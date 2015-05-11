@@ -2,17 +2,19 @@ var app = angular.module('myApp', ['ui.router'], function ($interpolateProvider)
             $interpolateProvider.startSymbol('[[');
             $interpolateProvider.endSymbol(']]');
         });
-app.config(function($stateProvider,$urlRouterProvider,$locationProvider){
-	// $locationProvider.html5Mode(true).hashPrefix('!');
-	// $urlRouterProvider.otherwise('templates/home');
+app.config(function($stateProvider,$urlRouterProvider){
+
+	$urlRouterProvider.otherwise('/templates/home');
 
 	$stateProvider
 		.state('home',{
 			url:'/home',
-			templateUrl:'/templates/home.html'
+			templateUrl:'templates/home.html'
 		})
-
-		
+		// .state('library',{
+		// 	url:'/drinkLibrary',
+		// 	templateUrl:'templates/drinkLibrary.html'
+		// })
 });
 app.factory('Drink',function($http) {
 	var Drink = function(name,date,caffeineLevel) {

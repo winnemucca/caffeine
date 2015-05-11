@@ -11,7 +11,7 @@ router.post('/drinks',function(req,res,next){
 	var formData = req.body;
 	var newDrink = new Drink({
 		name: formData.beverageName,
-	description: formData.description,
+	description: formData.date,
 	caffeine: formData.caffeine
 	});
 
