@@ -3,14 +3,18 @@ var app = angular.module('myApp', ['ui.router'], function ($interpolateProvider)
             $interpolateProvider.endSymbol(']]');
         });
 app.config(function($stateProvider,$urlRouterProvider,$locationProvider){
-	// $locationProvider.html5Mode(true).hashPrefix('!');
-	// $urlRouterProvider.otherwise('templates/home');
+	// $locationProvider.hashPrefix('!');
+	$urlRouterProvider.otherwise('templates/home');
 
 	$stateProvider
 		.state('home',{
 			url:'/home',
-			templateUrl:'/templates/home.html'
+			templateUrl:'../views/templates/home.html'
 		})
+		// .state('library',{
+		// 	url:'/library'
+		// 	templateUrl:'/templates/drinkLibrary.html'
+		// })
 
 		
 });
@@ -21,11 +25,35 @@ app.factory('Drink',function($http) {
  		this.caffeineLevel = caffeineLevel;
 
  	}
-
 	return Drink;
 })
 
-app.controller('myController', function($scope,Drink,$http  ) {
+// app.factory('DrinkLibrary',function($http,Drink){
+// 	var allDrinkList = [];
+
+// 	return {
+// 		addDrink: function(drink) {
+// 			allDrinkList.push(drink);
+// 		}
+// 	}
+// })
+// app.factory('DrinkPost',function(Drink,$http,$q){
+// 		return function() {
+// 			var defer = $q.defer();
+// 			$http.post('/api/drinks',obj).
+// 				success(function(data){
+// 					console.log(data)
+// 					// $scope.message ="succss"
+// 				}).
+// 				error(function(data){
+// 					console.log('error');
+// 				})
+
+// 				return defer.promise;
+// 		}
+// })
+
+app.controller('myController', function($scope,Drink,$http ) {
 	var init = function() {
 	 	 $scope.defaultForm = {
 	 		beverageName: "",
@@ -34,8 +62,6 @@ app.controller('myController', function($scope,Drink,$http  ) {
 	 	};
  	}
  	init();
- 	// $scope.defaultForm = defaultForm;
-
 
  	$scope.allDrinkList = [];
  	$scope.drinkList= function(obj) {
@@ -44,6 +70,10 @@ app.controller('myController', function($scope,Drink,$http  ) {
  		console.log($scope.allDrinkList);
  		init();
 
+ 		// DrinkPost().then(function(data){
+ 		// 	console.log(data);
+ 		// 	$scope.message = 'success';
+ 		// });
  		$http.post('/api/drinks',obj).
  			success(function(data){
  				console.log(data)
