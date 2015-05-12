@@ -1,10 +1,9 @@
 var app = angular.module('myApp', ['ui.router'], function ($interpolateProvider) {
-            $interpolateProvider.startSymbol('[[');
-            $interpolateProvider.endSymbol(']]');
-        });
-app.config(function($stateProvider,$urlRouterProvider,$locationProvider){
-	// $locationProvider.html5Mode(true).hashPrefix('!');
-	// $urlRouterProvider.otherwise('templates/home');
+  $interpolateProvider.startSymbol('[[');
+  $interpolateProvider.endSymbol(']]');
+});
+
+app.config(function($stateProvider, $urlRouterProvider){
 
 	$stateProvider
 		.state('home',{
@@ -12,8 +11,8 @@ app.config(function($stateProvider,$urlRouterProvider,$locationProvider){
 			templateUrl:'/templates/home.html'
 		})
 
-		
 });
+
 app.factory('Drink',function($http) {
 	var Drink = function(name,date,caffeineLevel) {
  		this.name = name;
@@ -54,6 +53,6 @@ app.controller('myController', function($scope,Drink,$http  ) {
  			})
 
  	};
- 	
+
 
 });
