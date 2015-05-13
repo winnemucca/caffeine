@@ -1,24 +1,28 @@
 var app = angular.module('myApp', ['ui.router'], function ($interpolateProvider) {
-<<<<<<< HEAD
+// <<<<<<< HEAD
             $interpolateProvider.startSymbol('[[');
             $interpolateProvider.endSymbol(']]');
         });
-app.config(function($stateProvider,$urlRouterProvider,$locationProvider){
-	// $locationProvider.hashPrefix('!');
-	// $urlRouterProvider.otherwise('/home');
-=======
-  $interpolateProvider.startSymbol('[[');
-  $interpolateProvider.endSymbol(']]');
-});
+// app.config(function($stateProvider,$urlRouterProvider,$locationProvider){
+// 	// $locationProvider.hashPrefix('!');
+// 	// $urlRouterProvider.otherwise('/home');
+
+//   $interpolateProvider.startSymbol('[[');
+//   $interpolateProvider.endSymbol(']]');
+// });
 
 app.config(function($stateProvider, $urlRouterProvider){
->>>>>>> 6aa3a9e13ebe644d783a4a9b6ba9ae9e814b5258
 
 	$stateProvider
 		.state('home',{
 			url:'/home',
 			templateUrl:'templates/home.html',
 			controller: 'homeController'
+		})
+		.state('caffeineAgent',{
+			url:'/caffeineAgent',
+			templateUrl:'templates/caffeineAgent.html',
+			controller: 'caffeineAgentController'
 		})
 		
 		// .state('library',{
@@ -66,7 +70,9 @@ app.controller('homeController',function($scope){
 	$scope.greeting = 'hello world';
 
 })
-
+app.controller('caffeineAgentController',function($scope){
+	$scope.greeting = "caffeineAgent";
+})
 app.controller('myController', function($scope,Drink,$http ) {
 	var init = function() {
 	 	 $scope.defaultForm = {

@@ -6,3 +6,7 @@
 a {
   color: #00B7FF;
 }*/
+.navbar-brand {
+	font-family: 'Lato',serif;
+	font-size: 28px;
+}
