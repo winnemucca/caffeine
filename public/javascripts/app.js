@@ -1,10 +1,18 @@
 var app = angular.module('myApp', ['ui.router'], function ($interpolateProvider) {
+<<<<<<< HEAD
             $interpolateProvider.startSymbol('[[');
             $interpolateProvider.endSymbol(']]');
         });
 app.config(function($stateProvider,$urlRouterProvider,$locationProvider){
 	// $locationProvider.hashPrefix('!');
 	// $urlRouterProvider.otherwise('/home');
+=======
+  $interpolateProvider.startSymbol('[[');
+  $interpolateProvider.endSymbol(']]');
+});
+
+app.config(function($stateProvider, $urlRouterProvider){
+>>>>>>> 6aa3a9e13ebe644d783a4a9b6ba9ae9e814b5258
 
 	$stateProvider
 		.state('home',{
@@ -18,8 +26,8 @@ app.config(function($stateProvider,$urlRouterProvider,$locationProvider){
 		// 	templateUrl:'/templates/drinkLibrary.html'
 		// })
 
-		
 });
+
 app.factory('Drink',function($http) {
 	var Drink = function(name,date,caffeineLevel) {
  		this.name = name;
@@ -90,6 +98,6 @@ app.controller('myController', function($scope,Drink,$http ) {
  			})
 
  	};
- 	
+
 
 });
