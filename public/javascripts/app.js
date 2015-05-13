@@ -4,13 +4,15 @@ var app = angular.module('myApp', ['ui.router'], function ($interpolateProvider)
         });
 app.config(function($stateProvider,$urlRouterProvider,$locationProvider){
 	// $locationProvider.hashPrefix('!');
-	$urlRouterProvider.otherwise('templates/home');
+	// $urlRouterProvider.otherwise('/home');
 
 	$stateProvider
 		.state('home',{
 			url:'/home',
-			templateUrl:'../views/templates/home.html'
+			templateUrl:'templates/home.html',
+			controller: 'homeController'
 		})
+		
 		// .state('library',{
 		// 	url:'/library'
 		// 	templateUrl:'/templates/drinkLibrary.html'
@@ -52,6 +54,10 @@ app.factory('Drink',function($http) {
 // 				return defer.promise;
 // 		}
 // })
+app.controller('homeController',function($scope){
+	$scope.greeting = 'hello world';
+
+})
 
 app.controller('myController', function($scope,Drink,$http ) {
 	var init = function() {
