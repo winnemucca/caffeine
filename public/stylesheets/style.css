@@ -1,12 +1,40 @@
-/*body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body {
+  padding-top: 70px;
+  
 }
 
 a {
   color: #00B7FF;
-}*/
+}
+.navbar {
+	margin-bottom: 0;
+	background: #D05A00;
+}
 .navbar-brand {
-	font-family: 'Lato',serif;
+	font-family: 'Damion',serif;
 	font-size: 28px;
+	font-weight: bold;
+	background: #29241E;
+	border-radius: 50%;
+	margin-left: 30px;
+}
+
+.jumboBackground {
+	background: #D05A00;
+/*#FEFFF8
+#29241E*/
+}
+.jumbotron h1 {
+	color:white;
+}
+.jumbotron-title {
+	font-family: 'Lato',serif;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+}
+
+
+footer {
+	margin-top: 60px;
 }

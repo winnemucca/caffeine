@@ -25,10 +25,11 @@ app.config(function($stateProvider, $urlRouterProvider){
 			controller: 'caffeineAgentController'
 		})
 		
-		// .state('library',{
-		// 	url:'/library'
-		// 	templateUrl:'/templates/drinkLibrary.html'
-		// })
+		.state('caffeine-library',{
+			url:'/caffeine-library',
+			templateUrl:'templates/caffeine-library.html',
+			controller: 'libraryController'
+		});
 
 });
 
@@ -71,7 +72,10 @@ app.controller('homeController',function($scope){
 
 })
 app.controller('caffeineAgentController',function($scope){
-	$scope.greeting = "caffeineAgent";
+	$scope.greeting = "CaffeineAgent";
+})
+app.controller('libraryController',function($scope){
+	console.log('connected');
 })
 app.controller('myController', function($scope,Drink,$http ) {
 	var init = function() {
