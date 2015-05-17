@@ -10,9 +10,9 @@ router.post('/drinks',function(req,res,next){
 	console.log(req.body);
 	var formData = req.body;
 	var newDrink = new Drink({
-		name: formData.beverageName,
-	description: formData.date,
-	caffeine: formData.caffeine
+		name: formData.name,
+		date: formData.date,
+		caffeine: formData.caffeineLevel
 	});
 
 	newDrink.save(function(err,result){
