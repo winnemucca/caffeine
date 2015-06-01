@@ -1,6 +1,22 @@
 <div>
 	<h1>Drink Library </h1>
 </div>
+<form class="form-horizontal">
+        <div class="form-group">
+          <label for="name">beverageName</label>
+          <input type="text" class="form-control" id="drinkName" placeholder="beverage name" ng-model="defaultForm.beverageName">
+        </div>
+        <div class="form-group">
+          <label for="date">date</label>
+          <input type="date" class="form-control" id="date" placeholder="date" ng-model="defaultForm.date">
+        </div>
+        <div class="form-group">
+          <label for="caffeine-level">caffeine-level</label>
+          <input type="text" class="form-control" id="caffeine-level" placeholder="caffeine-level" ng-model="defaultForm.caffeineLevel">
+        </div>
+        
+        <button type="submit" class="btn btn-default" ng-click="drinkList(defaultForm)">Submit</button>
+</form>
 
 <div class="table-responsive">
 	<table class="table table hover">
@@ -12,11 +28,19 @@
 				<th>Beverage Description</th>
 			</tr>
 		</thead>	
-		<tbody>
+		<tbody ng-repeat="drink in allDrinkList">
 			<td>[[drink.name]]</td>
 			<td>[[drink.date]]</td>
 			<td>[[drink.caffeineLevel]]</td>
-			<td>Edit or Delete </td>
+			<td>
+				<a ng-click="delete(drink._id)">
+					<i style="font-size:18px; margin-right:5%" class="fa fa-times"></i>
+				</a>
+				<a href="" ng-click="editBeverage(beverage)">
+					<i style="font-size:18px;" class="fa fa-pencil-square-o"></i>
+				</a> 
+			</td>
+
 		</tbody>
 	</table>
 

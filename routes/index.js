@@ -8,6 +8,6 @@ router.get('/', function(req, res, next) {
 
 router.get('/templates/:templateid' ,function(req,res,next){
 	res.render('templates/' + req.params.templateid);
-})
+});
 
 module.exports = router;

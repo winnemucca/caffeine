@@ -2,8 +2,10 @@ var mongoose = require('mongoose');
 
 var drinkSchema = mongoose.Schema({
 	name: String,
-	date: Date,
-	caffeine: String
+	date: {
+		type:Date,default: new Date()
+	},
+	caffeineLevel: String
 
 });
 

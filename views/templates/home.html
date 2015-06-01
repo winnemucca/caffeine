@@ -16,20 +16,6 @@
           <label for="caffeine-level">caffeine-level</label>
           <input type="text" class="form-control" id="caffeine-level" placeholder="caffeine-level" ng-model="defaultForm.caffeine">
         </div>
-        <!-- date picker not working  -->
-        <!-- <div class="form-group">
-          <input type="text" 
-           datepicker-popup="dd-MMMM-yyyy"
-           ng-model="cdate.customStartDate"
-           is-open="cdate.customStartDate.open"
-           ng-click = "cdate.customStartDate.open = true"
-           max-date="maxDate"
-           datepicker-options="dateOptions"
-           date-disabled="disabled(date, mode)" 
-           ng-required="true"
-           close-text="Close"
-           class="input-md" />
-        </div> -->
         
         <button type="submit" class="btn btn-default" ng-click="drinkList(defaultForm)">Submit</button>
 </form>
