@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+// var moment = require('moment');
 
 var Drink = require('../models/drinks.js');
 
@@ -22,6 +23,7 @@ router.post('/drinks',function(req,res,next){
 	var newDrink = new Drink({
 		name: formData.name,
 		date: formData.date,
+		// date: formData.moment(data).format('L'),
 		caffeineLevel: formData.caffeineLevel
 	});
 
@@ -43,7 +45,8 @@ router.get('/drink/:drink_id',function(req,res,next){
 })
 // delete individual drink by id
 router.delete('/drink/:drink_id',function(req,res){
-	drink.findByIdAndRemove(req.params.drink_id,function(err,post){
+	// res.send(req.params.drink_id);
+	Drink.findByIdAndRemove(req.params.drink_id,function(err,post){
 		if(err) return next(err);
 		res.send(post);
 	})

@@ -5,7 +5,7 @@ app.controller('homeController',function($scope){
 app.controller('caffeineAgentController',function($scope){
 	$scope.greeting = "CaffeineAgent";
 });
-app.controller('libraryController',function($scope,DrinkLibrary,Drink){
+app.controller('libraryController',function($scope,DrinkLibrary,Drink, $modal, $log){
 	console.log('connected');
 	var init = function() {
 	 	 $scope.defaultForm = {
@@ -18,9 +18,10 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink){
 
  	var drinkSet = function(){
 	 	DrinkLibrary.getDrinks().success(function(data){
+	 		console.log(Drink.myCaffeineList);
 	 		$scope.allDrinkList = data;
  		});
- 	}
+ 	};
 
  	drinkSet();
 
@@ -38,9 +39,18 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink){
 
  	$scope.delete=function(id){
  		DrinkLibrary.deleteDrink(id).success(function(data){
- 			$scope.allDrinkList = data;
+ 			// $scope.allDrinkList = data;
+ 			drinkSet();
  			console.log(data);
- 		})
+
+ 		});
+ 	};
+
+ 	$scope.update=function(id){
+ 		DrinkLibrary.updateDrink(id).
+ 		success(function(data){
+ 			console.log(data);
+ 		});
  	}
 
 });

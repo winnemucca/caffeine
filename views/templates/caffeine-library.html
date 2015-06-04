@@ -28,15 +28,15 @@
 				<th>Beverage Description</th>
 			</tr>
 		</thead>	
-		<tbody ng-repeat="drink in allDrinkList">
+		<tbody ng-repeat="drink in allDrinkList | orderBy:'-date'">
 			<td>[[drink.name]]</td>
-			<td>[[drink.date]]</td>
+			<td>[[drink.date |date: format :timezone]]</td>
 			<td>[[drink.caffeineLevel]]</td>
 			<td>
 				<a ng-click="delete(drink._id)">
 					<i style="font-size:18px; margin-right:5%" class="fa fa-times"></i>
 				</a>
-				<a href="" ng-click="editBeverage(beverage)">
+				<a href="" ng-click="update(drink._id)">
 					<i style="font-size:18px;" class="fa fa-pencil-square-o"></i>
 				</a> 
 			</td>
