@@ -101,22 +101,11 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, $modal, $
 
 });
 
-// app.controller('drinkEditController',function(Drink,DrinkLibrary, $scope,$modalInstance){
-// 	console.log('connected');
+app.controller('drinkEditController',function(Drink,DrinkLibrary, $scope){
+	console.log('connected');
 
-// 	  // $scope.items = items;
-// 	  // $scope.selected = {
-// 	  //   item: $scope.items[0]
-// 	  // };
-
-// 	  // $scope.ok = function () {
-// 	  //   $modalInstance.close($scope.selected.item);
-// 	  // };
-
-// 	  // $scope.cancel = function () {
-// 	  //   $modalInstance.dismiss('cancel');
-// 	  // };
-// })
+	
+})
 
 
 
