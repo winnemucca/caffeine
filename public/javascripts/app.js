@@ -21,7 +21,12 @@ app.config(function($stateProvider, $urlRouterProvider){
             url:'/caffeine-library',
             templateUrl:'templates/caffeine-library.html',
             controller: 'libraryController'
-        });
+        })
+        .state('editDrink',{
+            url:'caffeineAgent/:_drinkid/editDrink',
+            templateUrl:'templates/editCaffeineDrink.html'
+            // controller:'drinkController'
+        })
 
 });
 
