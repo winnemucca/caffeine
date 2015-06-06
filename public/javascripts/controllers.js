@@ -113,14 +113,14 @@ app.controller('drinkEditController',function(Drink,DrinkLibrary, $scope){
 	console.log('connected');
 
 
-	// update function needs to loose scope
-	// $scope.update=function(id){
- // 		DrinkLibrary.updateDrink(id).
- // 		success(function(data){
- // 			console.log(data);
- // 			// drinkset();
- // 		});
- // 	};
+	$scope.update=function(updateDrink){
+		var drink = updateDrink;
+ 		// DrinkLibrary.updateDrink(id).
+ 		// success(function(data){
+ 		// 	console.log(data);
+ 		// 	// drinkset();
+ 		// });
+ 	};
 
 	
 })
