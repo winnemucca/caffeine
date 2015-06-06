@@ -1,13 +1,16 @@
+
 app.factory('Drink',function($http) {
   var Drink = function(name,date,caffeineLevel) {
     this.name = name;
     // this.date = moment(date).format('L');
-    this.data = date;
+    this.date = date;
     this.caffeineLevel = caffeineLevel;
 
   };
   return Drink;
 });
+
+
 
 app.factory('DrinkLibrary',function($http,Drink){
 
@@ -26,7 +29,7 @@ app.factory('DrinkLibrary',function($http,Drink){
     }).
     error(function(data){
       console.log('error');
-    });
+    })
   }
 
   function addDrink(drink) {
@@ -69,52 +72,51 @@ app.factory('DrinkLibrary',function($http,Drink){
 });
 
 
-app.service('modalService',['$modal',function($modal){
+// app.service('modalService',['$modal',function($modal){
+//  var modalDefaults = {
+//             backdrop: true,
+//             keyboard: true,
+//             modalFade: true,
+//             templateUrl: '/templates/editCaffeineDrink.html'
+//         };
 
-  var modalDefaults = {
-    backdrop: true,
-    keyboard: true,
-    modalFade: true,
-    templateUrl: '/templates/editCaffeineDrink.html'
-  };
+//         var modalOptions = {
+//             closeButtonText: 'Close',
+//             actionButtonText: 'OK',
+//             headerText: 'Proceed?',
+//             bodyText: 'Perform this action?'
+//         };
 
-  var modalOptions = {
-    closeButtonText: 'Close',
-    actionButtonText: 'OK',
-    headerText: 'Proceed?',
-    bodyText: 'Perform this action?'
-  };
+//         this.showModal = function (customModalDefaults, customModalOptions) {
+//             if (!customModalDefaults) customModalDefaults = {};
+//             customModalDefaults.backdrop = 'static';
+//             return this.show(customModalDefaults, customModalOptions);
+//         };
 
-  this.showModal = function (customModalDefaults, customModalOptions) {
-    if (!customModalDefaults) customModalDefaults = {};
-    customModalDefaults.backdrop = 'static';
-    return this.show(customModalDefaults, customModalOptions);
-  };
+//         this.show = function (customModalDefaults, customModalOptions) {
+//             //Create temp objects to work with since we're in a singleton service
+//             var tempModalDefaults = {};
+//             var tempModalOptions = {};
 
-  this.show = function (customModalDefaults, customModalOptions) {
-    //Create temp objects to work with since we're in a singleton service
-    var tempModalDefaults = {};
-    var tempModalOptions = {};
+//             //Map angular-ui modal custom defaults to modal defaults defined in service
+//             angular.extend(tempModalDefaults, modalDefaults, customModalDefaults);
 
-    //Map angular-ui modal custom defaults to modal defaults defined in service
-    angular.extend(tempModalDefaults, modalDefaults, customModalDefaults);
+//             //Map modal.html $scope custom properties to defaults defined in service
+//             angular.extend(tempModalOptions, modalOptions, customModalOptions);
 
-    //Map modal.html $scope custom properties to defaults defined in service
-    angular.extend(tempModalOptions, modalOptions, customModalOptions);
+//             if (!tempModalDefaults.controller) {
+//                 tempModalDefaults.controller = function ($scope, $modalInstance) {
+//                     $scope.modalOptions = tempModalOptions;
+//                     $scope.modalOptions.ok = function (result) {
+//                         $modalInstance.close(result);
+//                     };
+//                     $scope.modalOptions.close = function (result) {
+//                         $modalInstance.dismiss('cancel');
+//                     };
+//                 }
+//             }
 
-    if (!tempModalDefaults.controller) {
-      tempModalDefaults.controller = function ($scope, $modalInstance) {
-        $scope.modalOptions = tempModalOptions;
-        $scope.modalOptions.ok = function (result) {
-          $modalInstance.close(result);
-        };
-        $scope.modalOptions.close = function (result) {
-          $modalInstance.dismiss('cancel');
-        };
-      };
-    }
+//             return $modal.open(tempModalDefaults).result;
+//         };
 
-    return $modal.open(tempModalDefaults).result;
-  };
-
-}]);
+// }]);
