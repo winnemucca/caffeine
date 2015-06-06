@@ -1,12 +1,15 @@
-
 app.controller('homeController',function($scope){
   $scope.greeting = 'hello world';
 });
+
 app.controller('caffeineAgentController',function($scope){
   $scope.greeting = "CaffeineAgent";
 });
+
 app.controller('libraryController',function($scope,DrinkLibrary,Drink, $modal, $log){
+
   console.log('connected');
+
   var init = function() {
      $scope.defaultForm = {
       beverageName: "",
@@ -14,6 +17,7 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, $modal, $
       caffeineLevel: ""
     };
   };
+
   init();
 
   var drinkSet = function(){
@@ -30,11 +34,8 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, $modal, $
     DrinkLibrary.addDrink(newdrink).success(function(data){
       $scope.message = 'success';
       drinkSet();
-
     });
-
     init();
-
   };
 
   $scope.delete=function(id){
@@ -42,7 +43,6 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, $modal, $
       // $scope.allDrinkList = data;
       drinkSet();
       console.log(data);
-
     });
   };
 
@@ -61,52 +61,44 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, $modal, $
     console.log(selectedDrink);
       var modalInstance = $modal.open({
         animation: $scope.animationsEnabled,
-      templateUrl: 'templates/editCaffeineDrink.html',
-      controller: function($scope,$modalInstance,drink){
-                // actual drink console.log === undefined
-        console.log(drink);
-        $scope.drink = drink;
+        templateUrl: 'templates/editCaffeineDrink.html',
+        controller: function($scope,$modalInstance,drink){
+          console.log(drink);
+          $scope.drink = drink;
 
-        $scope.ok = function(){
-          $modalInstance.close($scope.drink);
-        };
+          $scope.ok = function(){
+            $modalInstance.close($scope.drink);
+          };
 
-        $scope.cancel = function(){
-          $modalInstance.dismiss('cancel');
+          $scope.cancel = function(){
+            $modalInstance.dismiss('cancel');
+          };
+        },
+        size: size,
+        resolve: {
+          // resolve the drink
+          drink: function () {
+            // return selected drink
+            console.log(selectedDrink);
+            return $scope.selectedDrink;
+          }
         }
-      },
-      size: size,
-      resolve: {
-                // resolve the drink
-        drink: function () {
-                  // return selected drink
-          console.log(selectedDrink);
-          return $scope.selectedDrink;
-        }
-      }
-    });
-
-    modalInstance.result.then(function (selectedItem) {
-          $scope.selected = selectedItem;
-    }, function () {
-        $log.info('Modal dismissed at: ' + new Date());
       });
 
-    };
-      // end modalUpdate
+    modalInstance.result.then(function (selectedItem) {
+      $scope.selected = selectedItem;
+    }, function () {
+      $log.info('Modal dismissed at: ' + new Date());
+    });
 
-      $scope.toggleAnimation = function () {
-          $scope.animationsEnabled = !$scope.animationsEnabled;
-      };
+  }; // end modalUpdate
+
+  $scope.toggleAnimation = function () {
+    $scope.animationsEnabled = !$scope.animationsEnabled;
+  };
 
 });
 
 app.controller('drinkEditController',function(Drink,DrinkLibrary, $scope){
   console.log('connected');
-
-
-})
-
-
-
-
+});
