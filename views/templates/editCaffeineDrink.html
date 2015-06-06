@@ -24,25 +24,25 @@
 						</div>
 						<div class="form-group">
 							
-							<label class="control-label" for="name">Name</label>
+							<label class="control-label" for="name">Caffeine Level</label>
 							<div class="">
 								<input type="text" class="form-control" ng-model="drink.caffeineLevel" placeholder="caffeine Level">
 							</div>
 						</div>
-						<div class="form-group">
+						<!-- <div class="form-group">
 							
 							<label class="control-label" for="name">Name</label>
 							<div class="">
 								<input type="text" class="form-control" placeholder="name">
 							</div>
-						</div>
+						</div> -->
 					</fieldset>
 				</form>
 			</div>
 
 			<!-- footer -->
 			<div class="modal-footer">
-	            <button class="btn btn-primary" ng-click="ok()">OK</button>
+	            <button class="btn btn-primary" ng-click="ok(drink._id)">OK</button>
 	            <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
         	</div>
         	<!-- end of modal markup -->
