@@ -44,7 +44,7 @@ router.get('/drink/:drink_id',function(req,res,next){
   });
 });
 // delete individual drink by id
-router.delete('/drink/:drink_id',function(req,res){
+router.delete('/drink/:drink_id',function(req,res,next){
   // res.send(req.params.drink_id);
   Drink.findByIdAndRemove(req.params.drink_id,function(err,post){
     if(err) return next(err);
@@ -56,7 +56,7 @@ router.delete('/drink/:drink_id',function(req,res){
 router.put('/drink/:id',function(req,res,next){
   Drink.findByIdAndUpdate(req.params.id, req.body,function(err,post){
     if(err) return next(err);
-    res.send(post);
+    res.send('success');
   });
 });
 

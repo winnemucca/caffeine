@@ -1,4 +1,3 @@
-
 app.factory('Drink',function($http) {
   var Drink = function(name,date,caffeineLevel) {
     this.name = name;
@@ -14,13 +13,6 @@ app.factory('Drink',function($http) {
 
 app.factory('DrinkLibrary',function($http,Drink){
 
-  return {
-    getDrinks:getDrinks,
-    addDrink: addDrink,
-    deleteDrink: deleteDrink,
-    updateDrink:updateDrink
-  };
-
   function getDrinks(){
     return $http.get('/api/drinks').
     success(function(data){
@@ -29,7 +21,7 @@ app.factory('DrinkLibrary',function($http,Drink){
     }).
     error(function(data){
       console.log('error');
-    })
+    });
   }
 
   function addDrink(drink) {
@@ -59,8 +51,9 @@ app.factory('DrinkLibrary',function($http,Drink){
     });
   }
 
-  function updateDrink(id){
-    return $http.put('/api/drink/'+id).
+  function updateDrink(id,payload){
+  	// need a payload for put and for post
+    return $http.put('/api/drink/'+id,payload).
       success(function(data){
         console.log(data);
         return data;
@@ -69,6 +62,13 @@ app.factory('DrinkLibrary',function($http,Drink){
         console.log('error');
       });
   }
+
+  return {
+    getDrinks:getDrinks,
+    addDrink: addDrink,
+    deleteDrink: deleteDrink,
+    updateDrink:updateDrink
+  };
 });
 
 

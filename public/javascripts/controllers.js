@@ -2,15 +2,15 @@ app.controller('homeController',function($scope){
   $scope.greeting = 'hello world';
 });
 app.controller('caffeineAgentController',function($scope){
-  $scope.greeting = "CaffeineAgent";
+  $scope.greeting = 'CaffeineAgent';
 });
 app.controller('libraryController',function($scope,DrinkLibrary,Drink, $modal, $log){
   console.log('connected');
   var init = function() {
      $scope.defaultForm = {
-      beverageName: "",
-      date: "",
-      caffeineLevel: ""
+      beverageName: '',
+      date: '',
+      caffeineLevel: ''
     };
   };
   init();
@@ -58,7 +58,7 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, $modal, $
     console.log(selectedDrink);
     console.log(selectedDrink.name);
     console.log(selectedDrink.caffeineLevel);
-    console.log(selectedDrink.date)
+    console.log(selectedDrink.date);
 
 
       var modalInstance = $modal.open({
@@ -70,24 +70,25 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, $modal, $
         $scope.drink = drink;
 
         $scope.ok = function(id){
-          console.log(id);
-          DrinkLibrary.updateDrink(id).
+          // console.log(id);
+          // console.log($scope.drink);
+          DrinkLibrary.updateDrink(id,$scope.drink).
           success(function(data){
             console.log(data);
-          })
+          });
           $modalInstance.close($scope.drink);
         };
 
         $scope.cancel = function(){
           $modalInstance.dismiss('cancel');
-        }
+        };
       },
       size: size,
       resolve: {
                 // resolve the drink
         drink: function () {
                   // return selected drink
-          console.log(selectedDrink);
+          // console.log(selectedDrink);
           // return $scope.selectedDrink;
           return selectedDrink;
         }
@@ -115,25 +116,10 @@ app.controller('drinkEditController',function(Drink,DrinkLibrary, $scope){
 
 	$scope.update=function(updateDrink){
 		var drink = updateDrink;
- 		// DrinkLibrary.updateDrink(id).
- 		// success(function(data){
- 		// 	console.log(data);
- 		// 	// drinkset();
- 		// });
+ 		
  	};
 
 	
-})
+});
 
 
-  // update function needs to loose scope
-  // $scope.update=function(id){
- //     DrinkLibrary.updateDrink(id).
- //     success(function(data){
- //       console.log(data);
- //       // drinkset();
- //     });
- //   };
-
-
-})
