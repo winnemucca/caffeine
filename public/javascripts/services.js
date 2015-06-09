@@ -1,3 +1,4 @@
+var app = angular.module('myApp');
 app.factory('Drink',function($http) {
   var Drink = function(name,date,caffeineLevel) {
     this.name = name;
