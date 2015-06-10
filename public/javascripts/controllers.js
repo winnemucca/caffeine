@@ -18,7 +18,7 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, $modal, $
 
   var drinkSet = function(){
     DrinkLibrary.getDrinks().success(function(data){
-      console.log(Drink.myCaffeineList);
+      // console.log(Drink.myCaffeineList);
       $scope.allDrinkList = data;
     });
   };
@@ -56,52 +56,46 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, $modal, $
 
   // modal
   $scope.modalUpdate = function(size,selectedDrink) {
-    console.log(selectedDrink);
-    console.log(selectedDrink.name);
-    console.log(selectedDrink.caffeineLevel);
-    console.log(selectedDrink.date);
-
-
+    // console.log(selectedDrink);
+    // console.log(selectedDrink.name);
+    // console.log(selectedDrink.caffeineLevel);
+    // console.log(selectedDrink.date);
       var modalInstance = $modal.open({
         animation: $scope.animationsEnabled,
-      templateUrl: 'templates/editCaffeineDrink.html',
-      controller: function($scope,$modalInstance,drink,DrinkLibrary,Drink){
-                // actual drink console.log === undefined
-        // console.log(drink);
-        $scope.drink = drink;
+      	templateUrl: 'templates/editCaffeineDrink.html',
+      	controller: function($scope,$modalInstance,drink,DrinkLibrary,Drink){
+        	$scope.drink = drink;
 
-        $scope.ok = function(id){
-          // console.log(id);
-          // console.log($scope.drink);
-          DrinkLibrary.updateDrink(id,$scope.drink).
-          success(function(data){
-            console.log(data);
-          });
-          $modalInstance.close($scope.drink);
+        	$scope.ok = function(id){
+          		DrinkLibrary.updateDrink(id,$scope.drink).
+          		success(function(data){
+           		console.log(data);
+          	});
+          		$modalInstance.close($scope.drink);
         };
 
-        $scope.cancel = function(){
-          $modalInstance.dismiss('cancel');
-        };
-      },
-      size: size,
-      resolve: {
+	        $scope.cancel = function(){
+	          $modalInstance.dismiss('cancel');
+	        };
+      	},
+    	size: size,
+      	resolve: {
                 // resolve the drink
-        drink: function () {
+        	drink: function () {
                   // return selected drink
           // console.log(selectedDrink);
           // return $scope.selectedDrink;
-          return selectedDrink;
-        }
-      }
+          		return selectedDrink;
+        	}
+      	}
     });
+      // end of mal instance/modal open
 
     modalInstance.result.then(function (selectedItem) {
           $scope.selected = selectedItem;
-    }, function () {
-        $log.info('Modal dismissed at: ' + new Date());
-      });
-
+    }, 	function () {
+        	$log.info('Modal dismissed at: ' + new Date());
+       	});
     };
       // end modalUpdate
 
@@ -109,18 +103,33 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, $modal, $
           $scope.animationsEnabled = !$scope.animationsEnabled;
       };
 
-});
+	});
 
 app.controller('drinkEditController',function(Drink,DrinkLibrary, $scope){
 	console.log('connected');
-
-
 	$scope.update=function(updateDrink){
 		var drink = updateDrink;
  		
  	};
 
 	
+});
+
+app.controller('analysisController',function(Drink,DrinkLibrary,$scope){
+	console.log('connected');
+
+	$scope.mapData = DrinkLibrary.getDrinks;
+	console.log($scope.mapData);
+  	var drinkSet = function(){
+    	DrinkLibrary.getDrinks().success(function(data){
+      	var CaffeineData = data;
+      	console.log(CaffeineData[0].name)
+      // console.log(CaffeineData);
+    	});
+  	};
+  	drinkSet();
+
+
 });
 
 

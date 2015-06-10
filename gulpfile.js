@@ -14,5 +14,14 @@ gulp.task('connect', function() {
   });
 });
 
+gulp.task('express', function() {
+  var express = require('express');
+  var app = express();
+  app.use(express.static(__dirname));
+});
+
+
+
+
 // Default Task
 gulp.task('default', ['connect', 'lint']);

@@ -1,8 +1,14 @@
-var app = angular.module('myApp', ['ui.router','ui.bootstrap','ngResource'], function ($interpolateProvider) {
+var app = angular.module('myApp', ['ui.router','ui.bootstrap','ngResource','mgcrea.ngStrap'], function ($interpolateProvider) {
   $interpolateProvider.startSymbol('[[');
   $interpolateProvider.endSymbol(']]');
 });
 
+app.config(function($datepickerProvider) {
+  angular.extend($datepickerProvider.defaults, {
+    dateFormat: 'dd/MM/yyyy',
+    startWeek: 1
+  });
+});
 // routes
 app.config(function($stateProvider, $urlRouterProvider){
 
@@ -26,6 +32,11 @@ app.config(function($stateProvider, $urlRouterProvider){
       url:'caffeineAgent/:_drinkid/editDrink',
       templateUrl:'templates/editCaffeineDrink.html'
       // controller:'drinkController'
+    })
+    .state('caffeineAnalysis',{
+      url:'/caffeineAnalysis',
+      templateUrl:'templates/caffeineAnalysis.html',
+      controller:'analysisController'
     });
 
 });

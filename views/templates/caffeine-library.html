@@ -14,6 +14,11 @@
           <label for="caffeine-level">caffeine-level</label>
           <input type="text" class="form-control" id="caffeine-level" placeholder="caffeine-level" ng-model="defaultForm.caffeineLevel">
         </div>
+
+        <div class="form-group" ng-class="{'has-error': datepickerForm.date.$invalid}">
+        <label class="control-label"><i class="fa fa-calendar"></i> Date <small>(as date)</small></label>
+        <input type="text" class="form-control" ng-model="selectedDate" name="date" bs-datepicker>
+      </div>
         
         <button type="submit" class="btn btn-default" ng-click="drinkList(defaultForm)">Submit</button>
 </form>
