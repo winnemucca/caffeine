@@ -123,7 +123,7 @@ app.controller('analysisController',function(Drink,DrinkLibrary,$scope){
   	var drinkSet = function(){
     	DrinkLibrary.getDrinks().success(function(data){
       	var CaffeineData = data;
-      	console.log(CaffeineData[0].name)
+      	console.log(CaffeineData[0].name);
       // console.log(CaffeineData);
     	});
   	};
