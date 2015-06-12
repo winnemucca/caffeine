@@ -37,6 +37,16 @@ app.config(function($stateProvider, $urlRouterProvider){
       url:'/caffeineAnalysis',
       templateUrl:'templates/caffeineAnalysis.html',
       controller:'analysisController'
+    })
+    .state('login',{
+      url: '/login',
+      templateUrl:'templates/login.html',
+      controller:'loginController'
+    })
+    .state('register',{
+      url:'/register',
+      templateUrl:'templates/register.html',
+      controller:'registerController'
     });
 
 });

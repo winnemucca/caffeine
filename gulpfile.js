@@ -30,7 +30,5 @@ gulp.task('express', function() {
 });
 
 
-
-
 // Default Task
 gulp.task('default', ['start', 'lint']);

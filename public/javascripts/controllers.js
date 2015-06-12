@@ -115,21 +115,57 @@ app.controller('drinkEditController',function(Drink,DrinkLibrary, $scope){
 	
 });
 
+
+
+
+// app.controller('analysisController',function(Drink,DrinkLibrary,$scope){
+// 	console.log('connected');
+//   	var drinkSet = function(){
+//     	DrinkLibrary.getDrinks().success(function(data){
+//       		$scope.caffeineData = data;
+//       		// console.log(caffeineData);
+//     	});
+//   	};
+//   	drinkSet();
+//   	console.log($scope.caffeineData);
+
+// });
+
 app.controller('analysisController',function(Drink,DrinkLibrary,$scope){
-	console.log('connected');
+  console.log('connected');
 
-	$scope.mapData = DrinkLibrary.getDrinks;
-	console.log($scope.mapData);
-  	var drinkSet = function(){
-    	DrinkLibrary.getDrinks().success(function(data){
-      	var CaffeineData = data;
-      	console.log(CaffeineData[0].name);
-      // console.log(CaffeineData);
-    	});
-  	};
-  	drinkSet();
-
-
+  var caffeineData = []; // could also set via $scope.caffeineData
+  DrinkLibrary.getDrinks().success(function(data){
+  	$scope.caffeineData = data;
+  	caffeineData = data;
+    console.log(caffeineData);
+    return caffeineData;
+  });
+  console.log(caffeineData);
 });
+
+app.controller('loginController',function($scope){
+	console.log('connected');
+});
+app.controller('registerController',function($scope){
+	console.log('connected');
+});
+
+
+// app.directives('lineChart',[
+// 	function(){
+// 		return {
+// 			restrict: 'E',
+// 			scope: {
+// 				data: '='
+// 			},
+// 			link: function(scope, element){
+// 				var margin = {top: 20, right: 20, bottom: 30, left: 40},
+//           			width = 480 - margin.left - margin.right,
+//           			height = 360 - margin.top - margin.bottom;
+// 			}
+// 		}
+// 	}
+// 	])
 
 

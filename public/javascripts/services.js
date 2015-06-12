@@ -12,7 +12,7 @@ app.factory('Drink',function($http) {
 
 
 
-app.factory('DrinkLibrary',function($http,Drink){
+app.factory('DrinkLibrary',function($http,Drink,$q){
 
   function getDrinks(){
     return $http.get('/api/drinks').
@@ -24,6 +24,22 @@ app.factory('DrinkLibrary',function($http,Drink){
       console.log('error');
     });
   }
+
+
+   function getDrinks2(){
+  	var deferred = $q.defer();
+    $http.get('/api/drinks').
+    success(function(data){
+    	deferred.resolve(data);
+      	// console.log(data);
+      	// return data;
+    }).
+    error(function(data){
+      console.log('error');
+    });
+    return deferred.promise;
+  }
+
 
   function addDrink(drink) {
     // var allDrinkList = [];
