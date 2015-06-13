@@ -23,7 +23,7 @@ router.post('/drinks',function(req,res,next){
   var newDrink = new Drink({
     name: formData.name,
     date: formData.date,
-    // date: formData.moment(data).format('L'),
+    // date: moment(formData.date).toDate(),
     caffeineLevel: formData.caffeineLevel
   });
 

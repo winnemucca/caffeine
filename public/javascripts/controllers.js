@@ -106,7 +106,7 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, $modal, $
 	});
 
 app.controller('drinkEditController',function(Drink,DrinkLibrary, $scope){
-	console.log('connected');
+	// console.log('connected');
 	$scope.update=function(updateDrink){
 		var drink = updateDrink;
  		
@@ -116,37 +116,97 @@ app.controller('drinkEditController',function(Drink,DrinkLibrary, $scope){
 });
 
 
+app.controller('analysisController',function(Drink,DrinkLibrary,$scope,$timeout){
+	
+	$scope.caffeineData = []; // could also set via $scope.caffeineData
+  	DrinkLibrary.getDrinks().success(function(data){
+  		$scope.caffeineData = data;
+    	console.log($scope.caffeineData);
+    	// return $scope.caffeineData;
+    });
+
+  	console.log($scope.caffeineData);
+
+  	// start of timer for caffeine change
+  	var value = 5;
+  	$scope.value = value;
+
+  	function countDown(){
+  		$scope.value--;
+  		$scope.timeout = $timeout(countDown,1000);
+  	}   
+
+  	$scope.start =function(){
+
+  		// for(var i = 0; i<=value;i--){
+  		// 	if($scope.value >=0){
+  		// 		countDown();
+  		// }
+	  	// 	else{
+	  	// 		$timeout.cancel($scope.timeout);
+	  	// 	}	
+  		// }
+  		if($scope.value >=0){
+  			countDown();
+  		}
+  		else{
+  		$timeout.cancel($scope.timeout);
+  		}
+
+  		// var keepGoing = true;
+  		// angular.forEach($scope.value,function(count){
+  		// 	if($scope.value > 0){
+
+  		// 	}
+  		// })
 
 
-// app.controller('analysisController',function(Drink,DrinkLibrary,$scope){
-// 	console.log('connected');
-//   	var drinkSet = function(){
-//     	DrinkLibrary.getDrinks().success(function(data){
-//       		$scope.caffeineData = data;
-//       		// console.log(caffeineData);
-//     	});
-//   	};
-//   	drinkSet();
-//   	console.log($scope.caffeineData);
+  	}
 
-// });
+  	$scope.stop = function(){
+  		$timeout.cancel($scope.timeout);
+  	}
 
-app.controller('analysisController',function(Drink,DrinkLibrary,$scope){
-  console.log('connected');
 
-  var caffeineData = []; // could also set via $scope.caffeineData
-  DrinkLibrary.getDrinks().success(function(data){
-  	$scope.caffeineData = data;
-  	caffeineData = data;
-    console.log(caffeineData);
-    return caffeineData;
-  });
-  console.log(caffeineData);
+
+
+
 });
 
-app.controller('loginController',function($scope){
-	console.log('connected');
-});
+
+app.controller('loginController',['$scope', '$location', 'AuthService',
+  function($scope, $location, AuthService) {
+
+    console.log(AuthService.getUserStatus());
+
+    $scope.login = function () {
+
+      // initial values
+      $scope.error = false;
+      $scope.disabled = true;
+
+      // call login from service
+      AuthService.login($scope.loginForm.username, $scope.loginForm.password)
+        // handle success
+        .then(function () {
+          $location.path('/');
+          $scope.disabled = false;
+          $scope.loginForm = {};
+        })
+        // handle error
+        .catch(function () {
+          $scope.error = true;
+          $scope.errorMessage = "Invalid username and/or password";
+          $scope.disabled = false;
+          $scope.loginForm = {};
+        });
+
+    };
+
+}]);
+
+
+
 app.controller('registerController',function($scope){
 	console.log('connected');
 });

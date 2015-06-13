@@ -89,51 +89,107 @@ app.factory('DrinkLibrary',function($http,Drink,$q){
 });
 
 
-// app.service('modalService',['$modal',function($modal){
-//  var modalDefaults = {
-//             backdrop: true,
-//             keyboard: true,
-//             modalFade: true,
-//             templateUrl: '/templates/editCaffeineDrink.html'
-//         };
+app.factory('AuthService',['$q', '$timeout', '$http', function ($q, $timeout, $http) {
 
-//         var modalOptions = {
-//             closeButtonText: 'Close',
-//             actionButtonText: 'OK',
-//             headerText: 'Proceed?',
-//             bodyText: 'Perform this action?'
-//         };
+    // create user variable
+    var user = null;
 
-//         this.showModal = function (customModalDefaults, customModalOptions) {
-//             if (!customModalDefaults) customModalDefaults = {};
-//             customModalDefaults.backdrop = 'static';
-//             return this.show(customModalDefaults, customModalOptions);
-//         };
+    // return available functions for use in controllers
+    return ({
+      isLoggedIn: isLoggedIn,
+      getUserStatus: getUserStatus,
+      login: login,
+      logout: logout,
+      register: register
+    });
 
-//         this.show = function (customModalDefaults, customModalOptions) {
-//             //Create temp objects to work with since we're in a singleton service
-//             var tempModalDefaults = {};
-//             var tempModalOptions = {};
+    function isLoggedIn() {
+        if(user) {
+          return true;
+        } else {
+          return false;
+        }
+    }
 
-//             //Map angular-ui modal custom defaults to modal defaults defined in service
-//             angular.extend(tempModalDefaults, modalDefaults, customModalDefaults);
+    function getUserStatus() {
+      return user;
+    }
 
-//             //Map modal.html $scope custom properties to defaults defined in service
-//             angular.extend(tempModalOptions, modalOptions, customModalOptions);
+    function login(username, password) {
 
-//             if (!tempModalDefaults.controller) {
-//                 tempModalDefaults.controller = function ($scope, $modalInstance) {
-//                     $scope.modalOptions = tempModalOptions;
-//                     $scope.modalOptions.ok = function (result) {
-//                         $modalInstance.close(result);
-//                     };
-//                     $scope.modalOptions.close = function (result) {
-//                         $modalInstance.dismiss('cancel');
-//                     };
-//                 }
-//             }
+      // create a new instance of deferred
+      var deferred = $q.defer();
 
-//             return $modal.open(tempModalDefaults).result;
-//         };
+      // send a post request to the server
+      $http.post('/login', {username: username, password: password})
+        // handle success
+        .success(function (data, status) {
+          if(status === 200 && data.status){
+            user = true;
+            deferred.resolve();
+          } else {
+            user = false;
+            deferred.reject();
+          }
+        })
+        // handle error
+        .error(function (data) {
+          user = false;
+          deferred.reject();
+        });
 
-// }]);
+      // return promise object
+      return deferred.promise;
+
+    }
+
+    function logout() {
+
+      // create a new instance of deferred
+      var deferred = $q.defer();
+
+      // send a get request to the server
+      $http.get('/logout')
+        // handle success
+        .success(function (data) {
+          user = false;
+          deferred.resolve();
+        })
+        // handle error
+        .error(function (data) {
+          user = false;
+          deferred.reject();
+        });
+
+      // return promise object
+      return deferred.promise;
+
+    }
+
+    function register(username, password) {
+
+      // create a new instance of deferred
+      var deferred = $q.defer();
+
+      // send a post request to the server
+      $http.post('/register', {username: username, password: password})
+        // handle success
+        .success(function (data, status) {
+          if(status === 200 && data.status){
+            deferred.resolve();
+          } else {
+            deferred.reject();
+          }
+        })
+        // handle error
+        .error(function (data) {
+          deferred.reject();
+        });
+
+      // return promise object
+      return deferred.promise;
+
+    }
+
+  }]);
+
