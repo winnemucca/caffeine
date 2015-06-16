@@ -109,15 +109,15 @@ app.controller('drinkEditController',function(Drink,DrinkLibrary, $scope){
 	// console.log('connected');
 	$scope.update=function(updateDrink){
 		var drink = updateDrink;
- 		
+
  	};
 
-	
+
 });
 
 
 app.controller('analysisController',function(Drink,DrinkLibrary,$scope,$timeout){
-	
+
 	$scope.caffeineData = []; // could also set via $scope.caffeineData
   	DrinkLibrary.getDrinks().success(function(data){
   		$scope.caffeineData = data;
@@ -134,7 +134,7 @@ app.controller('analysisController',function(Drink,DrinkLibrary,$scope,$timeout)
   	function countDown(){
   		$scope.value--;
   		$scope.timeout = $timeout(countDown,1000);
-  	}   
+  	}
 
   	$scope.start =function(){
 
@@ -144,7 +144,7 @@ app.controller('analysisController',function(Drink,DrinkLibrary,$scope,$timeout)
   		// }
 	  	// 	else{
 	  	// 		$timeout.cancel($scope.timeout);
-	  	// 	}	
+	  	// 	}
   		// }
   		if($scope.value >=0){
   			countDown();
@@ -161,11 +161,11 @@ app.controller('analysisController',function(Drink,DrinkLibrary,$scope,$timeout)
   		// })
 
 
-  	}
+  	};
 
   	$scope.stop = function(){
   		$timeout.cancel($scope.timeout);
-  	}
+  	};
 
 
 

@@ -7,7 +7,6 @@ var drinkSchema = mongoose.Schema({
     default: new Date()
   },
   caffeineLevel: String
-
 });
 
 var Drink = mongoose.model('Drink',drinkSchema);
