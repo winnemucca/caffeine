@@ -94,15 +94,6 @@ app.factory('AuthService',['$q', '$timeout', '$http', function ($q, $timeout, $h
     // create user variable
     var user = null;
 
-    // return available functions for use in controllers
-    return ({
-      isLoggedIn: isLoggedIn,
-      getUserStatus: getUserStatus,
-      login: login,
-      logout: logout,
-      register: register
-    });
-
     function isLoggedIn() {
         if(user) {
           return true;
@@ -190,6 +181,15 @@ app.factory('AuthService',['$q', '$timeout', '$http', function ($q, $timeout, $h
       return deferred.promise;
 
     }
+
+    // return available functions for use in controllers
+    return ({
+      isLoggedIn: isLoggedIn,
+      getUserStatus: getUserStatus,
+      login: login,
+      logout: logout,
+      register: register
+    });
 
   }]);
 

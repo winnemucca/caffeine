@@ -161,11 +161,11 @@ app.controller('analysisController',function(Drink,DrinkLibrary,$scope,$timeout)
   		// })
 
 
-  	}
+  	};
 
   	$scope.stop = function(){
   		$timeout.cancel($scope.timeout);
-  	}
+  	};
 
 
 
@@ -196,7 +196,7 @@ app.controller('loginController',['$scope', '$location', 'AuthService',
         // handle error
         .catch(function () {
           $scope.error = true;
-          $scope.errorMessage = "Invalid username and/or password";
+          $scope.errorMessage = 'Invalid username and/or password';
           $scope.disabled = false;
           $scope.loginForm = {};
         });

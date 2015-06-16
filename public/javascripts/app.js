@@ -14,13 +14,13 @@ app.config(function($stateProvider, $urlRouterProvider){
 
   $stateProvider
     .state('home',{
-      url:'/',
+      url:'/home',
       templateUrl:'templates/home.html',
       controller: 'homeController',
       access: {restricted: true}
     })
     .state('caffeineAgent',{
-      url:'/caffeineAgent',
+      url:'/',
       templateUrl:'templates/caffeineAgent.html',
       controller: 'caffeineAgentController',
       access: {restricted: true}
@@ -62,8 +62,14 @@ app.config(function($stateProvider, $urlRouterProvider){
       access: {restricted: false}
 
     })
-    .state("otherwise", { url : '/',access: {restricted: true}
-   });
+    // .state('otherwise', { url : '/',access: {restricted: true}
+    // });
+
+    $stateProvider.state("otherwise", {
+      url: "*path",
+      templateUrl: "templates/error-not-found.html",
+      access: {restricted:true}
+    });
 
 });
 
