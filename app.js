@@ -1,32 +1,37 @@
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
-var swig = require('swig');
-var moment = require('moment');
+// requirements
+var express = require('express'),
+    path = require('path'),
+    favicon = require('serve-favicon'),
+    logger = require('morgan'),
+    cookieParser = require('cookie-parser'),
+    bodyParser = require('body-parser'),
+    swig = require('swig'),
+    moment = require('moment'),
+    mongoose = require('mongoose'),
+    passport = require('passport'),
+    LocalStrategy = require('passport-local').Strategy;
+
+
+// routers
+var apiRoutes = require('./routes/api');
 var routes = require('./routes/index');
 
-var apiRoutes = require('./routes/api');
-
+// instance of express
 var app = express();
 
-var mongoose = require('mongoose');
-var passport = require('passport');
-var LocalStrategy = require('passport-local').Strategy;
 
+// connect to mongoose
 mongoose.connect('mongodb://localhost/caffeine');
+
 
 // view engine setup
 swig = new swig.Swig();
-// swig.setDefaults({varControls: ['<%=','%>']});
 app.engine('html',swig.renderFile);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'html');
 
-// uncomment after placing your favicon in /public
-// app.use(favicon(__dirname + '/public/favicon.ico'));
+
+// middleware
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -38,31 +43,27 @@ app.use(require('express-session')({
 }));
 app.use(passport.initialize());
 app.use(passport.session());
-
-
 app.use(express.static(path.join(__dirname, 'public')));
 
-// passport config
 
+// passport config
 var Account = require('./models/account');
 passport.use(new LocalStrategy(Account.authenticate()));
 passport.serializeUser(Account.serializeUser());
 passport.deserializeUser(Account.deserializeUser());
 
-
+// routes
 app.use('/', routes);
-
 app.use('/api',apiRoutes);
-app.use('templates/:templateid', routes);
+// app.use('templates/:templateid', routes);
 
 
+// error handlers
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
   next(err);
 });
-
-// error handlers
 
 // development error handler
 // will print stacktrace

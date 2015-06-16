@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 // var moment = require('moment');
-
 var Drink = require('../models/drinks.js');
 
 
@@ -17,8 +16,7 @@ router.get('/drinks',function(req,res){
 
 // add drink to collection
 router.post('/drinks',function(req,res,next){
-
-  console.log(req.body);
+  // console.log(req.body);
   var formData = req.body;
   var newDrink = new Drink({
     name: formData.name,
@@ -34,8 +32,8 @@ router.post('/drinks',function(req,res,next){
     res.send(result);
   });
 });
-// access individual drink by id
 
+// access individual drink by id
 router.get('/drink/:drink_id',function(req,res,next){
   Drink.findById(req.params.id,function(err,post){
     if(err) return next(err);
@@ -43,6 +41,7 @@ router.get('/drink/:drink_id',function(req,res,next){
     res.send(post);
   });
 });
+
 // delete individual drink by id
 router.delete('/drink/:drink_id',function(req,res,next){
   // res.send(req.params.drink_id);
