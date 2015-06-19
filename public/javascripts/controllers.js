@@ -115,6 +115,10 @@ app.controller('drinkEditController',function(Drink,DrinkLibrary, $scope){
 
 });
 
+app.controller('caffeineTableController',function(DrinkLibrary,$scope){
+  console.log('connected');
+});
+
 
 app.controller('analysisController',function(Drink,DrinkLibrary,$scope,$timeout){
 
