@@ -62,6 +62,11 @@ app.config(function($stateProvider, $urlRouterProvider){
       access: {restricted: false}
 
     })
+    .state('caffeineTable',{
+      templateUrl:'templates/caffeineTable.html',
+      controller:'caffeineTableController',
+      access: {restricted: false}
+    });
     // .state('otherwise', { url : '/',access: {restricted: true}
     // });
 
