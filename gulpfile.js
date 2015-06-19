@@ -1,5 +1,4 @@
 var gulp = require('gulp'),
-    connect = require('gulp-connect'),
     nodemon = require('gulp-nodemon'),
     jshint = require('gulp-jshint');
 
@@ -8,12 +7,6 @@ gulp.task('lint', function(){
     .pipe(jshint({strict:false}))
     .pipe(jshint.reporter('default'));
 });
-
-// gulp.task('connect', function() {
-//   connect.server({
-//     root: './app'
-//   });
-// });
 
 gulp.task('start', function () {
   nodemon({

@@ -1,38 +1,38 @@
 <div>
 	<h1>Drink Library </h1>
 </div>
-<form class="form-horizontal">
-        <div class="form-group">
-          <label for="name">beverageName</label>
-          <input type="text" class="form-control" id="drinkName" placeholder="beverage name" ng-model="defaultForm.beverageName">
-        </div>
-        <div class="form-group">
-          <label for="date">date</label>
-          <input type="date" class="form-control" id="date" placeholder="date" ng-model="defaultForm.date">
-        </div>
-        <div class="form-group">
-          <label for="caffeine-level">caffeine-level</label>
-          <input type="text" class="form-control" id="caffeine-level" placeholder="caffeine-level" ng-model="defaultForm.caffeineLevel">
-        </div>
 
-        <div class="form-group" ng-class="{'has-error': datepickerForm.date.$invalid}">
-        <label class="control-label"><i class="fa fa-calendar"></i> Date <small>(as date)</small></label>
-        <input type="text" class="form-control" ng-model="selectedDate" name="date" bs-datepicker>
-      </div>
-        
-        <button type="submit" class="btn btn-default" ng-click="drinkList(defaultForm)">Submit</button>
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="name">beverageName</label>
+    <input type="text" class="form-control" id="drinkName" placeholder="beverage name" ng-model="defaultForm.beverageName">
+  </div>
+  <div class="form-group">
+    <label for="date">date</label>
+    <input type="date" class="form-control" id="date" placeholder="date" ng-model="defaultForm.date">
+  </div>
+  <div class="form-group">
+    <label for="caffeine-level">caffeine-level</label>
+    <input type="text" class="form-control" id="caffeine-level" placeholder="caffeine-level" ng-model="defaultForm.caffeineLevel">
+  </div>
+
+  <div class="form-group" ng-class="{'has-error': datepickerForm.date.$invalid}">
+    <label class="control-label"><i class="fa fa-calendar"></i> Date <small>(as date)</small></label>
+    <input type="text" class="form-control" ng-model="selectedDate" name="date" bs-datepicker>
+</div>
+  <button type="submit" class="btn btn-default" ng-click="drinkList(defaultForm)">Submit</button>
 </form>
 
 <div class="table-responsive">
 	<table class="table table hover">
-		<thead> 
+		<thead>
 			<tr>
 				<th>Beverage</th>
 				<th>Beverage Date</th>
 				<th>Caffeine Amount</th>
 				<th>Beverage Description</th>
 			</tr>
-		</thead>	
+		</thead>
 		<tbody ng-repeat="drink in allDrinkList | orderBy:'-date'">
 			<td>[[drink.name]]</td>
 			<td>[[drink.date |date: format :timezone]]</td>
@@ -44,15 +44,13 @@
 				<!-- <a href="" ng-click="update(drink._id)">
 					<i style="font-size:18px;" class="fa fa-pencil-square-o"></i>
 				</a>  -->
-				<a href="" ng-click="modalUpdate('lg',drink)"> 
+				
+				<a href="" ng-click="modalUpdate('lg',drink)">
 					<i style="font-size:18px;" class="fa fa-pencil-square-o"></i>
 				</a>
 			</td>
-			
-
 		</tbody>
 	</table>
-
 </div>
 
 

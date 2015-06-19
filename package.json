@@ -11,7 +11,6 @@
     "debug": "~2.1.1",
     "express": "~4.12.2",
     "express-session": "^1.11.3",
-    "gulp-nodemon": "^2.0.3",
     "jade": "~1.9.2",
     "moment": "^2.10.3",
     "mongoose": "^4.0.2",
@@ -27,7 +26,6 @@
   },
   "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp-connect": "^2.2.0",
     "gulp-jshint": "^1.11.0",
     "gulp-nodemon": "^2.0.3"
   }

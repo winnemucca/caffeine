@@ -1,11 +1,11 @@
 var app = angular.module('myApp');
+
 app.factory('Drink',function($http) {
   var Drink = function(name,date,caffeineLevel) {
     this.name = name;
     // this.date = moment(date).format('L');
     this.date = date;
     this.caffeineLevel = caffeineLevel;
-
   };
   return Drink;
 });
@@ -13,7 +13,6 @@ app.factory('Drink',function($http) {
 
 
 app.factory('DrinkLibrary',function($http,Drink,$q){
-
   function getDrinks(){
     return $http.get('/api/drinks').
     success(function(data){
@@ -26,7 +25,7 @@ app.factory('DrinkLibrary',function($http,Drink,$q){
   }
 
 
-   function getDrinks2(){
+  function getDrinks2(){
   	var deferred = $q.defer();
     $http.get('/api/drinks').
     success(function(data){
