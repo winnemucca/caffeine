@@ -1,13 +1,6 @@
-var app = angular.module('myApp', ['ui.router','ui.bootstrap','ngResource','mgcrea.ngStrap'], function ($interpolateProvider) {
+var app = angular.module('myApp', ['ui.router','ui.bootstrap'], function ($interpolateProvider) {
   $interpolateProvider.startSymbol('[[');
   $interpolateProvider.endSymbol(']]');
-});
-
-app.config(function($datepickerProvider) {
-  angular.extend($datepickerProvider.defaults, {
-    dateFormat: 'dd/MM/yyyy',
-    startWeek: 1
-  });
 });
 // routes
 app.config(function($stateProvider, $urlRouterProvider){
@@ -23,19 +16,20 @@ app.config(function($stateProvider, $urlRouterProvider){
       url:'/',
       templateUrl:'templates/caffeineAgent.html',
       controller: 'caffeineAgentController',
-      access: {restricted: true}
+      access: {restricted: false}
 
     })
     .state('caffeine-library',{
       url:'/caffeine-library',
       templateUrl:'templates/caffeine-library.html',
       controller: 'libraryController',
-      access: {restricted: true}
+      access: {restricted: false}
 
     })
     .state('editDrink',{
       url:'caffeineAgent/:_drinkid/editDrink',
       templateUrl:'templates/editCaffeineDrink.html',
+      controller:'drinkEditController',
       access: {restricted: true}
 
       // controller:'drinkController'
@@ -70,9 +64,9 @@ app.config(function($stateProvider, $urlRouterProvider){
     // .state('otherwise', { url : '/',access: {restricted: true}
     // });
 
-    $stateProvider.state("otherwise", {
-      url: "*path",
-      templateUrl: "templates/error-not-found.html",
+    $stateProvider.state('otherwise', {
+      url: '*path',
+      templateUrl: 'templates/error-not-found.html',
       access: {restricted:true}
     });
 

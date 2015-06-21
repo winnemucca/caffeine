@@ -1,5 +1,5 @@
  body {
-  padding-top: 70px;
+  padding-top: 45px;
   
 }
 
@@ -20,10 +20,15 @@ a {
 }
 
 .jumboBackground {
-	background: #D05A00;
-/*#FEFFF8
-#29241E*/
+	background: #FEF0D6 url('../images/logoMedium.png') no-repeat center;
+	-webkit-background-size: contain;
+  	-moz-background-size: contain;
+  	-o-background-size: contain;
+  	background-size: contain;
+  	height: 400px;
 }
+
+/*caffeine agent*/
 .jumbotron h1 {
 	color:white;
 }
@@ -32,6 +37,24 @@ a {
 	font-weight: bold;
 	text-align: center;
 	color: white;
+}
+
+.productDescription {
+	background-color: #FF8105;
+	font-family: 'Lato',serif;
+	color: white;
+
+}
+.mission-title {
+	text-align: center;
+}
+.mission {
+	text-align: center;
+	width: 80%;
+	margin: auto;
+	line-height: 150%;
+	padding:20px 0 40px 0;
+
 }
 .full button span {
     background-color: limegreen;
@@ -43,6 +66,9 @@ a {
     border-radius: 32px;
     color: black;
   }
+
+
+
 
 footer {
 	margin-top: 60px;

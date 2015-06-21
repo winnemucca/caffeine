@@ -1,122 +1,67 @@
 var app = angular.module('myApp');
-app.controller('homeController',function($scope){
-  $scope.greeting = 'hello world';
-});
-app.controller('caffeineAgentController',function($scope){
-  $scope.greeting = 'CaffeineAgent';
-});
-app.controller('libraryController',function($scope,DrinkLibrary,Drink, $modal, $log){
-  console.log('connected');
-  var init = function() {
-     $scope.defaultForm = {
-      beverageName: '',
-      date: '',
-      caffeineLevel: ''
+  app.controller('homeController',function($scope){
+    $scope.greeting = 'hello world';
+  });
+  app.controller('caffeineAgentController',function($scope){
+    $scope.greeting = 'CaffeineAgent';
+  });
+  app.controller('libraryController',function($scope,DrinkLibrary,Drink, ModalService, $modal, $log){
+    var init = function() {
+       $scope.defaultForm = {
+        beverageName: '',
+        date: '',
+        caffeineLevel: ''
+      };
     };
-  };
-  init();
-
-  var drinkSet = function(){
-    DrinkLibrary.getDrinks().success(function(data){
-      // console.log(Drink.myCaffeineList);
-      $scope.allDrinkList = data;
-    });
-  };
-
-  drinkSet();
-
-  $scope.drinkList= function(obj) {
-    var newdrink = new Drink(obj.beverageName, obj.date, obj.caffeineLevel);
-    DrinkLibrary.addDrink(newdrink).success(function(data){
-      $scope.message = 'success';
-      drinkSet();
-
-    });
-
     init();
 
-  };
-
-  $scope.delete=function(id){
-    DrinkLibrary.deleteDrink(id).success(function(data){
-      // $scope.allDrinkList = data;
-      drinkSet();
-      console.log(data);
-
-    });
-  };
-
-  $scope.update=function(id){
-    DrinkLibrary.updateDrink(id).
-    success(function(data){
-      console.log(data);
-      // drinkset();
-    });
-  };
-
-  // modal
-  $scope.modalUpdate = function(size,selectedDrink) {
-    // console.log(selectedDrink);
-    // console.log(selectedDrink.name);
-    // console.log(selectedDrink.caffeineLevel);
-    // console.log(selectedDrink.date);
-      var modalInstance = $modal.open({
-        animation: $scope.animationsEnabled,
-      	templateUrl: 'templates/editCaffeineDrink.html',
-      	controller: function($scope,$modalInstance,drink,DrinkLibrary,Drink){
-        	$scope.drink = drink;
-
-        	$scope.ok = function(id){
-          		DrinkLibrary.updateDrink(id,$scope.drink).
-          		success(function(data){
-           		console.log(data);
-          	});
-          		$modalInstance.close($scope.drink);
-        };
-
-	        $scope.cancel = function(){
-	          $modalInstance.dismiss('cancel');
-	        };
-      	},
-    	size: size,
-      	resolve: {
-                // resolve the drink
-        	drink: function () {
-                  // return selected drink
-          // console.log(selectedDrink);
-          // return $scope.selectedDrink;
-          		return selectedDrink;
-        	}
-      	}
-    });
-      // end of mal instance/modal open
-
-    modalInstance.result.then(function (selectedItem) {
-          $scope.selected = selectedItem;
-    }, 	function () {
-        	$log.info('Modal dismissed at: ' + new Date());
-       	});
+    var drinkSet = function(){
+      DrinkLibrary.getDrinks().success(function(data){
+        // console.log(Drink.myCaffeineList);
+        $scope.allDrinkList = data;
+      });
     };
-      // end modalUpdate
 
-      $scope.toggleAnimation = function () {
-          $scope.animationsEnabled = !$scope.animationsEnabled;
-      };
+    drinkSet();
+
+    $scope.drinkList= function(obj) {
+      var newdrink = new Drink(obj.beverageName, obj.date, obj.caffeineLevel);
+      DrinkLibrary.addDrink(newdrink).success(function(data){
+        $scope.message = 'success';
+        drinkSet();
+
+      });
+
+      init();
+
+    };
+
+    $scope.delete=function(id){
+      DrinkLibrary.deleteDrink(id).success(function(data){
+        // $scope.allDrinkList = data;
+        drinkSet();
+        console.log(data);
+
+      });
+    };
+
+    // here is my service modal
+    $scope.update=ModalService.trigger;
+
 
 	});
 
-app.controller('drinkEditController',function(Drink,DrinkLibrary, $scope){
+
+app.controller('drinkEditController',function(Drink,DrinkLibrary, $scope, $modal,$log){
 	// console.log('connected');
-	$scope.update=function(updateDrink){
-		var drink = updateDrink;
-
- 	};
-
+	  
 
 });
 
 app.controller('caffeineTableController',function(DrinkLibrary,$scope){
   console.log('connected');
+
+
 });
 
 
@@ -170,10 +115,6 @@ app.controller('analysisController',function(Drink,DrinkLibrary,$scope,$timeout)
   	$scope.stop = function(){
   		$timeout.cancel($scope.timeout);
   	};
-
-
-
-
 
 });
 

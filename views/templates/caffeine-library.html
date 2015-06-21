@@ -16,10 +16,7 @@
     <input type="text" class="form-control" id="caffeine-level" placeholder="caffeine-level" ng-model="defaultForm.caffeineLevel">
   </div>
 
-  <div class="form-group" ng-class="{'has-error': datepickerForm.date.$invalid}">
-    <label class="control-label"><i class="fa fa-calendar"></i> Date <small>(as date)</small></label>
-    <input type="text" class="form-control" ng-model="selectedDate" name="date" bs-datepicker>
-</div>
+  
   <button type="submit" class="btn btn-default" ng-click="drinkList(defaultForm)">Submit</button>
 </form>
 
@@ -41,12 +38,14 @@
 				<a ng-click="delete(drink._id)">
 					<i style="font-size:18px; margin-right:5%" class="fa fa-times"></i>
 				</a>
-				<!-- <a href="" ng-click="update(drink._id)">
-					<i style="font-size:18px;" class="fa fa-pencil-square-o"></i>
-				</a>  -->
 				
-				<a href="" ng-click="modalUpdate('lg',drink)">
+				
+				<!-- <a href="" ng-click="modalUpdate('lg',drink)">
 					<i style="font-size:18px;" class="fa fa-pencil-square-o"></i>
+				</a> -->
+
+				<a href="" ng-click="update(drink)">
+					<i style="font-size:22px;" class="fa fa-pencil-square-o"></i>
 				</a>
 			</td>
 		</tbody>
