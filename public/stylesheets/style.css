@@ -1,6 +1,8 @@
  body {
   padding-top: 45px;
-  
+  font-size: 18px;
+  font-family: 'Lato',serif;
+
 }
 
 a {
@@ -8,16 +10,28 @@ a {
 }
 .navbar {
 	margin-bottom: 0;
-	background: #D05A00;
+	background: #FF8105;
+	font-family: 'Damion',serif;
 }
 .navbar-brand {
-	font-family: 'Damion',serif;
+	/*font-family: 'Tangerine',serif;*/
 	font-size: 28px;
 	font-weight: bold;
 	background: #29241E;
 	border-radius: 50%;
 	margin-left: 30px;
 }
+
+.navbar-header {
+	padding-right: 100px;
+}
+.navLinks li a {
+	/*text-decoration: underline;*/
+	color: white;
+	font-size: 18px;
+
+}
+/*caffeine agent*/
 
 .jumboBackground {
 	background: #FEF0D6 url('../images/logoMedium.png') no-repeat center;
@@ -28,7 +42,6 @@ a {
   	height: 400px;
 }
 
-/*caffeine agent*/
 .jumbotron h1 {
 	color:white;
 }
@@ -40,9 +53,14 @@ a {
 }
 
 .productDescription {
-	background-color: #FF8105;
 	font-family: 'Lato',serif;
 	color: white;
+	background: -moz-linear-gradient(top, #ff8105 0, #FFA64E 100%);/* FF3.6+ */
+	background: -webkit-gradient(linear, top, color-stop(0, FF8105), color-stop(100%, FFA64E));/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #FF8105 0, #FFA64E 100%);/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f7f0b7 0, #b57c12 100%);/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f7f0b7 0, #b57c12 100%);/* IE10+ */
+	background: linear-gradient(top, #FF8105 0, #FFA64E 100%);
 
 }
 .mission-title {
@@ -68,8 +86,38 @@ a {
   }
 
 
+.leftVisual {
+	
+}
 
 
+.options-statement {
+	text-align: right;
+}
+
+.description {
+	line-height: 150%;
+	/*width: 90%;*/
+}
+.tech-left {
+	text-align: left;
+	color:#527DA8;
+	padding: 10px 0 40px 0;
+	/*width:60%;*/
+}
+
+.tech-right {
+	text-align: right;
+	color:#FF8C00;
+	padding: 10px 0 40px 0;
+	/*width:50%;*/
+}
+.coverImages {
+	margin-top: 80px;
+}
+.rightCoverImg {
+	/*text-align: right;*/
+}
 footer {
 	margin-top: 60px;
 }
