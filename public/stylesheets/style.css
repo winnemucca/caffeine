@@ -31,6 +31,18 @@ a {
 	font-size: 18px;
 
 }
+
+
+.icon-bar {
+	background: white;
+}
+
+.navbar-toggle:hover {
+	/*background: black;*/
+	/*color:black;*/
+
+}
+
 /*caffeine agent*/
 
 .jumboBackground {

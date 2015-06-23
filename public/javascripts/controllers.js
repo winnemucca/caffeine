@@ -6,6 +6,11 @@ var app = angular.module('myApp');
     $scope.greeting = 'CaffeineAgent';
   });
   app.controller('libraryController',function($scope,DrinkLibrary,Drink, ModalService, $modal, $log){
+
+    $scope.currentPage = 1;
+    $scope.pageSize = 5;
+
+    // $scope.totalItems = ;
     var init = function() {
        $scope.defaultForm = {
         beverageName: '',
@@ -17,6 +22,8 @@ var app = angular.module('myApp');
 
     var drinkSet = function(){
       DrinkLibrary.getDrinks().success(function(data){
+        $scope.currentPage = 1;
+        $scope.pageSize = 5;
         // console.log(Drink.myCaffeineList);
         $scope.allDrinkList = data;
       });
@@ -33,7 +40,6 @@ var app = angular.module('myApp');
       });
 
       init();
-
     };
 
     $scope.delete=function(id){
@@ -44,6 +50,7 @@ var app = angular.module('myApp');
 
       });
     };
+
 
     // here is my service modal
     $scope.update=ModalService.trigger;
@@ -124,6 +131,8 @@ app.controller('loginController',['$scope', '$location', 'AuthService',
 
     console.log(AuthService.getUserStatus());
 
+    // $scope.currentPath = $location.path('/login');
+
     $scope.login = function () {
 
       // initial values
@@ -149,7 +158,6 @@ app.controller('loginController',['$scope', '$location', 'AuthService',
     };
 
 }]);
-
 
 
 app.controller('registerController',function($scope){

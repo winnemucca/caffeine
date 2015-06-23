@@ -1,7 +1,12 @@
-var app = angular.module('myApp', ['ui.router','ui.bootstrap'], function ($interpolateProvider) {
+var app = angular.module('myApp', ['ui.router','ui.bootstrap','angularUtils.directives.dirPagination'], function ($interpolateProvider) {
   $interpolateProvider.startSymbol('[[');
   $interpolateProvider.endSymbol(']]');
 });
+
+app.config(function(paginationTemplateProvider) {
+    paginationTemplateProvider.setPath('/libs/angular-utils-pagination/dirPagination.tpl.html');
+});
+
 // routes
 app.config(function($stateProvider, $urlRouterProvider){
 
