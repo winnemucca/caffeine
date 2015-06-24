@@ -55,8 +55,59 @@ var app = angular.module('myApp');
     // here is my service modal
     $scope.update=ModalService.trigger;
 
+    // date picker 
+    
+  $scope.today = function() {
+      $scope.dt = new Date();
+    };
+    $scope.today();
 
-	});
+    $scope.clear = function () {
+      $scope.dt = null;
+    };
+
+    // Disable weekend selection
+    $scope.disabled = function(date, mode) {
+      return ( mode === 'day' && ( date.getDay() === 0 || date.getDay() === 6 ) );
+    };
+
+    
+
+    $scope.open = function($event) {
+      $event.preventDefault();
+      $event.stopPropagation();
+
+      $scope.opened = true;
+    };
+
+    $scope.dateOptions = {
+      formatYear: 'yy',
+      startingDay: 1
+    };
+
+    $scope.formats = ['dd-MMMM-yyyy', 'yyyy/MM/dd', 'dd.MM.yyyy', 'shortDate'];
+    $scope.format = $scope.formats[0];
+
+    
+
+    $scope.getDayClass = function(date, mode) {
+      if (mode === 'day') {
+        var dayToCheck = new Date(date).setHours(0,0,0,0);
+
+        for (var i=0;i<$scope.events.length;i++){
+          var currentDay = new Date($scope.events[i].date).setHours(0,0,0,0);
+
+          if (dayToCheck === currentDay) {
+            return $scope.events[i].status;
+          }
+        }
+      }
+
+      return '';
+    };
+
+
+});
 
 
 app.controller('drinkEditController',function(Drink,DrinkLibrary, $scope, $modal,$log){
@@ -163,6 +214,8 @@ app.controller('loginController',['$scope', '$location', 'AuthService',
 app.controller('registerController',function($scope){
 	console.log('connected');
 });
+
+
 
 
 // app.directives('lineChart',[

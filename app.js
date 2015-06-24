@@ -11,10 +11,15 @@ var express = require('express'),
     passport = require('passport'),
     LocalStrategy = require('passport-local').Strategy;
 
+var phantom=require('node-phantom-simple');
+
+
+
 
 // routers
 var apiRoutes = require('./routes/api');
 var routes = require('./routes/index');
+var caffeineRoutes = require('./routes/caffeine');
 
 // instance of express
 var app = express();
@@ -55,6 +60,7 @@ passport.deserializeUser(Account.deserializeUser());
 // routes
 app.use('/', routes);
 app.use('/api',apiRoutes);
+// app.use('/caffeine',caffeineRoutes);
 // app.use('templates/:templateid', routes);
 
 
