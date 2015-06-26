@@ -8,7 +8,7 @@ var app = angular.module('myApp');
   app.controller('libraryController',function($scope,DrinkLibrary,Drink, ModalService, $modal, $log){
 
     $scope.currentPage = 1;
-    $scope.pageSize = 5;
+    $scope.pageSize = 15;
 
     // $scope.totalItems = ;
     var init = function() {
@@ -36,9 +36,7 @@ var app = angular.module('myApp');
       DrinkLibrary.addDrink(newdrink).success(function(data){
         $scope.message = 'success';
         drinkSet();
-
       });
-
       init();
     };
 
@@ -47,17 +45,15 @@ var app = angular.module('myApp');
         // $scope.allDrinkList = data;
         drinkSet();
         console.log(data);
-
       });
     };
-
 
     // here is my service modal
     $scope.update=ModalService.trigger;
 
     // date picker 
     
-  $scope.today = function() {
+    $scope.today = function() {
       $scope.dt = new Date();
     };
     $scope.today();
@@ -70,16 +66,11 @@ var app = angular.module('myApp');
     $scope.disabled = function(date, mode) {
       return ( mode === 'day' && ( date.getDay() === 0 || date.getDay() === 6 ) );
     };
-
-    
-
     $scope.open = function($event) {
       $event.preventDefault();
       $event.stopPropagation();
-
       $scope.opened = true;
     };
-
     $scope.dateOptions = {
       formatYear: 'yy',
       startingDay: 1
@@ -88,24 +79,18 @@ var app = angular.module('myApp');
     $scope.formats = ['dd-MMMM-yyyy', 'yyyy/MM/dd', 'dd.MM.yyyy', 'shortDate'];
     $scope.format = $scope.formats[0];
 
-    
-
     $scope.getDayClass = function(date, mode) {
       if (mode === 'day') {
         var dayToCheck = new Date(date).setHours(0,0,0,0);
-
         for (var i=0;i<$scope.events.length;i++){
           var currentDay = new Date($scope.events[i].date).setHours(0,0,0,0);
-
           if (dayToCheck === currentDay) {
             return $scope.events[i].status;
           }
         }
       }
-
       return '';
     };
-
 
 });
 
@@ -113,14 +98,25 @@ var app = angular.module('myApp');
 app.controller('drinkEditController',function(Drink,DrinkLibrary, $scope, $modal,$log){
 	// console.log('connected');
 	  
-
 });
 
-app.controller('caffeineTableController',function(DrinkLibrary,$scope){
-  console.log('connected');
+app.controller('caffeineTableController',function(CaffeineMenu,$scope,$http){
+    
+    // $scope.list=CaffeineMenu.getList;
+    console.log($scope.list);
 
-
+    $http.get('documents/caffeineList.json').
+      success(function(data){
+        console.log('success');
+        $scope.drinks = data;
+      }).
+      error(function(data){
+      console.log('error');
+    });
+      $scope.currentPage = 1;
+    $scope.pageSize = 10;
 });
+
 
 
 app.controller('analysisController',function(Drink,DrinkLibrary,$scope,$timeout){

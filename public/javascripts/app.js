@@ -62,6 +62,7 @@ app.config(function($stateProvider, $urlRouterProvider){
 
     })
     .state('caffeineTable',{
+      url:'/caffeine-table',
       templateUrl:'templates/caffeineTable.html',
       controller:'caffeineTableController',
       access: {restricted: false}

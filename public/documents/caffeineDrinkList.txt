@@ -1,0 +1,3632 @@
+[
+    {
+        "caffeineLevel": "422",
+        "date": "",
+        "name": "10 Hour Energy Shot"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "28 Black Energy Drink"
+    },
+    {
+        "caffeineLevel": "60",
+        "date": "",
+        "name": "4C Energy Liquid Water Enhancers"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "4C Energy Rush"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "5 Alarm Energy Shot"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "5 Hour Energy"
+    },
+    {
+        "caffeineLevel": "6",
+        "date": "",
+        "name": "5 Hour Energy Decaf"
+    },
+    {
+        "caffeineLevel": "230",
+        "date": "",
+        "name": "5 Hour Energy Extra Strength"
+    },
+    {
+        "caffeineLevel": "120",
+        "date": "",
+        "name": "50 Cal Energy Shot"
+    },
+    {
+        "caffeineLevel": "125",
+        "date": "",
+        "name": "6 Hour Power"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "7-Eleven Energy Shot"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "7-Up"
+    },
+    {
+        "caffeineLevel": "29",
+        "date": "",
+        "name": "A&W Cream Soda"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "A&W Root Beer"
+    },
+    {
+        "caffeineLevel": "90",
+        "date": "",
+        "name": "ABB Diet Turbo"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Ace Energy Drink"
+    },
+    {
+        "caffeineLevel": "68",
+        "date": "",
+        "name": "Active Brain Energy Shot"
+    },
+    {
+        "caffeineLevel": "213",
+        "date": "",
+        "name": "Acute Fruit Energy Drink"
+    },
+    {
+        "caffeineLevel": "120",
+        "date": "",
+        "name": "Advocare Slam Energy Shot"
+    },
+    {
+        "caffeineLevel": "120",
+        "date": "",
+        "name": "Advocare Slim"
+    },
+    {
+        "caffeineLevel": "89",
+        "date": "",
+        "name": "Afri Cola"
+    },
+    {
+        "caffeineLevel": "37",
+        "date": "",
+        "name": "Ale 8 1"
+    },
+    {
+        "caffeineLevel": "210",
+        "date": "",
+        "name": "AllDay Energy Shot"
+    },
+    {
+        "caffeineLevel": "500",
+        "date": "",
+        "name": "ALRI Hypershot"
+    },
+    {
+        "caffeineLevel": "154",
+        "date": "",
+        "name": "Americano Coffee"
+    },
+    {
+        "caffeineLevel": "171",
+        "date": "",
+        "name": "Ammo Energy Shot"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Amp Energy Cherry Blast"
+    },
+    {
+        "caffeineLevel": "142",
+        "date": "",
+        "name": "Amp Energy Drink"
+    },
+    {
+        "caffeineLevel": "157",
+        "date": "",
+        "name": "Amp Energy Zero"
+    },
+    {
+        "caffeineLevel": "156",
+        "date": "",
+        "name": "Amp Passion Fruit"
+    },
+    {
+        "caffeineLevel": "156",
+        "date": "",
+        "name": "Amp Strawberry Limeade"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Aqua Enerviva"
+    },
+    {
+        "caffeineLevel": "50",
+        "date": "",
+        "name": "Arbonne Energy Fizz Stck"
+    },
+    {
+        "caffeineLevel": "12",
+        "date": "",
+        "name": "Arby's Jamocha Shake"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Archer Farms Energy Drink"
+    },
+    {
+        "caffeineLevel": "43",
+        "date": "",
+        "name": "Arizona Arnold Palmer Half and Half"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "Arizona Caution Energy Drink"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "AriZona Extreme Energy Shot"
+    },
+    {
+        "caffeineLevel": "38",
+        "date": "",
+        "name": "Arizona Iced Tea"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Arma Energy Drink"
+    },
+    {
+        "caffeineLevel": "76",
+        "date": "",
+        "name": "Arriba Horchata Energy"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Atomic Blast"
+    },
+    {
+        "caffeineLevel": "45",
+        "date": "",
+        "name": "Avitae Caffeinated Water"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "AZ Energy Drink"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "B 63 Energy Drink"
+    },
+    {
+        "caffeineLevel": "300",
+        "date": "",
+        "name": "BANG Energy Drink"
+    },
+    {
+        "caffeineLevel": "219",
+        "date": "",
+        "name": "Barista Bros Iced Coffee"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "Barq's Red Creme Soda"
+    },
+    {
+        "caffeineLevel": "23",
+        "date": "",
+        "name": "Barq's Root Beer"
+    },
+    {
+        "caffeineLevel": "234",
+        "date": "",
+        "name": "Baskin Robbins Cappuccino Blast"
+    },
+    {
+        "caffeineLevel": "106",
+        "date": "",
+        "name": "Battery Energy Drink"
+    },
+    {
+        "caffeineLevel": "144",
+        "date": "",
+        "name": "Battery Juiced Energy Drink"
+    },
+    {
+        "caffeineLevel": "67",
+        "date": "",
+        "name": "Bawls"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Bawls Cherry"
+    },
+    {
+        "caffeineLevel": "150",
+        "date": "",
+        "name": "Bawls Exxtra"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Bawls Root Beer"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Bazi Energy Drink"
+    },
+    {
+        "caffeineLevel": "72",
+        "date": "",
+        "name": "Bean and Body Coffee"
+    },
+    {
+        "caffeineLevel": "110",
+        "date": "",
+        "name": "Beaver Buzz Energy Drink"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Bee Energy Shot"
+    },
+    {
+        "caffeineLevel": "90",
+        "date": "",
+        "name": "Berocca"
+    },
+    {
+        "caffeineLevel": "164",
+        "date": "",
+        "name": "Big Jak Energy Drink"
+    },
+    {
+        "caffeineLevel": "34",
+        "date": "",
+        "name": "Big Red Soda"
+    },
+    {
+        "caffeineLevel": "49",
+        "date": "",
+        "name": "Big Train Java Chip Ice Coffee"
+    },
+    {
+        "caffeineLevel": "65",
+        "date": "",
+        "name": "Big Train Spiced Chai"
+    },
+    {
+        "caffeineLevel": "45",
+        "date": "",
+        "name": "Bigelow Tea"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "Biggby Brewed Coffee"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Biggby Creamy Lattes"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Biggby Espresso"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Biggby Frozen Lattes"
+    },
+    {
+        "caffeineLevel": "192",
+        "date": "",
+        "name": "Biggby Iced Coffee"
+    },
+    {
+        "caffeineLevel": "38",
+        "date": "",
+        "name": "Biggby Iced Tea"
+    },
+    {
+        "caffeineLevel": "120",
+        "date": "",
+        "name": "Bing Energy Drink"
+    },
+    {
+        "caffeineLevel": "206",
+        "date": "",
+        "name": "Black Medicine Iced Coffee"
+    },
+    {
+        "caffeineLevel": "240",
+        "date": "",
+        "name": "Blade Energy Drink"
+    },
+    {
+        "caffeineLevel": "150",
+        "date": "",
+        "name": "Blink Energy Water"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Blood Energy Potion"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "BLU Energy Drinks"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Blu Frog Energy Drink"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Blue Bolt"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Blue Charge"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Blue Energy Drink"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "Blutonium Energy Drink"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Bomb Energy Drink"
+    },
+    {
+        "caffeineLevel": "75",
+        "date": "",
+        "name": "Bomba Energy Drink"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Boost Energy Drink"
+    },
+    {
+        "caffeineLevel": "12",
+        "date": "",
+        "name": "Boost Nutritional Drink"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Booty Sweat Energy Drink"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "Brain TonIQ"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "Brawndo Energy Drink"
+    },
+    {
+        "caffeineLevel": "4",
+        "date": "",
+        "name": "Brown Rice Tea"
+    },
+    {
+        "caffeineLevel": "204",
+        "date": "",
+        "name": "Bulldog Buzz"
+    },
+    {
+        "caffeineLevel": "145",
+        "date": "",
+        "name": "Bulletproof Coffee"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Burn Energy Drink"
+    },
+    {
+        "caffeineLevel": "78",
+        "date": "",
+        "name": "Buzz Monkey"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "BuzzWater"
+    },
+    {
+        "caffeineLevel": "125",
+        "date": "",
+        "name": "Cafe Viva Probiotic Coffee"
+    },
+    {
+        "caffeineLevel": "152",
+        "date": "",
+        "name": "Caffe Mocha"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Caffe Nero Coffee"
+    },
+    {
+        "caffeineLevel": "34",
+        "date": "",
+        "name": "Caffeinated Club Soda"
+    },
+    {
+        "caffeineLevel": "140",
+        "date": "",
+        "name": "Caffeine Energy Drink"
+    },
+    {
+        "caffeineLevel": "9",
+        "date": "",
+        "name": "Canada Dry Green Tea Ginger Ale"
+    },
+    {
+        "caffeineLevel": "224",
+        "date": "",
+        "name": "Canadian Big Buzz Green Machine Energy"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Cannabis Energy Drink"
+    },
+    {
+        "caffeineLevel": "154",
+        "date": "",
+        "name": "Cappuccino"
+    },
+    {
+        "caffeineLevel": "305",
+        "date": "",
+        "name": "Caribou Brewed Coffee"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "Celsius Energy Drink"
+    },
+    {
+        "caffeineLevel": "2160",
+        "date": "",
+        "name": "Chameleon Cold Brew Coffee"
+    },
+    {
+        "caffeineLevel": "270",
+        "date": "",
+        "name": "Chameleon Cold Brew RTD Coffee"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "CHARGE! Super Shot"
+    },
+    {
+        "caffeineLevel": "48",
+        "date": "",
+        "name": "Cheerwine"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "Cheetah Power Surge"
+    },
+    {
+        "caffeineLevel": "34",
+        "date": "",
+        "name": "Cherry Coke"
+    },
+    {
+        "caffeineLevel": "34",
+        "date": "",
+        "name": "Cherry Coke Zero"
+    },
+    {
+        "caffeineLevel": "94",
+        "date": "",
+        "name": "Chick-fil-A Iced Coffee"
+    },
+    {
+        "caffeineLevel": "5",
+        "date": "",
+        "name": "Chocolate Milk"
+    },
+    {
+        "caffeineLevel": "23",
+        "date": "",
+        "name": "Choffy (roasted cacao)"
+    },
+    {
+        "caffeineLevel": "170",
+        "date": "",
+        "name": "Cintron Energy Drink"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Clif Shot Turbo Energy Gel"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Club Mate"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "Coca-Cola caffeine free"
+    },
+    {
+        "caffeineLevel": "34",
+        "date": "",
+        "name": "Coca-Cola Classic"
+    },
+    {
+        "caffeineLevel": "27",
+        "date": "",
+        "name": "Coca-Cola Life"
+    },
+    {
+        "caffeineLevel": "280",
+        "date": "",
+        "name": "Cocaine Energy Drink"
+    },
+    {
+        "caffeineLevel": "280",
+        "date": "",
+        "name": "Cocaine Energy Shot"
+    },
+    {
+        "caffeineLevel": "163",
+        "date": "",
+        "name": "Coffee (Brewed)"
+    },
+    {
+        "caffeineLevel": "6",
+        "date": "",
+        "name": "Coffee (Decaf, Brewed)"
+    },
+    {
+        "caffeineLevel": "3",
+        "date": "",
+        "name": "Coffee (Decaf, Instant)"
+    },
+    {
+        "caffeineLevel": "77",
+        "date": "",
+        "name": "Coffee (Espresso)"
+    },
+    {
+        "caffeineLevel": "57",
+        "date": "",
+        "name": "Coffee (Instant)"
+    },
+    {
+        "caffeineLevel": "333",
+        "date": "",
+        "name": "Coffee Bean & Tea leaf Coffee"
+    },
+    {
+        "caffeineLevel": "12",
+        "date": "",
+        "name": "Coffee Leaf Tea"
+    },
+    {
+        "caffeineLevel": "125",
+        "date": "",
+        "name": "Cojones Energy Shot"
+    },
+    {
+        "caffeineLevel": "45",
+        "date": "",
+        "name": "Coke Zero"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "CoMotion"
+    },
+    {
+        "caffeineLevel": "277",
+        "date": "",
+        "name": "Costa Coffee"
+    },
+    {
+        "caffeineLevel": "150",
+        "date": "",
+        "name": "Cougar Energy Double Shot"
+    },
+    {
+        "caffeineLevel": "105",
+        "date": "",
+        "name": "Cranenergy Juice"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Crave Energy Drink"
+    },
+    {
+        "caffeineLevel": "192",
+        "date": "",
+        "name": "Crunk Energy Drink"
+    },
+    {
+        "caffeineLevel": "60",
+        "date": "",
+        "name": "Crystal Light Energy"
+    },
+    {
+        "caffeineLevel": "40",
+        "date": "",
+        "name": "Crystal Light Focus"
+    },
+    {
+        "caffeineLevel": "11",
+        "date": "",
+        "name": "Crystal Light Iced Tea"
+    },
+    {
+        "caffeineLevel": "320",
+        "date": "",
+        "name": "Cult Cola"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Cyborg"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Dare Iced Coffee"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Dark Dog Energy Drink"
+    },
+    {
+        "caffeineLevel": "660",
+        "date": "",
+        "name": "Death Wish Coffee"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Demon Energy Drink"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "Demon Energy Shot"
+    },
+    {
+        "caffeineLevel": "95",
+        "date": "",
+        "name": "Diablo Energy Drink"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Diabolo Loco Energy Drink"
+    },
+    {
+        "caffeineLevel": "22",
+        "date": "",
+        "name": "Diet A&W Cream Soda"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "Diet Barq's Root Beer"
+    },
+    {
+        "caffeineLevel": "48",
+        "date": "",
+        "name": "Diet Cheerwine"
+    },
+    {
+        "caffeineLevel": "34",
+        "date": "",
+        "name": "Diet Cherry Coca-Cola"
+    },
+    {
+        "caffeineLevel": "45",
+        "date": "",
+        "name": "Diet Coke"
+    },
+    {
+        "caffeineLevel": "45",
+        "date": "",
+        "name": "Diet Coke Plus"
+    },
+    {
+        "caffeineLevel": "45",
+        "date": "",
+        "name": "Diet Coke with Lemon"
+    },
+    {
+        "caffeineLevel": "45",
+        "date": "",
+        "name": "Diet Coke with Lime"
+    },
+    {
+        "caffeineLevel": "34",
+        "date": "",
+        "name": "Diet Coke with Splenda"
+    },
+    {
+        "caffeineLevel": "41",
+        "date": "",
+        "name": "Diet Dr Pepper"
+    },
+    {
+        "caffeineLevel": "39",
+        "date": "",
+        "name": "Diet Dr Pepper Cherry"
+    },
+    {
+        "caffeineLevel": "39",
+        "date": "",
+        "name": "Diet Dr Pepper Cherry Vanilla"
+    },
+    {
+        "caffeineLevel": "54",
+        "date": "",
+        "name": "Diet Mountain Dew"
+    },
+    {
+        "caffeineLevel": "40",
+        "date": "",
+        "name": "Diet Mr. Pibb"
+    },
+    {
+        "caffeineLevel": "35",
+        "date": "",
+        "name": "Diet Pepsi"
+    },
+    {
+        "caffeineLevel": "43",
+        "date": "",
+        "name": "Diet Pepsi UK, AU, NZ"
+    },
+    {
+        "caffeineLevel": "47",
+        "date": "",
+        "name": "Diet RC Cola"
+    },
+    {
+        "caffeineLevel": "39",
+        "date": "",
+        "name": "Diet Ruby Red Squirt"
+    },
+    {
+        "caffeineLevel": "42",
+        "date": "",
+        "name": "Diet Sunkist Orange Soda"
+    },
+    {
+        "caffeineLevel": "90",
+        "date": "",
+        "name": "Diet Turbo Tea"
+    },
+    {
+        "caffeineLevel": "45",
+        "date": "",
+        "name": "Diet Vanilla Coke"
+    },
+    {
+        "caffeineLevel": "38",
+        "date": "",
+        "name": "Diet Wild Cherry Pepsi"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Divas Energy Drink"
+    },
+    {
+        "caffeineLevel": "170",
+        "date": "",
+        "name": "DNA Energy Drink"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "DOC 360"
+    },
+    {
+        "caffeineLevel": "190",
+        "date": "",
+        "name": "Dollar Energy Shot"
+    },
+    {
+        "caffeineLevel": "145",
+        "date": "",
+        "name": "Don Tomas Estate Coffee"
+    },
+    {
+        "caffeineLevel": "36",
+        "date": "",
+        "name": "Double Cola"
+    },
+    {
+        "caffeineLevel": "41",
+        "date": "",
+        "name": "Dr Pepper"
+    },
+    {
+        "caffeineLevel": "51",
+        "date": "",
+        "name": "Dr Pepper 10"
+    },
+    {
+        "caffeineLevel": "39",
+        "date": "",
+        "name": "Dr Pepper Cherry"
+    },
+    {
+        "caffeineLevel": "39",
+        "date": "",
+        "name": "Dr Pepper Cherry Vanilla"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Dragon Pearl"
+    },
+    {
+        "caffeineLevel": "120",
+        "date": "",
+        "name": "Duff Energy Drink"
+    },
+    {
+        "caffeineLevel": "178",
+        "date": "",
+        "name": "Dunkin' Donuts Brewed Coffee"
+    },
+    {
+        "caffeineLevel": "23",
+        "date": "",
+        "name": "Dunkin' Donuts Coolatta"
+    },
+    {
+        "caffeineLevel": "106",
+        "date": "",
+        "name": "Dunkin' Donuts Dunkaccino"
+    },
+    {
+        "caffeineLevel": "91",
+        "date": "",
+        "name": "Dunkin' Donuts Iced Coffee"
+    },
+    {
+        "caffeineLevel": "97",
+        "date": "",
+        "name": "Dunkin' Donuts Iced Latte"
+    },
+    {
+        "caffeineLevel": "81",
+        "date": "",
+        "name": "Dunkin' Donuts Iced Tea"
+    },
+    {
+        "caffeineLevel": "97",
+        "date": "",
+        "name": "Dunkin' Donuts Latte"
+    },
+    {
+        "caffeineLevel": "97",
+        "date": "",
+        "name": "Dunkin' Donuts Mocha"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Dutch Bros. Blue Rebel Energy Drink"
+    },
+    {
+        "caffeineLevel": "256",
+        "date": "",
+        "name": "Dutch Bros. Coffee"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "DynaPep"
+    },
+    {
+        "caffeineLevel": "185",
+        "date": "",
+        "name": "E6 Energy Shot"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Eboost Energy Drink"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "ED Energy Drink"
+    },
+    {
+        "caffeineLevel": "206",
+        "date": "",
+        "name": "Einstein Bros Coffee"
+    },
+    {
+        "caffeineLevel": "50",
+        "date": "",
+        "name": "Element Caffeinated Water"
+    },
+    {
+        "caffeineLevel": "75",
+        "date": "",
+        "name": "Emerge"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "EnerBee Energy Drink"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "Energi-ZING Shake by Nutrisystem"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Energy Catalyst"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Enerji Green Tea Energy Shot"
+    },
+    {
+        "caffeineLevel": "88",
+        "date": "",
+        "name": "Enorm Energy Drink"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Epiphany Energy Drink"
+    },
+    {
+        "caffeineLevel": "45",
+        "date": "",
+        "name": "Eruption Effervescent Energy"
+    },
+    {
+        "caffeineLevel": "222",
+        "date": "",
+        "name": "Eternal Energy Shot"
+    },
+    {
+        "caffeineLevel": "79",
+        "date": "",
+        "name": "Ex Energy Drink"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "Extra Water Energy Drink"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "Extreme Thermo Rush"
+    },
+    {
+        "caffeineLevel": "70",
+        "date": "",
+        "name": "FAB Energy Drink"
+    },
+    {
+        "caffeineLevel": "140",
+        "date": "",
+        "name": "Facedrink Energy Shot"
+    },
+    {
+        "caffeineLevel": "118",
+        "date": "",
+        "name": "Fakeer Energy Drink"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "Fanta"
+    },
+    {
+        "caffeineLevel": "110",
+        "date": "",
+        "name": "Fast Lane Black Tea"
+    },
+    {
+        "caffeineLevel": "42",
+        "date": "",
+        "name": "Faygo Cola"
+    },
+    {
+        "caffeineLevel": "20",
+        "date": "",
+        "name": "Faygo Moon Mist"
+    },
+    {
+        "caffeineLevel": "75",
+        "date": "",
+        "name": "Fein Energy Crystals"
+    },
+    {
+        "caffeineLevel": "38",
+        "date": "",
+        "name": "Fighter Energy Drink"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Fire Blade Energy Drink"
+    },
+    {
+        "caffeineLevel": "77",
+        "date": "",
+        "name": "Flat White"
+    },
+    {
+        "caffeineLevel": "65",
+        "date": "",
+        "name": "Flatt Cola"
+    },
+    {
+        "caffeineLevel": "106",
+        "date": "",
+        "name": "Flying Power Energy Drink"
+    },
+    {
+        "caffeineLevel": "240",
+        "date": "",
+        "name": "FMF Power Energy Drink"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "Frava Caffeinated Juice"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "Fresca"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Freshe Energy Drink"
+    },
+    {
+        "caffeineLevel": "83",
+        "date": "",
+        "name": "Fritz Kola"
+    },
+    {
+        "caffeineLevel": "38",
+        "date": "",
+        "name": "FRS Energy Drink"
+    },
+    {
+        "caffeineLevel": "180",
+        "date": "",
+        "name": "Fuel Cell"
+    },
+    {
+        "caffeineLevel": "240",
+        "date": "",
+        "name": "Fuel Energy Drink"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Full Throttle Energy Drink"
+    },
+    {
+        "caffeineLevel": "27",
+        "date": "",
+        "name": "Full Throttle Frozen Blast"
+    },
+    {
+        "caffeineLevel": "70",
+        "date": "",
+        "name": "Function Alternative Energy"
+    },
+    {
+        "caffeineLevel": "25",
+        "date": "",
+        "name": "Fuze Iced Tea"
+    },
+    {
+        "caffeineLevel": "150",
+        "date": "",
+        "name": "G Fuel Energy Drink Mix"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "G Pure Energy Drink"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "G Shot Antioxidant Energy"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "GaGa Energy Drink"
+    },
+    {
+        "caffeineLevel": "38",
+        "date": "",
+        "name": "Game Juice"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "Ginger Ale or Ginger Beer"
+    },
+    {
+        "caffeineLevel": "67",
+        "date": "",
+        "name": "Gloria Jean's Coffee"
+    },
+    {
+        "caffeineLevel": "120",
+        "date": "",
+        "name": "Go Fast Energy Drink"
+    },
+    {
+        "caffeineLevel": "162",
+        "date": "",
+        "name": "Go Fast! Coconut"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Go Girl Energy Drink"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Go Loco- Loco Tonic"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Golazo Sports Energy Drink"
+    },
+    {
+        "caffeineLevel": "65",
+        "date": "",
+        "name": "Gourmesso Coffee Pods"
+    },
+    {
+        "caffeineLevel": "63",
+        "date": "",
+        "name": "Grazzhopper Energy Drink"
+    },
+    {
+        "caffeineLevel": "50",
+        "date": "",
+        "name": "Great Value Energy Drink Enhancers"
+    },
+    {
+        "caffeineLevel": "120",
+        "date": "",
+        "name": "Great Value Energy Drink Mix"
+    },
+    {
+        "caffeineLevel": "50",
+        "date": "",
+        "name": "Greek Coffee (Metrios)"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Green Go"
+    },
+    {
+        "caffeineLevel": "150",
+        "date": "",
+        "name": "Guayaki Canned Yerba Mate"
+    },
+    {
+        "caffeineLevel": "140",
+        "date": "",
+        "name": "Guayaki Energy Shots"
+    },
+    {
+        "caffeineLevel": "140",
+        "date": "",
+        "name": "Guayaki Yerba Mate Bottled Tea"
+    },
+    {
+        "caffeineLevel": "90",
+        "date": "",
+        "name": "Guayusa Tea"
+    },
+    {
+        "caffeineLevel": "125",
+        "date": "",
+        "name": "Guru Energy Drink"
+    },
+    {
+        "caffeineLevel": "57",
+        "date": "",
+        "name": "Hansen's Diet Red"
+    },
+    {
+        "caffeineLevel": "57",
+        "date": "",
+        "name": "Hansen's Energy Pro"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "Hard Rock Energy Drink"
+    },
+    {
+        "caffeineLevel": "300",
+        "date": "",
+        "name": "Hardcore Energize Bullet"
+    },
+    {
+        "caffeineLevel": "52",
+        "date": "",
+        "name": "Havoc Energy Drink"
+    },
+    {
+        "caffeineLevel": "150",
+        "date": "",
+        "name": "Hawaiian OLA Noni Energy Shot"
+    },
+    {
+        "caffeineLevel": "150",
+        "date": "",
+        "name": "Hawaiian Ola Sparkling Energy"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Health Energy Potion"
+    },
+    {
+        "caffeineLevel": "170",
+        "date": "",
+        "name": "Helix Energy Drink"
+    },
+    {
+        "caffeineLevel": "5",
+        "date": "",
+        "name": "Hershey's Chocolate Milk"
+    },
+    {
+        "caffeineLevel": "120",
+        "date": "",
+        "name": "Hi Ball Energy Coffee"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Hi Ball Energy Drink"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Hi Ball Protein Energy Shake"
+    },
+    {
+        "caffeineLevel": "163",
+        "date": "",
+        "name": "High Brew Coffee"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "Hijinks Energy Mixer"
+    },
+    {
+        "caffeineLevel": "40",
+        "date": "",
+        "name": "Honest Professor Fizz"
+    },
+    {
+        "caffeineLevel": "45",
+        "date": "",
+        "name": "Honest Tea"
+    },
+    {
+        "caffeineLevel": "5",
+        "date": "",
+        "name": "Hot Cocoa (Hot Chocolate)"
+    },
+    {
+        "caffeineLevel": "114",
+        "date": "",
+        "name": "Hot Pure Energy Drink"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Howling Monkey Energy Drink"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Hydrive Energy Water"
+    },
+    {
+        "caffeineLevel": "195",
+        "date": "",
+        "name": "Hydrive Extra Power"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "Hydroxycut Instant Shot"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Hype Energy Drink"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "IBC Root Beer"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Illy Issimo Latte Macchiato"
+    },
+    {
+        "caffeineLevel": "50",
+        "date": "",
+        "name": "Inca Kola"
+    },
+    {
+        "caffeineLevel": "94",
+        "date": "",
+        "name": "Indigo Energy Drink"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Ink"
+    },
+    {
+        "caffeineLevel": "184",
+        "date": "",
+        "name": "Inko's White Tea Energy"
+    },
+    {
+        "caffeineLevel": "106",
+        "date": "",
+        "name": "Irn Bru 32"
+    },
+    {
+        "caffeineLevel": "120",
+        "date": "",
+        "name": "iShot Energy Shot"
+    },
+    {
+        "caffeineLevel": "90",
+        "date": "",
+        "name": "iShot Love Potion"
+    },
+    {
+        "caffeineLevel": "78",
+        "date": "",
+        "name": "iShot Skinny Energy Shot"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Jamba Juice Energy Drink"
+    },
+    {
+        "caffeineLevel": "188",
+        "date": "",
+        "name": "Java Monster"
+    },
+    {
+        "caffeineLevel": "38",
+        "date": "",
+        "name": "Jazz Caramel Cream"
+    },
+    {
+        "caffeineLevel": "280",
+        "date": "",
+        "name": "Jolt Cola Energy Drink"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "Jolt Endurance Shot"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "Jump Start Energy Drink"
+    },
+    {
+        "caffeineLevel": "41",
+        "date": "",
+        "name": "K Cup Tea"
+    },
+    {
+        "caffeineLevel": "120",
+        "date": "",
+        "name": "K-Cup Coffee"
+    },
+    {
+        "caffeineLevel": "75",
+        "date": "",
+        "name": "Kaffn8 Liquified Caffeine"
+    },
+    {
+        "caffeineLevel": "110",
+        "date": "",
+        "name": "Karvana Kombucha Energy Shot"
+    },
+    {
+        "caffeineLevel": "180",
+        "date": "",
+        "name": "Keurig Vue Pack"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Kick Energy Drink"
+    },
+    {
+        "caffeineLevel": "40",
+        "date": "",
+        "name": "Kickapoo Soda: Joy Juice & Fruit Shine"
+    },
+    {
+        "caffeineLevel": "25",
+        "date": "",
+        "name": "Kill Cliff Recovery Drink"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Killer Buzz"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "King 888 Energy Drink"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "Kinley Soda"
+    },
+    {
+        "caffeineLevel": "180",
+        "date": "",
+        "name": "Kirkland Energy Shot"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Knockout Energy Drink"
+    },
+    {
+        "caffeineLevel": "150",
+        "date": "",
+        "name": "Kombucha Extreme Energy Shot"
+    },
+    {
+        "caffeineLevel": "24",
+        "date": "",
+        "name": "Kombucha Tea"
+    },
+    {
+        "caffeineLevel": "54",
+        "date": "",
+        "name": "Kona Red"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "KX Energy Drink"
+    },
+    {
+        "caffeineLevel": "154",
+        "date": "",
+        "name": "Latte"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Life Blast Xtreme Energy"
+    },
+    {
+        "caffeineLevel": "72",
+        "date": "",
+        "name": "Lift Off Energy Drink"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Lift Plus Energy Drink"
+    },
+    {
+        "caffeineLevel": "32",
+        "date": "",
+        "name": "Limelite Fusion Energy Drink"
+    },
+    {
+        "caffeineLevel": "8",
+        "date": "",
+        "name": "Lipton Brisk Tea"
+    },
+    {
+        "caffeineLevel": "48",
+        "date": "",
+        "name": "Lipton Iced Tea"
+    },
+    {
+        "caffeineLevel": "75",
+        "date": "",
+        "name": "Lipton Natural Energy Tea"
+    },
+    {
+        "caffeineLevel": "55",
+        "date": "",
+        "name": "Lipton Tea"
+    },
+    {
+        "caffeineLevel": "500",
+        "date": "",
+        "name": "Liquid Caffeine"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Liquid Ice Energy Drink"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "Liquid Lightning"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Liquid Ninja Energy Drink"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Liquid Z Juiced Energy Drink"
+    },
+    {
+        "caffeineLevel": "154",
+        "date": "",
+        "name": "Long Black"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Lost Energy Drink"
+    },
+    {
+        "caffeineLevel": "46",
+        "date": "",
+        "name": "Lucozade"
+    },
+    {
+        "caffeineLevel": "120",
+        "date": "",
+        "name": "Lyft Energy Stick"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "M-150 Energy Drink"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Mad Croc Energy Drink"
+    },
+    {
+        "caffeineLevel": "90",
+        "date": "",
+        "name": "Mamma Chia Energy"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Mana Energy Potion"
+    },
+    {
+        "caffeineLevel": "120",
+        "date": "",
+        "name": "Mario Power Up Energy Drink"
+    },
+    {
+        "caffeineLevel": "70",
+        "date": "",
+        "name": "Matcha Tea"
+    },
+    {
+        "caffeineLevel": "155",
+        "date": "",
+        "name": "Max Velocity Energy Drink"
+    },
+    {
+        "caffeineLevel": "142",
+        "date": "",
+        "name": "McDonalds (McCafe) Latte"
+    },
+    {
+        "caffeineLevel": "167",
+        "date": "",
+        "name": "McDonalds (McCafe) Mocha"
+    },
+    {
+        "caffeineLevel": "145",
+        "date": "",
+        "name": "McDonalds Coffee"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "McDonalds Iced Coffee"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "McDonalds Sweet Tea"
+    },
+    {
+        "caffeineLevel": "240",
+        "date": "",
+        "name": "Mega Monster Energy Drink"
+    },
+    {
+        "caffeineLevel": "53",
+        "date": "",
+        "name": "Mello Yello"
+    },
+    {
+        "caffeineLevel": "51",
+        "date": "",
+        "name": "Mello Yello Zero"
+    },
+    {
+        "caffeineLevel": "60",
+        "date": "",
+        "name": "MiO Energy Water Enhancer"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Missile Energy Drink"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Mix and Go"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "MonaVie"
+    },
+    {
+        "caffeineLevel": "140",
+        "date": "",
+        "name": "Monster Absolutely Zero"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Monster Assault"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Monster Cuba Lima"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Monster DUB"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Monster Energy Drink"
+    },
+    {
+        "caffeineLevel": "92",
+        "date": "",
+        "name": "Monster Energy Mexico"
+    },
+    {
+        "caffeineLevel": "76",
+        "date": "",
+        "name": "Monster Export"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Monster Extra Strength"
+    },
+    {
+        "caffeineLevel": "240",
+        "date": "",
+        "name": "Monster Hitman Sniper"
+    },
+    {
+        "caffeineLevel": "179",
+        "date": "",
+        "name": "Monster Import"
+    },
+    {
+        "caffeineLevel": "154",
+        "date": "",
+        "name": "Monster Khaos"
+    },
+    {
+        "caffeineLevel": "140",
+        "date": "",
+        "name": "Monster Lo-Carb"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Monster M3 Energy Drink"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Monster Mixxd Energy Drink"
+    },
+    {
+        "caffeineLevel": "140",
+        "date": "",
+        "name": "Monster Pink Energy Drink"
+    },
+    {
+        "caffeineLevel": "161",
+        "date": "",
+        "name": "Monster Rehab Energy Drink"
+    },
+    {
+        "caffeineLevel": "155",
+        "date": "",
+        "name": "Monster Rehab Green Tea"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Monster Ripper"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Monster The Doctor Energy Drink"
+    },
+    {
+        "caffeineLevel": "152",
+        "date": "",
+        "name": "Monster Ultra Citron"
+    },
+    {
+        "caffeineLevel": "140",
+        "date": "",
+        "name": "Monster Ultra Energy Drink"
+    },
+    {
+        "caffeineLevel": "151",
+        "date": "",
+        "name": "Monster Ultra Sunrise"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "Monster Unleaded Energy Drink"
+    },
+    {
+        "caffeineLevel": "170",
+        "date": "",
+        "name": "Morning Spark Energy Drink"
+    },
+    {
+        "caffeineLevel": "40",
+        "date": "",
+        "name": "Morning Thunder Tea"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Mother Energy Drink"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Mother Inferno"
+    },
+    {
+        "caffeineLevel": "54",
+        "date": "",
+        "name": "Mountain Dew"
+    },
+    {
+        "caffeineLevel": "72",
+        "date": "",
+        "name": "Mountain Dew Baja Blast"
+    },
+    {
+        "caffeineLevel": "54",
+        "date": "",
+        "name": "Mountain Dew Code Red"
+    },
+    {
+        "caffeineLevel": "121",
+        "date": "",
+        "name": "Mountain Dew Game Fuel"
+    },
+    {
+        "caffeineLevel": "92",
+        "date": "",
+        "name": "Mountain Dew Kickstart"
+    },
+    {
+        "caffeineLevel": "68",
+        "date": "",
+        "name": "Mountain Dew Kickstart Hydrating Boost"
+    },
+    {
+        "caffeineLevel": "54",
+        "date": "",
+        "name": "Mountain Dew Live Wire"
+    },
+    {
+        "caffeineLevel": "55",
+        "date": "",
+        "name": "Mountain Dew Voltage"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Moxie Energy Drink"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "Mug Root Beer"
+    },
+    {
+        "caffeineLevel": "156",
+        "date": "",
+        "name": "Muscle Monster"
+    },
+    {
+        "caffeineLevel": "120",
+        "date": "",
+        "name": "MusclePharm Energy Drink"
+    },
+    {
+        "caffeineLevel": "82",
+        "date": "",
+        "name": "Naked Juice Energy Smoothie"
+    },
+    {
+        "caffeineLevel": "102",
+        "date": "",
+        "name": "Nap Nock Energy Shot"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Nawgan Energy Drink"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "NEO Energy Drink"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Neon Energy Drink"
+    },
+    {
+        "caffeineLevel": "120",
+        "date": "",
+        "name": "Nerd Energy Drink"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Nescafe Ice Java"
+    },
+    {
+        "caffeineLevel": "6",
+        "date": "",
+        "name": "Nescafe' Ricoffy"
+    },
+    {
+        "caffeineLevel": "60",
+        "date": "",
+        "name": "Nespresso Coffee Capsules"
+    },
+    {
+        "caffeineLevel": "13",
+        "date": "",
+        "name": "Nestea Iced Tea"
+    },
+    {
+        "caffeineLevel": "4",
+        "date": "",
+        "name": "Nestle Milo"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Neuro Sonic"
+    },
+    {
+        "caffeineLevel": "128",
+        "date": "",
+        "name": "Neurofuel Energy Drink"
+    },
+    {
+        "caffeineLevel": "180",
+        "date": "",
+        "name": "Neutron Energy Drink"
+    },
+    {
+        "caffeineLevel": "64",
+        "date": "",
+        "name": "Nexcite Energy Drink"
+    },
+    {
+        "caffeineLevel": "182",
+        "date": "",
+        "name": "No Fear Energy Drink"
+    },
+    {
+        "caffeineLevel": "115",
+        "date": "",
+        "name": "NoDoz Energy Shot"
+    },
+    {
+        "caffeineLevel": "221",
+        "date": "",
+        "name": "NOS Active Sports Drink"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "NOS Energy Drink"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "NOS Energy Drink (New Zealand Brand)"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "NOS Loaded Cherry"
+    },
+    {
+        "caffeineLevel": "130",
+        "date": "",
+        "name": "NRG MicroShot"
+    },
+    {
+        "caffeineLevel": "40",
+        "date": "",
+        "name": "Nuun Energy Drink"
+    },
+    {
+        "caffeineLevel": "64",
+        "date": "",
+        "name": "O Infused Water - Energize"
+    },
+    {
+        "caffeineLevel": "10",
+        "date": "",
+        "name": "Octane Energy Burst"
+    },
+    {
+        "caffeineLevel": "225",
+        "date": "",
+        "name": "Octane Energy Drink"
+    },
+    {
+        "caffeineLevel": "60",
+        "date": "",
+        "name": "Oi Ocha Green Tea"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "OK Energy Drink"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Ol' Glory Energy Drink"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "ON Energy Drink"
+    },
+    {
+        "caffeineLevel": "177",
+        "date": "",
+        "name": "OnGo Energy Shot"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "OnTheGo Drink Mix"
+    },
+    {
+        "caffeineLevel": "50",
+        "date": "",
+        "name": "Oprah Chai Tea Latte"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "Orange Crush"
+    },
+    {
+        "caffeineLevel": "33",
+        "date": "",
+        "name": "Oregon Chai Tea"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "Ovaltine"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Pacific Chai"
+    },
+    {
+        "caffeineLevel": "189",
+        "date": "",
+        "name": "Panera Bread Coffee"
+    },
+    {
+        "caffeineLevel": "12",
+        "date": "",
+        "name": "PC Cola"
+    },
+    {
+        "caffeineLevel": "13",
+        "date": "",
+        "name": "PC Cola Diet"
+    },
+    {
+        "caffeineLevel": "60",
+        "date": "",
+        "name": "Peace Tea"
+    },
+    {
+        "caffeineLevel": "267",
+        "date": "",
+        "name": "Peet's Brewed Coffee"
+    },
+    {
+        "caffeineLevel": "140",
+        "date": "",
+        "name": "Peet's Caffe Americano"
+    },
+    {
+        "caffeineLevel": "140",
+        "date": "",
+        "name": "Peet's Caffe Latte"
+    },
+    {
+        "caffeineLevel": "165",
+        "date": "",
+        "name": "Peet's Caffe Mocha"
+    },
+    {
+        "caffeineLevel": "140",
+        "date": "",
+        "name": "Peet's Cappuccino"
+    },
+    {
+        "caffeineLevel": "70",
+        "date": "",
+        "name": "Peet's Coffee Espresso"
+    },
+    {
+        "caffeineLevel": "10",
+        "date": "",
+        "name": "Peet's Decaf Espresso"
+    },
+    {
+        "caffeineLevel": "150",
+        "date": "",
+        "name": "Peet's Iced Coffee"
+    },
+    {
+        "caffeineLevel": "140",
+        "date": "",
+        "name": "Peet's Iced Latte"
+    },
+    {
+        "caffeineLevel": "165",
+        "date": "",
+        "name": "Peet's Iced Mocha"
+    },
+    {
+        "caffeineLevel": "81",
+        "date": "",
+        "name": "PepPod Energy Drink"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "Pepsi Caffeine Free"
+    },
+    {
+        "caffeineLevel": "38",
+        "date": "",
+        "name": "Pepsi Cola"
+    },
+    {
+        "caffeineLevel": "38",
+        "date": "",
+        "name": "Pepsi Diet Lemon"
+    },
+    {
+        "caffeineLevel": "38",
+        "date": "",
+        "name": "Pepsi Diet Lime"
+    },
+    {
+        "caffeineLevel": "38",
+        "date": "",
+        "name": "Pepsi Diet Vanilla"
+    },
+    {
+        "caffeineLevel": "69",
+        "date": "",
+        "name": "Pepsi Max"
+    },
+    {
+        "caffeineLevel": "43",
+        "date": "",
+        "name": "Pepsi Max UK, NZ, AU"
+    },
+    {
+        "caffeineLevel": "32",
+        "date": "",
+        "name": "Pepsi Next"
+    },
+    {
+        "caffeineLevel": "54",
+        "date": "",
+        "name": "Pepsi One"
+    },
+    {
+        "caffeineLevel": "14",
+        "date": "",
+        "name": "Pepsi Slurpee"
+    },
+    {
+        "caffeineLevel": "38",
+        "date": "",
+        "name": "Pepsi Throwback"
+    },
+    {
+        "caffeineLevel": "24",
+        "date": "",
+        "name": "Pepsi True"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Phix Energy Drink"
+    },
+    {
+        "caffeineLevel": "40",
+        "date": "",
+        "name": "Pibb Xtra"
+    },
+    {
+        "caffeineLevel": "40",
+        "date": "",
+        "name": "Pibb Zero"
+    },
+    {
+        "caffeineLevel": "133",
+        "date": "",
+        "name": "Pirate Energy Shot"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Plasma Energy Drink"
+    },
+    {
+        "caffeineLevel": "120",
+        "date": "",
+        "name": "Player Aid Energy Shot"
+    },
+    {
+        "caffeineLevel": "88",
+        "date": "",
+        "name": "Please Energy Drink"
+    },
+    {
+        "caffeineLevel": "150",
+        "date": "",
+        "name": "Positive Charge Energy Drink"
+    },
+    {
+        "caffeineLevel": "150",
+        "date": "",
+        "name": "Positive Energy Juice"
+    },
+    {
+        "caffeineLevel": "250",
+        "date": "",
+        "name": "Potencia Energy Drink"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Power Edge Energy Drink Mix"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Power Horse Energy Drink"
+    },
+    {
+        "caffeineLevel": "210",
+        "date": "",
+        "name": "Power Trip Energy Drink"
+    },
+    {
+        "caffeineLevel": "96",
+        "date": "",
+        "name": "Powerade Fuel +"
+    },
+    {
+        "caffeineLevel": "190",
+        "date": "",
+        "name": "Powerthirst Energy Drink"
+    },
+    {
+        "caffeineLevel": "83",
+        "date": "",
+        "name": "Premium Cola"
+    },
+    {
+        "caffeineLevel": "67",
+        "date": "",
+        "name": "Pronto Coffee"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "Propel Zero Energy Mix"
+    },
+    {
+        "caffeineLevel": "21",
+        "date": "",
+        "name": "Pulse"
+    },
+    {
+        "caffeineLevel": "175",
+        "date": "",
+        "name": "Pure Cofain 699"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "Pure Kick Energy Drink"
+    },
+    {
+        "caffeineLevel": "57",
+        "date": "",
+        "name": "Pure Leaf Iced Tea"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Pyure o.e.o. Energy Shot"
+    },
+    {
+        "caffeineLevel": "140",
+        "date": "",
+        "name": "Quad Energy Drink"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Race Energy Drink"
+    },
+    {
+        "caffeineLevel": "156",
+        "date": "",
+        "name": "Radioactive Energy Drink"
+    },
+    {
+        "caffeineLevel": "375",
+        "date": "",
+        "name": "Rage Inferno"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "Rage Liquid Energy"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Ram Jam Energy Drink"
+    },
+    {
+        "caffeineLevel": "43",
+        "date": "",
+        "name": "RC Cola"
+    },
+    {
+        "caffeineLevel": "43",
+        "date": "",
+        "name": "RC Cola, Cherry"
+    },
+    {
+        "caffeineLevel": "66",
+        "date": "",
+        "name": "Real Beanz Iced Coffee"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Realife Plus Energy"
+    },
+    {
+        "caffeineLevel": "125",
+        "date": "",
+        "name": "Reckless Energy Shot"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Red Bull"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Red Bull Blue Edition"
+    },
+    {
+        "caffeineLevel": "114",
+        "date": "",
+        "name": "Red Bull Cherry Edition"
+    },
+    {
+        "caffeineLevel": "114",
+        "date": "",
+        "name": "Red Bull Orange Edition"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Red Bull Red Edition"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Red Bull Silver Edition"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Red Bull Sugar Free"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Red Bull Total Zero"
+    },
+    {
+        "caffeineLevel": "114",
+        "date": "",
+        "name": "Red Bull Yellow Edition"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Red Devil Energy Drink"
+    },
+    {
+        "caffeineLevel": "106",
+        "date": "",
+        "name": "Red Eye Energy Drink"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "Red Fin Energy Shot"
+    },
+    {
+        "caffeineLevel": "37",
+        "date": "",
+        "name": "Red Flash"
+    },
+    {
+        "caffeineLevel": "75",
+        "date": "",
+        "name": "Red Heel Drink"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Red Rain Energy Drink"
+    },
+    {
+        "caffeineLevel": "26",
+        "date": "",
+        "name": "Red Rock Cola"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Red Rooster"
+    },
+    {
+        "caffeineLevel": "60",
+        "date": "",
+        "name": "Red Rose Energy Tea"
+    },
+    {
+        "caffeineLevel": "75",
+        "date": "",
+        "name": "Red Thunder Energy Drink"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Red Thunder Energy Shot"
+    },
+    {
+        "caffeineLevel": "250",
+        "date": "",
+        "name": "Redline Energy Drink"
+    },
+    {
+        "caffeineLevel": "350",
+        "date": "",
+        "name": "Redline Power Rush"
+    },
+    {
+        "caffeineLevel": "250",
+        "date": "",
+        "name": "Redline Princess"
+    },
+    {
+        "caffeineLevel": "316",
+        "date": "",
+        "name": "Redline Xtreme Energy Drink"
+    },
+    {
+        "caffeineLevel": "300",
+        "date": "",
+        "name": "Redline Xtreme Shot"
+    },
+    {
+        "caffeineLevel": "20",
+        "date": "",
+        "name": "Reeds Energy Elixir"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Relentless Energy Drink"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "RhinoRush Energy Shot"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "Rip It Energy Drink"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Rip It Energy Shot"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "Ripped Force Energy Drink"
+    },
+    {
+        "caffeineLevel": "10",
+        "date": "",
+        "name": "Ritz Cola"
+    },
+    {
+        "caffeineLevel": "60",
+        "date": "",
+        "name": "Rize Energy Drink"
+    },
+    {
+        "caffeineLevel": "161",
+        "date": "",
+        "name": "Roaring Lion Energy Drink"
+    },
+    {
+        "caffeineLevel": "79",
+        "date": "",
+        "name": "Robust Energy Drink"
+    },
+    {
+        "caffeineLevel": "265",
+        "date": "",
+        "name": "Robusta Coffee"
+    },
+    {
+        "caffeineLevel": "125",
+        "date": "",
+        "name": "Rock On Energy Shot"
+    },
+    {
+        "caffeineLevel": "151",
+        "date": "",
+        "name": "Rockstar (NZ / Aus)"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Rockstar Burner Energy Drink"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Rockstar Energy Cola"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Rockstar Energy Drink"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "Rockstar Energy Shot"
+    },
+    {
+        "caffeineLevel": "180",
+        "date": "",
+        "name": "Rockstar Energy Water"
+    },
+    {
+        "caffeineLevel": "225",
+        "date": "",
+        "name": "Rockstar Horchata Energy Drink"
+    },
+    {
+        "caffeineLevel": "240",
+        "date": "",
+        "name": "Rockstar Iced Energy Drink"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Rockstar Juiced"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Rockstar Lime Freeze"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Rockstar Organic Energy Drink"
+    },
+    {
+        "caffeineLevel": "240",
+        "date": "",
+        "name": "Rockstar Perfect Berry"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Rockstar Pina Colada"
+    },
+    {
+        "caffeineLevel": "240",
+        "date": "",
+        "name": "Rockstar Punched"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Rockstar Punched (non-USA)"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Rockstar Punched Guava"
+    },
+    {
+        "caffeineLevel": "240",
+        "date": "",
+        "name": "Rockstar Pure Zero Energy Drink"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Rockstar Recovery"
+    },
+    {
+        "caffeineLevel": "220",
+        "date": "",
+        "name": "Rockstar Roasted"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Rockstar Sparkling Energy"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Rockstar Sport Energy Shake"
+    },
+    {
+        "caffeineLevel": "240",
+        "date": "",
+        "name": "Rockstar Super Sours"
+    },
+    {
+        "caffeineLevel": "240",
+        "date": "",
+        "name": "Rockstar XDurance Energy Drink"
+    },
+    {
+        "caffeineLevel": "240",
+        "date": "",
+        "name": "Rockstar Zero Carb"
+    },
+    {
+        "caffeineLevel": "50",
+        "date": "",
+        "name": "Root9 Vitality Drink"
+    },
+    {
+        "caffeineLevel": "120",
+        "date": "",
+        "name": "RootJack Caffeinated Pirate Root Beer"
+    },
+    {
+        "caffeineLevel": "39",
+        "date": "",
+        "name": "Ruby Red Squirt"
+    },
+    {
+        "caffeineLevel": "75",
+        "date": "",
+        "name": "Rude Energy Drink"
+    },
+    {
+        "caffeineLevel": "170",
+        "date": "",
+        "name": "Rumba Energy Juice"
+    },
+    {
+        "caffeineLevel": "120",
+        "date": "",
+        "name": "Runa Clean Energy Drink"
+    },
+    {
+        "caffeineLevel": "50",
+        "date": "",
+        "name": "Rush! Energy"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Sambazon Amazon Energy Drink"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "Sarsaparilla"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Scheckters Organic Energy Drink"
+    },
+    {
+        "caffeineLevel": "185",
+        "date": "",
+        "name": "Screamin Energy Max Hit"
+    },
+    {
+        "caffeineLevel": "260",
+        "date": "",
+        "name": "Seattle's Best Brewed Coffee"
+    },
+    {
+        "caffeineLevel": "40",
+        "date": "",
+        "name": "Sencha Green Tea Shot"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Shark Energy Drink"
+    },
+    {
+        "caffeineLevel": "43",
+        "date": "",
+        "name": "Shasta Cola"
+    },
+    {
+        "caffeineLevel": "231",
+        "date": "",
+        "name": "Shock Coffee Triple Latte"
+    },
+    {
+        "caffeineLevel": "90",
+        "date": "",
+        "name": "Sin Energy Drink"
+    },
+    {
+        "caffeineLevel": "69",
+        "date": "",
+        "name": "Ski Soda"
+    },
+    {
+        "caffeineLevel": "70",
+        "date": "",
+        "name": "Skinny Cow Iced Coffee"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Slammers Energy Drink"
+    },
+    {
+        "caffeineLevel": "220",
+        "date": "",
+        "name": "SLAP Energy Drink"
+    },
+    {
+        "caffeineLevel": "40",
+        "date": "",
+        "name": "SlimFast Cappuccino Delight Shake"
+    },
+    {
+        "caffeineLevel": "40",
+        "date": "",
+        "name": "Slurpee"
+    },
+    {
+        "caffeineLevel": "42",
+        "date": "",
+        "name": "Snapple Tea"
+    },
+    {
+        "caffeineLevel": "77",
+        "date": "",
+        "name": "SoBe Energy Citrus"
+    },
+    {
+        "caffeineLevel": "10",
+        "date": "",
+        "name": "SoBe Green Tea"
+    },
+    {
+        "caffeineLevel": "76",
+        "date": "",
+        "name": "SoBe Power Fruit Punch"
+    },
+    {
+        "caffeineLevel": "60",
+        "date": "",
+        "name": "Soda Stream"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Source Energy Drink"
+    },
+    {
+        "caffeineLevel": "41",
+        "date": "",
+        "name": "Southern Sweet Tea"
+    },
+    {
+        "caffeineLevel": "120",
+        "date": "",
+        "name": "Spark Energy Drink"
+    },
+    {
+        "caffeineLevel": "90",
+        "date": "",
+        "name": "Spartan Energy Drink"
+    },
+    {
+        "caffeineLevel": "186",
+        "date": "",
+        "name": "Speed Energy Drink"
+    },
+    {
+        "caffeineLevel": "250",
+        "date": "",
+        "name": "Speed Stack Energy Drink"
+    },
+    {
+        "caffeineLevel": "240",
+        "date": "",
+        "name": "Spider Energy Drink"
+    },
+    {
+        "caffeineLevel": "350",
+        "date": "",
+        "name": "Spike Energy Double Shot"
+    },
+    {
+        "caffeineLevel": "350",
+        "date": "",
+        "name": "Spike Energy Drink"
+    },
+    {
+        "caffeineLevel": "300",
+        "date": "",
+        "name": "SPIKE Shooter"
+    },
+    {
+        "caffeineLevel": "140",
+        "date": "",
+        "name": "Sport Max Energy Shot"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "Sprite"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "Squirt Soda"
+    },
+    {
+        "caffeineLevel": "180",
+        "date": "",
+        "name": "Stakk'd Caffeine Mixer"
+    },
+    {
+        "caffeineLevel": "90",
+        "date": "",
+        "name": "Starbucks Bottled Frappuccino"
+    },
+    {
+        "caffeineLevel": "115",
+        "date": "",
+        "name": "Starbucks Bottled Iced Coffee"
+    },
+    {
+        "caffeineLevel": "25",
+        "date": "",
+        "name": "Starbucks Decaf Coffee"
+    },
+    {
+        "caffeineLevel": "539",
+        "date": "",
+        "name": "Starbucks Discoveries Caffe Mocha"
+    },
+    {
+        "caffeineLevel": "125",
+        "date": "",
+        "name": "Starbucks Double Shot"
+    },
+    {
+        "caffeineLevel": "145",
+        "date": "",
+        "name": "Starbucks Doubleshot Energy + Coffee"
+    },
+    {
+        "caffeineLevel": "225",
+        "date": "",
+        "name": "Starbucks Grande Caffe Americano"
+    },
+    {
+        "caffeineLevel": "150",
+        "date": "",
+        "name": "Starbucks Grande Caffe Latte"
+    },
+    {
+        "caffeineLevel": "175",
+        "date": "",
+        "name": "Starbucks Grande Caffe Mocha"
+    },
+    {
+        "caffeineLevel": "150",
+        "date": "",
+        "name": "Starbucks Grande Cappuccino"
+    },
+    {
+        "caffeineLevel": "330",
+        "date": "",
+        "name": "Starbucks Grande Coffee"
+    },
+    {
+        "caffeineLevel": "225",
+        "date": "",
+        "name": "Starbucks Iced Espresso"
+    },
+    {
+        "caffeineLevel": "140",
+        "date": "",
+        "name": "Starbucks Protein and Coffee"
+    },
+    {
+        "caffeineLevel": "50",
+        "date": "",
+        "name": "Starbucks Refreshers"
+    },
+    {
+        "caffeineLevel": "50",
+        "date": "",
+        "name": "Starbucks Refreshers Canned"
+    },
+    {
+        "caffeineLevel": "60",
+        "date": "",
+        "name": "Starbucks Verismo Coffee Pods"
+    },
+    {
+        "caffeineLevel": "135",
+        "date": "",
+        "name": "Starbucks Via Ready Brew"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Steaz Organic Energy Drink"
+    },
+    {
+        "caffeineLevel": "50",
+        "date": "",
+        "name": "Stewie's Mind Erase Elixir"
+    },
+    {
+        "caffeineLevel": "40",
+        "date": "",
+        "name": "Stok Black Coffee Shots"
+    },
+    {
+        "caffeineLevel": "280",
+        "date": "",
+        "name": "Street King Energy Shot"
+    },
+    {
+        "caffeineLevel": "319",
+        "date": "",
+        "name": "Stumptown Cold Brew + Milk"
+    },
+    {
+        "caffeineLevel": "340",
+        "date": "",
+        "name": "Stumptown Cold Brew Chocolate + Milk"
+    },
+    {
+        "caffeineLevel": "279",
+        "date": "",
+        "name": "Stumptown Cold Brew Coffee"
+    },
+    {
+        "caffeineLevel": "330",
+        "date": "",
+        "name": "Stumptown Nitro Cold Brew"
+    },
+    {
+        "caffeineLevel": "64",
+        "date": "",
+        "name": "Sun Drop Soda"
+    },
+    {
+        "caffeineLevel": "41",
+        "date": "",
+        "name": "Sunkist Orange Soda"
+    },
+    {
+        "caffeineLevel": "41",
+        "date": "",
+        "name": "Sunkist Sparkling Lemonade"
+    },
+    {
+        "caffeineLevel": "68",
+        "date": "",
+        "name": "Sunkist Ten"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "SunnyD X Energy Drink"
+    },
+    {
+        "caffeineLevel": "69",
+        "date": "",
+        "name": "Surge Citrus Soda"
+    },
+    {
+        "caffeineLevel": "140",
+        "date": "",
+        "name": "Surge Energy Shot"
+    },
+    {
+        "caffeineLevel": "50",
+        "date": "",
+        "name": "Swing Juice Energy Drink"
+    },
+    {
+        "caffeineLevel": "120",
+        "date": "",
+        "name": "T-Virus Antidote"
+    },
+    {
+        "caffeineLevel": "47",
+        "date": "",
+        "name": "TAB Diet Cola"
+    },
+    {
+        "caffeineLevel": "130",
+        "date": "",
+        "name": "Taiwanese Milk Tea"
+    },
+    {
+        "caffeineLevel": "174",
+        "date": "",
+        "name": "Talon Energy Drink"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "TAPOUT Energy Drink"
+    },
+    {
+        "caffeineLevel": "47",
+        "date": "",
+        "name": "Tazo Chai"
+    },
+    {
+        "caffeineLevel": "42",
+        "date": "",
+        "name": "Tea (Black)"
+    },
+    {
+        "caffeineLevel": "5",
+        "date": "",
+        "name": "Tea (Decaf)"
+    },
+    {
+        "caffeineLevel": "25",
+        "date": "",
+        "name": "Tea (Green)"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "Tea (Herbal)"
+    },
+    {
+        "caffeineLevel": "47",
+        "date": "",
+        "name": "Tea (Iced)"
+    },
+    {
+        "caffeineLevel": "40",
+        "date": "",
+        "name": "Tea (Instant)"
+    },
+    {
+        "caffeineLevel": "25",
+        "date": "",
+        "name": "Tea (Jasmine)"
+    },
+    {
+        "caffeineLevel": "37",
+        "date": "",
+        "name": "Tea (Oolong)"
+    },
+    {
+        "caffeineLevel": "28",
+        "date": "",
+        "name": "Tea (White)"
+    },
+    {
+        "caffeineLevel": "55",
+        "date": "",
+        "name": "Teas' Tea Oolong"
+    },
+    {
+        "caffeineLevel": "41",
+        "date": "",
+        "name": "Teavana Tea"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "TEHO Energy Drink"
+    },
+    {
+        "caffeineLevel": "50",
+        "date": "",
+        "name": "Tejava Iced Tea"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Tiger Energy Drink"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "Tim Hortons Large Brewed Coffee"
+    },
+    {
+        "caffeineLevel": "60",
+        "date": "",
+        "name": "Tim Hortons Small English Toffee Coffee"
+    },
+    {
+        "caffeineLevel": "60",
+        "date": "",
+        "name": "Tim Hortons Small French Vanilla Coffee"
+    },
+    {
+        "caffeineLevel": "38",
+        "date": "",
+        "name": "TK Diet Cola"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "Tonic Water"
+    },
+    {
+        "caffeineLevel": "125",
+        "date": "",
+        "name": "Topplez Cafe 125"
+    },
+    {
+        "caffeineLevel": "150",
+        "date": "",
+        "name": "Trader Joe's Energy Drink"
+    },
+    {
+        "caffeineLevel": "50",
+        "date": "",
+        "name": "Trim Water"
+    },
+    {
+        "caffeineLevel": "50",
+        "date": "",
+        "name": "TroopFuel Energy Drink"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "Tropicana Twister Soda"
+    },
+    {
+        "caffeineLevel": "50",
+        "date": "",
+        "name": "Tru Blood Energy Drink"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "TruBrain Morning"
+    },
+    {
+        "caffeineLevel": "110",
+        "date": "",
+        "name": "Turkey Hill Iced Tea"
+    },
+    {
+        "caffeineLevel": "25",
+        "date": "",
+        "name": "Twig Tea (Kukicha)"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Ubermonster Energy Brew"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "UPTIME Energy Drink"
+    },
+    {
+        "caffeineLevel": "120",
+        "date": "",
+        "name": "USANA Rev3 Energy Drink"
+    },
+    {
+        "caffeineLevel": "147",
+        "date": "",
+        "name": "V Double Espresso Iced Coffee"
+    },
+    {
+        "caffeineLevel": "109",
+        "date": "",
+        "name": "V Energy Drink"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "V Pocket Rocket Energy Shot"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "V8 Fusion Energy Drink"
+    },
+    {
+        "caffeineLevel": "240",
+        "date": "",
+        "name": "Vamp Energy Drink"
+    },
+    {
+        "caffeineLevel": "34",
+        "date": "",
+        "name": "Vanilla Coke"
+    },
+    {
+        "caffeineLevel": "34",
+        "date": "",
+        "name": "Vanilla Coke Zero"
+    },
+    {
+        "caffeineLevel": "75",
+        "date": "",
+        "name": "Vegas Fuel Energy Drink"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Venom Black Mamba"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Venom Death Adder"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Venom Killer Taipan"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Venom Mojave Rattler"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "Vernors Ginger Ale"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Verve! Energy Drink"
+    },
+    {
+        "caffeineLevel": "125",
+        "date": "",
+        "name": "Vidration Enhanced Water"
+    },
+    {
+        "caffeineLevel": "300",
+        "date": "",
+        "name": "Viso Energy Drink"
+    },
+    {
+        "caffeineLevel": "120",
+        "date": "",
+        "name": "Vita Coco Cafe"
+    },
+    {
+        "caffeineLevel": "155",
+        "date": "",
+        "name": "Vital 4U Liquid Energy"
+    },
+    {
+        "caffeineLevel": "150",
+        "date": "",
+        "name": "Vital Energy Drink"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "VitaminWater Energy Drink"
+    },
+    {
+        "caffeineLevel": "42",
+        "date": "",
+        "name": "VitaRain Energy Enhanced Water"
+    },
+    {
+        "caffeineLevel": "174",
+        "date": "",
+        "name": "Vixen Energy Drink"
+    },
+    {
+        "caffeineLevel": "50",
+        "date": "",
+        "name": "Voltz Energy Shot"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Vuka Functional Drinks"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Warrior Energy Drink"
+    },
+    {
+        "caffeineLevel": "60",
+        "date": "",
+        "name": "Water Joe"
+    },
+    {
+        "caffeineLevel": "32",
+        "date": "",
+        "name": "Wendy's Iced Tea"
+    },
+    {
+        "caffeineLevel": "150",
+        "date": "",
+        "name": "Whey Up Energy Drink"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "White Tiger"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "Whoop Ass Energy Drink"
+    },
+    {
+        "caffeineLevel": "155",
+        "date": "",
+        "name": "Wicked Energy Drink"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Wicked Hammer Energy"
+    },
+    {
+        "caffeineLevel": "38",
+        "date": "",
+        "name": "Wild Cherry Pepsi"
+    },
+    {
+        "caffeineLevel": "90",
+        "date": "",
+        "name": "Winrgy Energy Drink"
+    },
+    {
+        "caffeineLevel": "188",
+        "date": "",
+        "name": "Wired X 3000 Energy Drink"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "Wired X Berry Rush"
+    },
+    {
+        "caffeineLevel": "344",
+        "date": "",
+        "name": "Wired X344 Energy Drink"
+    },
+    {
+        "caffeineLevel": "160",
+        "date": "",
+        "name": "Worx Energy Shot"
+    },
+    {
+        "caffeineLevel": "79",
+        "date": "",
+        "name": "X Ray Energy Drink"
+    },
+    {
+        "caffeineLevel": "93",
+        "date": "",
+        "name": "XAPP Protein Energy Drink"
+    },
+    {
+        "caffeineLevel": "35",
+        "date": "",
+        "name": "Xingtea Flavored Tea"
+    },
+    {
+        "caffeineLevel": "155",
+        "date": "",
+        "name": "Xingtea Green Tea Energy"
+    },
+    {
+        "caffeineLevel": "75",
+        "date": "",
+        "name": "Xingtea Just Plain Tea"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "XL Energy Drink"
+    },
+    {
+        "caffeineLevel": "50",
+        "date": "",
+        "name": "XO Energy Drink"
+    },
+    {
+        "caffeineLevel": "83",
+        "date": "",
+        "name": "XS Energy Drink"
+    },
+    {
+        "caffeineLevel": "180",
+        "date": "",
+        "name": "Xtazy Energy Drink"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "Xtreme Shock Energy Drink"
+    },
+    {
+        "caffeineLevel": "184",
+        "date": "",
+        "name": "Xyience Xenergy Energy Drink"
+    },
+    {
+        "caffeineLevel": "180",
+        "date": "",
+        "name": "Y.E.S. Energy Shot"
+    },
+    {
+        "caffeineLevel": "33",
+        "date": "",
+        "name": "Yellow Tea"
+    },
+    {
+        "caffeineLevel": "85",
+        "date": "",
+        "name": "Yerba Mate Tea"
+    },
+    {
+        "caffeineLevel": "0",
+        "date": "",
+        "name": "Yoo-Hoo Chocolate Drink"
+    },
+    {
+        "caffeineLevel": "150",
+        "date": "",
+        "name": "Zest Highly Caffeinated Tea"
+    },
+    {
+        "caffeineLevel": "45",
+        "date": "",
+        "name": "Zevia Cola"
+    },
+    {
+        "caffeineLevel": "100",
+        "date": "",
+        "name": "ZipFizz Energy Drink"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "ZizZazz Energy Drink"
+    },
+    {
+        "caffeineLevel": "125",
+        "date": "",
+        "name": "Zola Coconut Water Espresso"
+    },
+    {
+        "caffeineLevel": "80",
+        "date": "",
+        "name": "Zombie Blood Energy Potion"
+    },
+    {
+        "caffeineLevel": "200",
+        "date": "",
+        "name": "ZUM XR Energy Drink"
+    }
+]
