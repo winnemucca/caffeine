@@ -1,3 +1,5 @@
+var app = angular.module('myApp');
+
 app.controller('libraryController',function($scope,DrinkLibrary,Drink, ModalService, $modal, $log){
 
     $scope.currentPage = 1;

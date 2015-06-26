@@ -37,4 +37,8 @@
 	margin: auto;
 	padding: 10px 0;
 }
+
+.userInput input{
+	border-radius: 10px;
+}
 /*height of 800 px will not work on the cell phone view*/
