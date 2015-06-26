@@ -1,10 +1,12 @@
 var app = angular.module('myApp');
+
   app.controller('homeController',function($scope){
     $scope.greeting = 'hello world';
   });
   app.controller('caffeineAgentController',function($scope){
     $scope.greeting = 'CaffeineAgent';
   });
+
   app.controller('libraryController',function($scope,DrinkLibrary,Drink, ModalService, $modal, $log){
 
     $scope.currentPage = 1;
@@ -100,7 +102,7 @@ app.controller('drinkEditController',function(Drink,DrinkLibrary, $scope, $modal
 	  
 });
 
-app.controller('caffeineTableController',function(CaffeineMenu,$scope,$http){
+app.controller('caffeineTableController',function($scope,$http){
     
     // $scope.list=CaffeineMenu.getList;
     console.log($scope.list);
