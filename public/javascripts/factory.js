@@ -208,7 +208,9 @@ app.factory('ModalService', ['$modal', '$modalStack','$log',function($modal, $mo
                       success(function(data){
                         console.log(data);
                       });
-                    $modalInstance.close($scope.drink);               };
+
+                    $modalInstance.close($scope.drink);               
+                  };
 
                   $scope.cancel = function(){
                     $modalInstance.dismiss('cancel');
@@ -224,8 +226,6 @@ app.factory('ModalService', ['$modal', '$modalStack','$log',function($modal, $mo
               }
           });
           // end of modal open
-          
-
       }
     };
 }]);
