@@ -1,17 +1,18 @@
 var app = angular.module('myApp');
 
 app.factory('DrinkLibrary',function($http,Drink,$q){
+  
   function getDrinks(){
+
     return $http.get('/api/drinks').
-    success(function(data){
-      console.log(data);
-      return data;
+      success(function(data){
+        console.log(data);
+        return data;
     }).
-    error(function(data){
-      console.log('error');
+      error(function(data){
+        console.log('error');
     });
   }
-
 
   // function getDrinks2(){
   // 	var deferred = $q.defer();

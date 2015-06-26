@@ -1,4 +1,4 @@
-var app = angular.module('myApp');
+// var app = angular.module('myApp');
 
 app.factory('AuthService',['$q', '$timeout', '$http', function ($q, $timeout, $http) {
     // create user variable

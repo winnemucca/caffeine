@@ -7,9 +7,8 @@
     "animate.css": "latest",
     "moment": "~2.10.3",
     "d3": "~3.5.5",
-    "angular-strap": "~2.2.4",
     "angular": "1.3.13",
     "angular-utils-pagination": "~0.8.2",
-    "angularjs-datepicker": "~0.2.5"
+    "angular-ui-calendar": "~1.0.0"
   }
 }
