@@ -29,9 +29,18 @@
 
 	  <button type="submit" class="btn btn-default" ng-click="drinkList(defaultForm)">Submit</button>
 	</form>
-
-	<div class="table-responsive">
-		<table class="table table hover">
+	<div class="row">
+	<div class="table-responsive col-sm-6">
+		<!-- <table class="table table hover">
+			<thead>
+				<tr>
+					<th>Beverage</th>
+					<th>Beverage Date</th>
+					<th>Caffeine Amount</th>
+					<th>Beverage Description</th>
+				</tr>
+			</thead> -->
+			<table class="table table hover">
 			<thead>
 				<tr>
 					<th>Beverage</th>
@@ -41,7 +50,54 @@
 				</tr>
 			</thead>
 			<!-- <tbody ng-repeat="drink in allDrinkList | orderBy:'-date'"> -->
-			<tbody dir-paginate="drink in allDrinkList | orderBy:'-date'| itemsPerPage: pageSize" current-page="currentPage">
+			<tbody ng-repeat="drink in unEditableDrinkList | orderBy:'-date'|limitTo:10">
+				<td>[[drink.name]]</td>
+				<td>[[drink.date |date: format :timezone]]</td>
+				<td>[[drink.caffeineLevel]]</td>
+				<td>
+					<a ng-click="delete(drink._id)">
+						<i style="font-size:18px; margin-right:5%" class="fa fa-times"></i>
+					</a>
+
+					<a href="" ng-click="update(drink)">
+						<i style="font-size:22px;" class="fa fa-pencil-square-o"></i>
+					</a>
+				</td>
+			</tbody>
+		</table>
+			<!-- <tbody ng-repeat="drink in allDrinkList | orderBy:'-date'"> -->
+			<!-- <tbody dir-paginate="drink in unEditabledrinkSet | orderBy:'-date'| itemsPerPage: pageSize" current-page="currentPage">
+				<td>[[drink.name]]</td>
+				<td>[[drink.date |date: format :timezone]]</td>
+				<td>[[drink.caffeineLevel]]</td>
+				<td>
+					<a ng-click="delete(drink._id)">
+						<i style="font-size:18px; margin-right:5%" class="fa fa-times"></i>
+					</a>
+
+					<a href="" ng-click="update(drink)">
+						<i style="font-size:22px;" class="fa fa-pencil-square-o"></i>
+					</a>
+				</td>
+			</tbody>
+		</table> -->
+<!-- 
+		<dir-pagination-controls  template-url='/libs/angular-utils-pagination/dirPagination.tpl.html'></dir-pagination-controls> -->
+
+	</div>
+
+	<div class="table-responsive col-sm-6">
+		<table class="table table hover">
+			<thead>
+				<tr>
+					<th>Beverage</th>
+					<th>Beverage Date</th>
+					<th>Caffeine Amount</th>
+					<th>Beverage Description</th>
+				</tr>
+			</thead>
+			<tbody ng-repeat="drink in editableDrinkList | orderBy:'-date'|limitTo:10">
+			<!-- <tbody dir-paginate="drink in editableDrinkList | filter: drink.editable === true | orderBy:'-date'| itemsPerPage: pageSize" current-page="currentPage"> -->
 				<td>[[drink.name]]</td>
 				<td>[[drink.date |date: format :timezone]]</td>
 				<td>[[drink.caffeineLevel]]</td>
@@ -57,8 +113,9 @@
 			</tbody>
 		</table>
 
-		<dir-pagination-controls  template-url='/libs/angular-utils-pagination/dirPagination.tpl.html'></dir-pagination-controls>
+		<!-- <dir-pagination-controls  template-url='/libs/angular-utils-pagination/dirPagination.tpl.html'></dir-pagination-controls> -->
 
+	</div>
 	</div>
 
 </div>

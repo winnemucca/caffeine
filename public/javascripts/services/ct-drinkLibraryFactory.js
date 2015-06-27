@@ -2,32 +2,22 @@ var app = angular.module('myApp');
 
 app.factory('DrinkLibrary',function($http,Drink,$q){
   
-  function getDrinks(){
-
-    return $http.get('/api/drinks').
-      success(function(data){
-        console.log(data);
-        return data;
-    }).
-      error(function(data){
-        console.log('error');
-    });
+  function getAllDrinks(){
+    return $http.get('/api/drinks')
   }
 
-  // function getDrinks2(){
-  // 	var deferred = $q.defer();
-  //   $http.get('/api/drinks').
-  //   success(function(data){
-  //   	deferred.resolve(data);
-  //     	// console.log(data);
-  //     	// return data;
-  //   }).
-  //   error(function(data){
-  //     console.log('error');
-  //   });
-  //   return deferred.promise;
-  // }
 
+  // function getUneditableDrinks(){
+
+  //   return $http.get('/api/drinks').
+  //     success(function(data){
+  //       console.log(data);
+  //       return data;
+  //   }).
+  //     error(function(data){
+  //       console.log('error');
+  //   });
+  // }
 
   function addDrink(drink) {
     // var allDrinkList = [];
@@ -69,7 +59,7 @@ app.factory('DrinkLibrary',function($http,Drink,$q){
   }
 
   return {
-    getDrinks:getDrinks,
+    getAllDrinks:getAllDrinks,
     addDrink: addDrink,
     deleteDrink: deleteDrink,
     updateDrink:updateDrink

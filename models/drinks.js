@@ -1,13 +1,17 @@
 var mongoose = require('mongoose');
 
 var drinkSchema = mongoose.Schema({
-  name: String,
-  date: {
+	// user: {type: Number, ref:'myDrink'},
+  	name: String,
+  	date: {
     type:Date,
-    // default: new Date()
     default: Date.now()
-
   },
+  editable: {
+    	type: Boolean,
+    	default: true
+  },
+
   caffeineLevel: String
 });
 

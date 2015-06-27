@@ -13,22 +13,45 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, ModalServ
     };
     init();
 
-    var drinkSet = function(){
-      DrinkLibrary.getDrinks().success(function(data){
+    var editabledrinkSet = function(){
+      editableArray = [];
+      DrinkLibrary.getAllDrinks().success(function(data){
+        for (var i = 0; i < data.length; i++) {
+          if(data[i].editable) {
+            editableArray.push(data[i])
+          };
+        };
         $scope.currentPage = 1;
         $scope.pageSize = 15;
         // console.log(Drink.myCaffeineList);
-        $scope.allDrinkList = data;
+        $scope.editableDrinkList = editableArray;
       });
     };
 
-    drinkSet();
+    var unEditabledrinkSet = function(){
+      unEditableArray = [];
+      DrinkLibrary.getAllDrinks().success(function(data){
+        for (var i = 0; i < data.length; i++) {
+          if(!data[i].editable) {
+            unEditableArray.push(data[i])
+          };
+        };
+        $scope.currentPage = 1;
+        $scope.pageSize = 15;
+        // console.log(Drink.myCaffeineList);
+        $scope.unEditableDrinkList = unEditableArray;
+      });
+    };
+
+    editabledrinkSet();
+    unEditabledrinkSet();
 
     $scope.drinkList= function(obj) {
       var newdrink = new Drink(obj.beverageName, obj.date, obj.caffeineLevel);
       DrinkLibrary.addDrink(newdrink).success(function(data){
         $scope.message = 'success';
-        drinkSet();
+        editabledrinkSet();
+        unEditabledrinkSet();
       });
       init();
     };
@@ -36,7 +59,8 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, ModalServ
     $scope.delete=function(id){
       DrinkLibrary.deleteDrink(id).success(function(data){
         // $scope.allDrinkList = data;
-        drinkSet();
+        editabledrinkSet();
+        unEditabledrinkSet();
         console.log(data);
       });
     };

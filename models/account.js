@@ -9,7 +9,10 @@ var Account  = new Schema({
 		lowercase:true,
 		unique: true
 	},
-	password: String
+	password: {
+		type: String,
+		required: true
+	}
 });
 
 Account.plugin(passportLocalMongoose);
