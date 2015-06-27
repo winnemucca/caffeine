@@ -4,7 +4,9 @@ var drinkSchema = mongoose.Schema({
   name: String,
   date: {
     type:Date,
-    default: new Date()
+    // default: new Date()
+    default: Date.now()
+
   },
   caffeineLevel: String
 });

@@ -2,8 +2,6 @@ var app = angular.module('myApp');
 
 app.controller('libraryController',function($scope,DrinkLibrary,Drink, ModalService, $modal, $log){
 
-    $scope.currentPage = 1;
-    $scope.pageSize = 15;
 
     // $scope.totalItems = ;
     var init = function() {
@@ -18,7 +16,7 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, ModalServ
     var drinkSet = function(){
       DrinkLibrary.getDrinks().success(function(data){
         $scope.currentPage = 1;
-        $scope.pageSize = 5;
+        $scope.pageSize = 15;
         // console.log(Drink.myCaffeineList);
         $scope.allDrinkList = data;
       });
