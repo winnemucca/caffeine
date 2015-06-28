@@ -16,7 +16,7 @@
 			</tr>
 		</thead>
 
-		<tbody dir-paginate="drink in drinks|filter:search| orderBy:'name'|itemsPerPage:pageSize" current-page="currentPage">
+		<tbody ng-repeat="drink in drinks |limitTo:10 |filter:search" >
 			<td>[[drink.name]] </td>
 			<td>[[drink.size]] </td>
 			<td>[[drink.mgFloz]] </td>
@@ -26,5 +26,4 @@
 		
 	</table>
 
-	<dir-pagination-controls template-url='libs/angular-utils-pagination/dirPagination.tpl.html'></dir-pagination-controls>
 </div>

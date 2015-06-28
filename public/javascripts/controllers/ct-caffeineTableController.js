@@ -13,6 +13,5 @@ var app = angular.module('myApp');
         error(function(data){
         console.log('error');
       });
-        $scope.currentPage = 1;
-        $scope.pageSize = 10;
+        
   });

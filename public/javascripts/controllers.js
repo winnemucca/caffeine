@@ -216,20 +216,5 @@ app.controller('registerController',function($scope){
 
 
 
-// app.directives('lineChart',[
-// 	function(){
-// 		return {
-// 			restrict: 'E',
-// 			scope: {
-// 				data: '='
-// 			},
-// 			link: function(scope, element){
-// 				var margin = {top: 20, right: 20, bottom: 30, left: 40},
-//           			width = 480 - margin.left - margin.right,
-//           			height = 360 - margin.top - margin.bottom;
-// 			}
-// 		}
-// 	}
-// 	])
 
 
