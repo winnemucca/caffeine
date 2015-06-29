@@ -13,9 +13,6 @@ var express = require('express'),
 
 var phantom=require('node-phantom-simple');
 
-
-
-
 // routers
 var apiRoutes = require('./routes/api');
 var routes = require('./routes/index');
