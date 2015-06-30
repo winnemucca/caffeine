@@ -6,27 +6,10 @@ app.factory('DrinkLibrary',function($http,Drink,$q){
     return $http.get('/api/drinks')
   }
 
-
-  // function getUneditableDrinks(){
-
-  //   return $http.get('/api/drinks').
-  //     success(function(data){
-  //       console.log(data);
-  //       return data;
-  //   }).
-  //     error(function(data){
-  //       console.log('error');
-  //   });
-  // }
-
   function addDrink(drink) {
-    // var allDrinkList = [];
-    // this.allDrinkList.push(drink);
+    
     return $http.post('/api/drinks',drink).
     success(function(data){
-    // this.allDrinkList.push(data);
-
-      // allDrinkList.push(data);
       console.log(data);
       return data;
     }).

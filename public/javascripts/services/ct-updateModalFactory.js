@@ -13,12 +13,8 @@ app.factory('ModalService', ['$modal', '$modalStack','$log',function($modal, $mo
                     success(function(data){
                       console.log(data);
                       $modalInstance.close($scope.drink);               
-
-                    });
-        
-                    // end of success
-                  // $modalInstance.close($scope.drink);               
-                };
+                    });            
+                  };
                   $scope.cancel = function(){
                     $modalInstance.dismiss('cancel');
                   };

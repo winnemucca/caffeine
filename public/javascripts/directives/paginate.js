@@ -2,7 +2,7 @@ angular.module('myApp').controller('PaginationDemoCtrl', function ($scope, $log,
   console.log('connected');
   $scope.pageSize = 4;
   $scope.currentPage = 1;
-
+  getData();
   function getData(){
     DrinkLibrary.getAllDrinks().success(function(data){
       $scope.totalItems = data;
