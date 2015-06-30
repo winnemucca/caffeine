@@ -1,18 +1,23 @@
 var mongoose = require('mongoose');
 
-var myDrinkSchema = mongoose.Schema({
-  _id: Number,
+var MyDrinkSchema = mongoose.Schema({
+  // _id: Number,
   name: String,
+  postedBy: {
+  	type:mongoose.Schema.Types.ObjectId,
+  	ref: 'accounts'
+  },
   date: {
-    type:Date,
+    type: Date,
     default: Date.now()
   },
-  caffeineLevel: String
-  drinks: [{type: Schema.Types.ObjectId,ref:'Drink'}];
+  caffeineLevel: String,
+  drinks: [{type: mongoose.Schema.Types.ObjectId,
+  	ref:'Drink'}]
   // setting it to an array of ObjectIds
 });
 
-var myDrink = mongoose.model('myDrink',myDrinkSchema);
+var myDrink = mongoose.model('MyDrink',MyDrinkSchema);
 
 module.exports = myDrink;
 
