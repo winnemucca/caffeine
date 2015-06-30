@@ -4,8 +4,6 @@ var router = express.Router();
 var Drink = require('../models/drinks.js');
 
 
-
-
 // get all drinks from collection
 router.get('/drinks',function(req,res){
   Drink.find(function(err,result){

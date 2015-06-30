@@ -43,9 +43,9 @@
 				<td>[[drink.date |date: format :timezone]]</td>
 				<td>[[drink.caffeineLevel]]</td>
 				<td>
-					<a ng-click="delete(drink._id)">
+					<!-- <a ng-click="delete(drink._id)">
 						<i style="font-size:18px; margin-right:5%" class="fa fa-times"></i>
-					</a>
+					</a> -->
 
 					<a href="" ng-click="update(drink)">
 						<i style="font-size:22px;" class="fa fa-pencil-square-o"></i>
@@ -83,7 +83,8 @@
 			</tbody>
 		</table>
 
-		<!-- <dir-pagination-controls  template-url='/libs/angular-utils-pagination/dirPagination.tpl.html'></dir-pagination-controls> -->
+		<pagination total-items="totalItems" ng-model="currentPage" ng-change="pageChanged()"></pagination>
+	
 
 	</div>
 	</div>

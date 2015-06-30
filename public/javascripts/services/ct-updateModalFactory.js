@@ -3,19 +3,21 @@ var app = angular.module('myApp');
 app.factory('ModalService', ['$modal', '$modalStack','$log',function($modal, $modalStack, $log) {
     return {
       trigger:function(selectedDrink){
-        var modalInstance = $modal.open({
+              return $modal.open({
               templateUrl: 'templates/editCaffeineDrink.html',
               controller: function($scope,$modalInstance,drink,DrinkLibrary,Drink){
 
-                $scope.drink = drink;
+                $scope.drink = drink.editable ? drink : angular.copy(drink);
                   $scope.ok = function(id){
                   DrinkLibrary.updateDrink(id,$scope.drink).
                     success(function(data){
                       console.log(data);
+                      $modalInstance.close($scope.drink);               
+
                     });
         
                     // end of success
-                  $modalInstance.close($scope.drink);               
+                  // $modalInstance.close($scope.drink);               
                 };
                   $scope.cancel = function(){
                     $modalInstance.dismiss('cancel');

@@ -48,6 +48,10 @@ app.factory('DrinkLibrary',function($http,Drink,$q){
 
   function updateDrink(id,payload){
   	// need a payload for put and for post
+    // 
+    if(!payload.editable){
+      return addDrink(angular.copy(payload,{editable:true}))
+    } 
     return $http.put('/api/drink/'+id,payload).
       success(function(data){
         console.log(data);

@@ -21,8 +21,9 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, ModalServ
             editableArray.push(data[i])
           };
         };
-        $scope.currentPage = 1;
-        $scope.pageSize = 15;
+        // $scope.currentPage = 1;
+        // $scope.pageSize = 4;
+        $scope.totalItems = editableArray.length;
         // console.log(Drink.myCaffeineList);
         $scope.editableDrinkList = editableArray;
       });
@@ -37,7 +38,7 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, ModalServ
           };
         };
         $scope.currentPage = 1;
-        $scope.pageSize = 15;
+        $scope.pageSize = 4;
         // console.log(Drink.myCaffeineList);
         $scope.unEditableDrinkList = unEditableArray;
       });
@@ -66,7 +67,16 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, ModalServ
     };
 
     // here is my service modal
-    $scope.update=ModalService.trigger;
+    $scope.update = function(drink) {
+      ModalService.trigger(drink).result.then(function() {
+      editabledrinkSet();
+      });
+    }
+    // $scope.update=ModalService.trigger;
+
+    // pagination
+    $scope.totalItems = 
+    $scope.currentPage =1;
 
     // date picker 
     
