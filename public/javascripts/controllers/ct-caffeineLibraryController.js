@@ -15,16 +15,26 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, ModalServ
 
     var editabledrinkSet = function(){
       editableArray = [];
+
       DrinkLibrary.getAllDrinks().success(function(data){
         for (var i = 0; i < data.length; i++) {
           if(data[i].editable) {
             editableArray.push(data[i])
           };
         };
-        // $scope.currentPage = 1;
-        // $scope.pageSize = 4;
+        $scope.currentPage = 1;
         $scope.totalItems = editableArray.length;
-        // console.log(Drink.myCaffeineList);
+
+        $scope.itemsPerPage =10;
+        $scope.maxSize = 10;
+
+        $scope.setPage = function(pageNo) {
+          $scope.currentPage = pageNo;
+        }
+        $scope.pageChanged = function() {
+          $log.log('Page changed to: ' + $scope.currentPage);
+        };
+        
         $scope.editableDrinkList = editableArray;
       });
     };
@@ -49,17 +59,21 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, ModalServ
     $scope.drinkList= function(obj) {
       var newdrink = new Drink(obj.beverageName, obj.date, obj.caffeineLevel);
       DrinkLibrary.addDrink(newdrink).success(function(data){
-          $scope.currentPage=1;
-          $scope.numPerPage =20;
-          $scope.maxSize=20;
-          $scope.$watch("currentPage + numPerPage", function() {
-          var begin = (($scope.currentPage - 1) * $scope.numPerPage)
-          ,end = begin + $scope.numPerPage;
-          });
+          // $scope.currentPage=1;
+          // $scope.numPerPage =20;
+          // $scope.maxSize=20;
+          // $scope.$watch("currentPage + numPerPage", function() {
+          //   var begin = (($scope.currentPage - 1) * $scope.numPerPage)
+          //   ,end = begin + $scope.numPerPage;
+          // });
+          // $scope.filteredDrinks = $scope.todos.slice(begin, end);
+          // $scope.pageChanged = function(){
 
-        $scope.message = 'success';
-        editabledrinkSet();
-        unEditabledrinkSet();
+          // }
+
+          // $scope.message = 'success';
+          editabledrinkSet();
+          unEditabledrinkSet();
       });
       init();
     };
@@ -79,14 +93,56 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, ModalServ
       editabledrinkSet();
       });
     };
-
+    // paginate
     // $scope.currentPage=1;
-    // $scope.numPerPage =20;
+    // $scope.numPerPage =10;
     // $scope.maxSize=5;
     // $scope.$watch("currentPage + numPerPage", function() {
     //   var begin = (($scope.currentPage - 1) * $scope.numPerPage)
     //   ,end = begin + $scope.numPerPage;
 
     // });
+
+
+// datepicker
+  $scope.today = function() {
+      $scope.dt = new Date();
+    };
+    $scope.today();
+
+    $scope.clear = function () {
+      $scope.dt = null;
+    };
+
+    // Disable weekend selection
+    $scope.disabled = function(date, mode) {
+      return ( mode === 'day' && ( date.getDay() === 0 || date.getDay() === 6 ) );
+    };
+    $scope.open = function($event) {
+      $event.preventDefault();
+      $event.stopPropagation();
+      $scope.opened = true;
+    };
+    $scope.dateOptions = {
+      formatYear: 'yy',
+      startingDay: 1
+    };
+
+    $scope.formats = ['dd-MMMM-yyyy', 'yyyy/MM/dd', 'dd.MM.yyyy', 'shortDate'];
+    $scope.format = $scope.formats[0];
+
+    $scope.getDayClass = function(date, mode) {
+      if (mode === 'day') {
+        var dayToCheck = new Date(date).setHours(0,0,0,0);
+        for (var i=0;i<$scope.events.length;i++){
+          var currentDay = new Date($scope.events[i].date).setHours(0,0,0,0);
+          if (dayToCheck === currentDay) {
+            return $scope.events[i].status;
+          }
+        }
+      }
+      return '';
+    };
+
 
 });
