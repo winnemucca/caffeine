@@ -37,8 +37,7 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, ModalServ
             unEditableArray.push(data[i])
           };
         };
-        $scope.currentPage = 1;
-        $scope.pageSize = 4;
+     
         // console.log(Drink.myCaffeineList);
         $scope.unEditableDrinkList = unEditableArray;
       });
@@ -50,6 +49,14 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, ModalServ
     $scope.drinkList= function(obj) {
       var newdrink = new Drink(obj.beverageName, obj.date, obj.caffeineLevel);
       DrinkLibrary.addDrink(newdrink).success(function(data){
+          $scope.currentPage=1;
+          $scope.numPerPage =20;
+          $scope.maxSize=20;
+          $scope.$watch("currentPage + numPerPage", function() {
+          var begin = (($scope.currentPage - 1) * $scope.numPerPage)
+          ,end = begin + $scope.numPerPage;
+          });
+
         $scope.message = 'success';
         editabledrinkSet();
         unEditabledrinkSet();
@@ -71,52 +78,15 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, ModalServ
       ModalService.trigger(drink).result.then(function() {
       editabledrinkSet();
       });
-    }
-    // $scope.update=ModalService.trigger;
-
-    // pagination
-    $scope.totalItems = 
-    $scope.currentPage =1;
-
-    // date picker 
-    
-    $scope.today = function() {
-      $scope.dt = new Date();
-    };
-    $scope.today();
-
-    $scope.clear = function () {
-      $scope.dt = null;
     };
 
-    // Disable weekend selection
-    $scope.disabled = function(date, mode) {
-      return ( mode === 'day' && ( date.getDay() === 0 || date.getDay() === 6 ) );
-    };
-    $scope.open = function($event) {
-      $event.preventDefault();
-      $event.stopPropagation();
-      $scope.opened = true;
-    };
-    $scope.dateOptions = {
-      formatYear: 'yy',
-      startingDay: 1
-    };
+    // $scope.currentPage=1;
+    // $scope.numPerPage =20;
+    // $scope.maxSize=5;
+    // $scope.$watch("currentPage + numPerPage", function() {
+    //   var begin = (($scope.currentPage - 1) * $scope.numPerPage)
+    //   ,end = begin + $scope.numPerPage;
 
-    $scope.formats = ['dd-MMMM-yyyy', 'yyyy/MM/dd', 'dd.MM.yyyy', 'shortDate'];
-    $scope.format = $scope.formats[0];
-
-    $scope.getDayClass = function(date, mode) {
-      if (mode === 'day') {
-        var dayToCheck = new Date(date).setHours(0,0,0,0);
-        for (var i=0;i<$scope.events.length;i++){
-          var currentDay = new Date($scope.events[i].date).setHours(0,0,0,0);
-          if (dayToCheck === currentDay) {
-            return $scope.events[i].status;
-          }
-        }
-      }
-      return '';
-    };
+    // });
 
 });

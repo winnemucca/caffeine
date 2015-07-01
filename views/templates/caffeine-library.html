@@ -55,7 +55,13 @@
 					</td>
 				</tr>
 			</tbody>
+			
 		</table>
+		<pagination 
+		  ng-model="currentPage"
+		  total-items="unEditableDrinkList.length"
+		  boundary-links="true">
+		</pagination>
 			
 
 	</div>
