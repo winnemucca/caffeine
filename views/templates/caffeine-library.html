@@ -3,116 +3,134 @@
 		<h1>Drink Library </h1>
 	</div>
 
-	<form class="form-horizontal" novalidate>
-	  <div class="form-group">
-	    <label for="name">beverageName</label>
-	    <input type="text" class="form-control" id="drinkName" placeholder="beverage name" ng-model="defaultForm.beverageName">
-	  </div>
-	 
-	  <div class="form-group">
-	    <label for="caffeine-level">caffeine-level</label>
-	    <input type="text" class="form-control" id="caffeine-level" placeholder="caffeine-level" ng-model="defaultForm.caffeineLevel">
-	  </div>
-
-
-	  <div class="form-group input-group">
-
-	  	<input  class="form-control" id="date" placeholder="date" ng-model="defaultForm.date" datepicker-popup ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions"  date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
-        <span class="input-group-btn">
-            <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
-       </span>
-	  	
-	  </div>
-
-	  <button type="submit" class="btn btn-default" ng-click="drinkList(defaultForm)">Submit</button>
-	</form>
 	<div class="row">
-	<div class="table-responsive col-sm-6">
-			<table class="table table hover">
-			<thead>
-				<tr>
-					<th>Beverage</th>
-					<th>Beverage Date</th>
-					<th>Caffeine Amount</th>
-					<th>Beverage Description</th>
-				</tr>
-			</thead>
-			
-			<tbody>
-				<tr ng-repeat="drink in unEditableDrinkList | orderBy:'-date'|limitTo:10">
+		<form class="form-horizontal" novalidate>
+		  <div class="form-group">
+		    <label for="name">beverageName</label>
+		    <input type="text" class="form-control" id="drinkName" placeholder="beverage name" ng-model="defaultForm.beverageName">
+		  </div>
+		 
+		  <div class="form-group">
+		    <label for="caffeine-level">caffeine-level</label>
+		    <input type="text" class="form-control" id="caffeine-level" placeholder="caffeine-level" ng-model="defaultForm.caffeineLevel">
+		  </div>
 
-					<td>[[drink.name]]</td>
-					<td>[[drink.date |date: format :timezone]]</td>
-					<td>[[drink.caffeineLevel]]</td>
-					<td>
 
-						<!-- <a ng-click="delete(drink._id)">
-							<i style="font-size:18px; margin-right:5%" class="fa fa-times"></i>
-						</a> -->
+		  <div class="form-group input-group">
+		  	<!-- <label>Date</label> -->
+		  	<input  class="form-control" id="date" placeholder="date" ng-model="defaultForm.date" datepicker-popup ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions"  date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+	        <span class="input-group-btn">
+	            <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+	       </span>
+		  	
+		  </div>
 
-						<a href="" ng-click="update(drink)">
-							<i style="font-size:22px;" class="fa fa-pencil-square-o"></i>
-						</a>
-					</td>
-				</tr>
-			</tbody>
-			
-		</table>
-		<!-- <pagination 
-		  ng-model="currentPage"
-		  total-items="unEditableDrinkList.length"
-		  boundary-links="true">
-		</pagination> -->
-			
-
+		  <button type="submit" class="btn btn-default" ng-click="drinkList(defaultForm)">Submit</button>
+		</form>
 	</div>
 
-	<div class="table-responsive col-sm-6">
-		<table class="table table hover">
-			<thead>
-				<tr>
-					<th>Beverage</th>
-					<th>Beverage Date</th>
-					<th>Caffeine Amount</th>
-					<th>Beverage Description</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr ng-repeat="drink in editableDrinkList.slice(((currentPage-1)*maxSize), ((currentPage)*maxSize)) track by $index">
-
-				<!-- <tr ng-repeat="drink in editableDrinkList | orderBy:'-date'">  -->
-					<td>[[drink.name]]</td>
-					<td>[[drink.date |date: format :timezone]]</td>
-					<td>[[drink.caffeineLevel]]</td>
-					<td>
-						<a ng-click="delete(drink._id)">
-							<i style="font-size:18px; margin-right:5%" class="fa fa-times"></i>
-						</a>
-
-						<a href="" ng-click="update(drink)">
-							<i style="font-size:22px;" class="fa fa-pencil-square-o"></i>
-						</a>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-
-		<pagination  
-			total-items="totalItems" 
-			ng-model="currentPage" 
-			items-per-page="itemsPerPage" 
-			ng-change="pageChanged()" 
-			ng-click="setPage(currentPage)">
-		</pagination>
-
-		<div> 
-			<p>total Items [[totalItems]]</p>
-			<p>itemsPerPage [[itemsPerPage]]</p>
-			<p>current page [[currentPage]]</p>
+	<div class="row caffInfoTables">
+		<div class="form-group">
+			<div class="btn-group btn-group-justified" role="group">
+		        <div class="btn-group" role="group">
+				    <button type="button" class="btn btn-primary" ng-click="click()">All</button>
+				</div>
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-primary" ng-click="">Coffee</button>
+			  	</div>
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-primary" ng-click="">Soda</button>
+				</div>
+				<div class="btn-group" role="group">
+				    <button type="button" class="btn btn-primary" ng-click="">Energy Drinks</button>
+				</div>
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-primary" ng-click="">Tea</button>
+			  	</div>
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-primary" ng-click="">Energy Shotsprimary< ng-click=""/button>
+				</div>
+			</div>
 		</div>
-	
+		<div class="form-group">
+			<input type="text" class="drinkSearch" ng-model="search"  placeholder="search" />
+		</div>
 
-	</div>
-	</div>
+		<div class="table-responsive col-sm-6 caffDataTable">
 
-</div>
+			<table class="table table-hover scrollTable" style="table-layout:fixed">
+
+				<thead>
+					<tr>
+						<th>Beverage</th>
+						<th>Beverage Date</th>
+						<th>Caffeine Amount</th>
+						<th>Beverage Description</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					<tr class="unEditableDrinks" ng-repeat="drink in unEditableDrinkList | orderBy:'-date'|limitTo:100|filter:search">
+
+						<td>[[drink.name]]</td>
+						<td>[[drink.date |date: format :timezone]]</td>
+						<td>[[drink.caffeineLevel]]</td>
+						<td>
+							<!-- <a ng-click="delete(drink._id)">
+								<i style="font-size:18px; margin-right:5%" class="fa fa-times"></i>
+							</a> -->
+							<a href="" ng-click="update(drink)">
+								<i style="font-size:22px;" class="fa fa-pencil-square-o"></i>
+							</a>
+						</td>
+					</tr>
+				</tbody>
+				
+			</table>
+		
+		</div>
+
+				
+
+		<div class="table-responsive col-sm-6 caffDataTable">
+
+			<table class="table table-hover">
+
+				<thead>
+					<tr>
+						<th>Beverage</th>
+						<th>Beverage Date</th>
+						<th>Caffeine Amount</th>
+						<th>Beverage Description</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr ng-repeat="drink in editableDrinkList.slice(((currentPage-1)*maxSize), ((currentPage)*maxSize)) track by $index |orderBy:'-date'">
+						<td>[[drink.name]]</td>
+						<td>[[drink.date |date: format :timezone]]</td>
+						<td>[[drink.caffeineLevel]]</td>
+						<td>
+							<a ng-click="delete(drink._id)">
+								<i style="font-size:18px; margin-right:5%" class="fa fa-times"></i>
+							</a>
+							<a href="" ng-click="update(drink)">
+								<i style="font-size:22px;" class="fa fa-pencil-square-o"></i>
+							</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<pagination  
+					total-items="totalItems" 
+					ng-model="currentPage" 
+					items-per-page="itemsPerPage" 
+					ng-change="pageChanged()" 
+					ng-click="setPage(currentPage)">
+			</pagination>
+
+
+		</div>  <!-- end of editable table -->
+	</div>  <!-- end of row -->
+
+</div> <!-- //end of container -->

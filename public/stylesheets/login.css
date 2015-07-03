@@ -13,9 +13,7 @@
 	font-family: 'Lato',serif;
 	color: white;
 	background: url('../images/caffeineBeans.png');
-	height: 800px
-
-
+	height: 800px;
 }
 
 .logo-header {
@@ -28,7 +26,6 @@
 
 .form-login {
 	background: rgba(73, 137, 180, 0.81);
-		/*background: rgba(254, 148, 0, 0.81);*/
 
 }
 
@@ -41,4 +38,3 @@
 .userInput input{
 	border-radius: 10px;
 }
-/*height of 800 px will not work on the cell phone view*/

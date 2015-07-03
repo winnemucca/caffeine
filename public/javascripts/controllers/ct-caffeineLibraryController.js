@@ -13,6 +13,10 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, ModalServ
     };
     init();
 
+    $scope.click=function() {
+      console.log(clicked);
+    }
+
     var editabledrinkSet = function(){
       editableArray = [];
 
@@ -39,12 +43,23 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, ModalServ
       });
     };
 
+   var str = '123z56';
+  
+    for(var i =0; i<str.length;i++) {
+      if(str.match(/[a-z]/i)){
+        console.log('true');
+      }
+      else{
+        console.log(false);
+      }
+    }    
+    
     var unEditabledrinkSet = function(){
       unEditableArray = [];
       DrinkLibrary.getAllDrinks().success(function(data){
-        for (var i = 0; i < data.length; i++) {
-          if(!data[i].editable) {
-            unEditableArray.push(data[i])
+          for (var i = 0; i < data.length; i++) {
+            if(!data[i].editable) {
+              unEditableArray.push(data[i])
           };
         };
      
@@ -59,19 +74,6 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, ModalServ
     $scope.drinkList= function(obj) {
       var newdrink = new Drink(obj.beverageName, obj.date, obj.caffeineLevel);
       DrinkLibrary.addDrink(newdrink).success(function(data){
-          // $scope.currentPage=1;
-          // $scope.numPerPage =20;
-          // $scope.maxSize=20;
-          // $scope.$watch("currentPage + numPerPage", function() {
-          //   var begin = (($scope.currentPage - 1) * $scope.numPerPage)
-          //   ,end = begin + $scope.numPerPage;
-          // });
-          // $scope.filteredDrinks = $scope.todos.slice(begin, end);
-          // $scope.pageChanged = function(){
-
-          // }
-
-          // $scope.message = 'success';
           editabledrinkSet();
           unEditabledrinkSet();
       });
@@ -93,15 +95,7 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, ModalServ
       editabledrinkSet();
       });
     };
-    // paginate
-    // $scope.currentPage=1;
-    // $scope.numPerPage =10;
-    // $scope.maxSize=5;
-    // $scope.$watch("currentPage + numPerPage", function() {
-    //   var begin = (($scope.currentPage - 1) * $scope.numPerPage)
-    //   ,end = begin + $scope.numPerPage;
-
-    // });
+  
 
 
 // datepicker

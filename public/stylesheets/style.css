@@ -147,3 +147,67 @@ a {
 footer {
 	margin-top: 60px;
 }
+
+.caffInfoTables {
+	padding-top: 20px;
+	height: 400px;
+}
+
+.caffDataTable {
+	height: 100%;
+	overflow: auto;
+}
+.scrollTable {
+	overflow: scroll;
+}
+
+.unEditableDrinks {
+	position: relative;
+}
+
+.unEditableDrinks.ng-enter-stagger,
+.unEditableDrinks.ng-leave-stagger, 
+.unEditableDrinks.ng-leave-stagger {
+ 
+  /* 200ms will be applied between each sucessive enter operation */ 
+  -webkit-animation-delay:0.2s;
+  animation-delay:0.2s;
+
+  /* this is here to avoid accidental CSS inheritance */
+  -webkit-animation-duration:0;
+  /*animation-duration:0;*/
+}
+
+
+.unEditableDrinks.ng-move,
+.unEditableDrinks.ng-enter {
+  opacity: 0;
+  -webkit-animation:enter_animation 0.3s;
+  animation:enter_animation 0.3s;
+}
+
+.unEditableDrinks.ng-leave {
+  -webkit-animation:leave_animation 0.3s;
+  animation:leave_animation 0.3s;
+}
+
+
+@-webkit-keyframes enter_animation {
+  from { opacity:0; }
+  to { opacity:1; }
+}
+
+@keyframes enter_animation {
+  from { opacity:0; }
+  to { opacity:1; }
+}
+
+@-webkit-keyframes leave_animation {
+  from { opacity:1; }
+  to { opacity:0; }
+}
+
+@keyframes leave_animation {
+  from { opacity:1; }
+  to { opacity:0; }
+}
