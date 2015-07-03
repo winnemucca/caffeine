@@ -42,17 +42,7 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, ModalServ
         $scope.editableDrinkList = editableArray;
       });
     };
-
-   var str = '123z56';
-  
-    for(var i =0; i<str.length;i++) {
-      if(str.match(/[a-z]/i)){
-        console.log('true');
-      }
-      else{
-        console.log(false);
-      }
-    }    
+ 
     
     var unEditabledrinkSet = function(){
       unEditableArray = [];
