@@ -21,8 +21,13 @@ var caffeineRoutes = require('./routes/caffeine');
 // instance of express
 var app = express();
 
-var mongoUri = process.env.MONGOLAB_URI ||'mongodb://localhost/caffeine';
-mongoose.connect(mongoUri);
+var mongoUri = process.env.MONGOLAB_URI || 'mongodb://localhost/caffeine';
+mongoose.connect(mongoUri, function (err, db) {
+  if (err) {
+    console.log(err);
+  }
+  console.log("connected!");
+});
 
 // connect to mongoose
 // mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/caffeine');
