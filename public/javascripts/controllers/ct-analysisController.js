@@ -3,7 +3,7 @@ var app = angular.module('myApp');
 app.controller('analysisController',['Drink','DrinkLibrary','$scope','$timeout',function(Drink,DrinkLibrary,$scope,$timeout){
 
 	$scope.caffeineData = []; // could also set via $scope.caffeineData
-  	DrinkLibrary.getDrinks().success(function(data){
+  	DrinkLibrary.getAllDrinks().success(function(data){
   		$scope.caffeineData = data;
     	console.log($scope.caffeineData);
     	// return $scope.caffeineData;
