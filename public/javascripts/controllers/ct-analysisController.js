@@ -1,6 +1,6 @@
 var app = angular.module('myApp');
 
-app.controller('analysisController',function(Drink,DrinkLibrary,$scope,$timeout){
+app.controller('analysisController',['Drink','DrinkLibrary','$scope','$timeout',function(Drink,DrinkLibrary,$scope,$timeout){
 
 	$scope.caffeineData = []; // could also set via $scope.caffeineData
   	DrinkLibrary.getDrinks().success(function(data){
@@ -100,4 +100,4 @@ app.controller('analysisController',function(Drink,DrinkLibrary,$scope,$timeout)
     $scope.eventSources = [$scope.events, $scope.eventSource];
 
 
-});
+}]);

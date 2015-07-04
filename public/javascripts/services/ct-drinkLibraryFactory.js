@@ -1,6 +1,6 @@
 var app = angular.module('myApp');
 
-app.factory('DrinkLibrary',function($http,Drink,$q){
+app.factory('DrinkLibrary',['$http','Drink','$q',function($http,Drink,$q) {
   
   function getAllDrinks(){
     return $http.get('/api/drinks')
@@ -51,4 +51,4 @@ app.factory('DrinkLibrary',function($http,Drink,$q){
     deleteDrink: deleteDrink,
     updateDrink:updateDrink
   };
-});
+}]);

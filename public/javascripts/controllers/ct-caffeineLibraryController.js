@@ -1,6 +1,6 @@
 var app = angular.module('myApp');
 
-app.controller('libraryController',function($scope,DrinkLibrary,Drink, ModalService, $modal, $log){
+app.controller('libraryController',['$scope','DrinkLibrary','Drink','ModalService','$modal','$log',function($scope,DrinkLibrary,Drink, ModalService, $modal, $log){
 
 
     // $scope.totalItems = ;
@@ -129,4 +129,4 @@ app.controller('libraryController',function($scope,DrinkLibrary,Drink, ModalServ
     };
 
 
-});
+}]);

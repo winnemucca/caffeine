@@ -1,5 +1,5 @@
 var app = angular.module('myApp');
 
-	app.controller('registerController',function($scope){
+	app.controller('registerController',['$scope',function($scope){
 		console.log('connected');
-	});
+	}]);

@@ -1,6 +1,6 @@
 var app = angular.module('myApp');
 
-app.factory('Drink',function($http) {
+app.factory('Drink',['$http',function($http) {
   var Drink = function(name,date,caffeineLevel,size,mgFloz) {
     this.name = name;
     // this.date = moment(date).format('L');
@@ -10,4 +10,4 @@ app.factory('Drink',function($http) {
     this.mgFloz=mgFloz;
   };
   return Drink;
-});
+}]);

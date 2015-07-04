@@ -1,6 +1,6 @@
 var app = angular.module('myApp');
 
-  app.controller('caffeineTableController',function($scope,$http){
+  app.controller('caffeineTableController',['$scope','$http',function($scope,$http){
       
       // $scope.list=CaffeineMenu.getList;
       console.log($scope.list);
@@ -14,4 +14,4 @@ var app = angular.module('myApp');
         console.log('error');
       });
         
-  });
+  }]);
