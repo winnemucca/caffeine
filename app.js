@@ -26,7 +26,7 @@ mongoose.connect(mongoUri, function (err, db) {
   if (err) {
     console.log(err);
   }
-  console.log("connected!");
+  console.log('connected!');
 });
 
 // connect to mongoose
