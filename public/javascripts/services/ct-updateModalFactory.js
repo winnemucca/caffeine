@@ -6,8 +6,8 @@ app.factory('ModalService', ['$modal', '$modalStack','$log',function($modal, $mo
               return $modal.open({
               templateUrl: 'templates/editCaffeineDrink.html',
               controller: function($scope,$modalInstance,drink,DrinkLibrary,Drink){
-
                 $scope.drink = drink.editable ? drink : angular.copy(drink);
+                console.log('drink',$scope.drink.date)
                   $scope.ok = function(id){
                   DrinkLibrary.updateDrink(id,$scope.drink).
                     success(function(data){
@@ -22,7 +22,7 @@ app.factory('ModalService', ['$modal', '$modalStack','$log',function($modal, $mo
 
               },
               // end of controller
-              size: 'lg',
+              size: 'sm',
               resolve: {
                     // resolve the drink
                   drink: function () {

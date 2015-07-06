@@ -275,7 +275,7 @@ var app = angular.module('myApp');
 app.directive("calendar", function() {
     return {
         restrict: "E",
-        templateUrl: "javascripts/directives/calender2.html",
+        templateUrl: "javascripts/directives/calendar.html",
         scope: {
             selected: "="
         },

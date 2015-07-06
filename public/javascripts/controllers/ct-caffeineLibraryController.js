@@ -28,9 +28,10 @@ app.controller('libraryController',['$scope','DrinkLibrary','Drink','ModalServic
         };
         $scope.currentPage = 1;
         $scope.totalItems = editableArray.length;
-
         $scope.itemsPerPage =10;
         $scope.maxSize = 10;
+
+      
 
         $scope.setPage = function(pageNo) {
           $scope.currentPage = pageNo;

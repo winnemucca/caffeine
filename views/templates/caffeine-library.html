@@ -106,7 +106,8 @@
 				</thead>
 
 				<tbody>
-					<tr ng-repeat="drink in editableDrinkList.slice(((currentPage-1)*maxSize), ((currentPage)*maxSize)) track by $index |orderBy:'-date'">
+					<!-- <tr ng-repeat="drink in editableDrinkList.slice(((currentPage-1)*maxSize), ((currentPage)*maxSize)) track by $index |orderBy:'-date'"> -->
+					<tr ng-repeat="drink in editableDrinkList |orderBy:'-date' |pages:currentPage : itemsPerPage">
 						<td>[[drink.name]]</td>
 						<td>[[drink.date |date: format :timezone]]</td>
 						<td>[[drink.caffeineLevel]]</td>
@@ -121,16 +122,29 @@
 					</tr>
 				</tbody>
 			</table>
-			<pagination  
+			<!-- <pagination  
 					total-items="totalItems" 
 					ng-model="currentPage" 
 					items-per-page="itemsPerPage" 
 					ng-change="pageChanged()" 
 					ng-click="setPage(currentPage)">
-			</pagination>
+			</pagination> -->
+			<pagination  
+		        total-items="totalItems" 
+		        ng-model="currentPage" 
+		        items-per-page="itemsPerPage"
+		        max-size="maxSize"
+		        class="pagination-sm">
+    		</pagination>
 
 
 		</div>  <!-- end of editable table -->
 	</div>  <!-- end of row -->
+
+	<div class=" row data-row">
+
+		<calendar selected="day"></calendar>
+	</div>
+
 
 </div> <!-- //end of container -->
