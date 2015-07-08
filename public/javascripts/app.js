@@ -83,7 +83,8 @@ app.config(function($stateProvider, $urlRouterProvider){
         $location.path('/login');
       }
     });
-});
+  });
+
 
 
 app.filter('pages', function() {

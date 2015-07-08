@@ -1,6 +1,6 @@
 var app = angular.module('myApp');
 
-app.controller('libraryController',['$scope','DrinkLibrary','Drink','ModalService','$modal','$log',function($scope,DrinkLibrary,Drink, ModalService, $modal, $log){
+app.controller('libraryController',['$scope','DrinkLibrary','Drink','ModalService','$modal','$log','_',function($scope,DrinkLibrary,Drink, ModalService, $modal, $log,_){
 
 
     // $scope.totalItems = ;
@@ -19,6 +19,7 @@ app.controller('libraryController',['$scope','DrinkLibrary','Drink','ModalServic
 
     var editabledrinkSet = function(){
       editableArray = [];
+      console.log('editable',editableArray);
 
       DrinkLibrary.getAllDrinks().success(function(data){
         for (var i = 0; i < data.length; i++) {
@@ -30,6 +31,19 @@ app.controller('libraryController',['$scope','DrinkLibrary','Drink','ModalServic
         $scope.totalItems = editableArray.length;
         $scope.itemsPerPage =10;
         $scope.maxSize = 10;
+
+        var dayCaffLevels = _.chain(editableArray)
+                              .pluck('date')
+                              .value();
+        console.log(dayCaffLevels); 
+
+        var caffPerDay = _.chain(editableArray)
+                          .groupBy(function (data) {
+                              return data.date;
+                          })
+                          .pairs()
+                          .value();
+        console.log(caffPerDay);                    
 
       
 

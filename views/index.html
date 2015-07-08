@@ -42,10 +42,24 @@
             <li><a>News And Research</a></li>
             <!-- <li>&nbsp;</li> -->
           </ul>
-          <!-- starting navbar right -->
+
           <ul class="nav navbar-nav navbar-right navLinks">
-            <li><a ui-sref="login"><i class="fa fa-sign-in"></i>Sign-In/Register</a></li>
+            
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown">SignIn/Register <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-link"><a ui-sref="login"><i class="fa fa-sign-in"></i>Login</a></li>
+                <li class="dropdown-link"><a ui-sref="register"><i class="fa fa-pencil-square-o"></i>Register</a></li>
+
+              </ul>
+            </li>
           </ul>
+
+
+          <!-- starting navbar right -->
+          <!-- <ul class="nav navbar-nav navbar-right navLinks">
+            <li><a ui-sref="login"><i class="fa fa-sign-in"></i>Sign-In/Register</a></li>
+          </ul> -->
         </div>
       </div>
     </nav>
@@ -101,6 +115,7 @@
     <!-- scripts -->
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.0/lodash.min.js"></script>
     <script type="text/javascript" src="libs/moment/moment.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     
@@ -113,7 +128,7 @@
 
 
     <!-- factories -->
-
+    <script type="text/javascript" src="javascripts/services/ct-lodashService.js"></script>
     <script type="text/javascript" src="javascripts/services/ct-authServiceFactory.js"></script>
     <script type="text/javascript" src="javascripts/services/ct-drinkFactory.js"></script>
     <script type="text/javascript" src="javascripts/services/ct-drinkLibraryFactory.js"></script>
