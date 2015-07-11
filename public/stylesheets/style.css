@@ -1,14 +1,16 @@
  body {
   padding-top: 45px;
   font-size: 18px;
+  /*font-size: 3.5vw;*/
   font-family: 'Lato',serif;
 
 }
+/*.container-fluid {
+	background: url('../images/caffeineBeans@2x.png') repeat center;
+	/*background-size: 100% 100%;*/
 
+}*/
 
-a {
-  /*color: #00B7FF;*/
-}
 .navbar {
 	margin-bottom: 0;
 	background: #FF8105;
@@ -32,22 +34,14 @@ a {
 	width: 50%;
 }
 .navLinks li a {
-	/*text-decoration: underline;*/
 	color: white;
 	font-size: 18px;
-
 }
-
 
 .icon-bar {
 	background: white;
 }
 
-.navbar-toggle:hover {
-	/*background: black;*/
-	/*color:black;*/
-
-}
 
 .dropdown-menu {
 	background: #FF8105;
@@ -121,11 +115,6 @@ a {
   }
 
 
-.leftVisual {
-	
-}
-
-
 .options-statement {
 	text-align: right;
 }
@@ -150,9 +139,23 @@ a {
 .coverImages {
 	margin-top: 80px;
 }
-.rightCoverImg {
-	/*text-align: right;*/
+
+/*lights late gray
+.well {
+
+	background: #ffffff;
+	border: 1px solid #FF8105;
+	border-radius: 10px;
+}*/
+.drink-labels {
+	color: #F0A830;
 }
+
+.block-border{
+	border: 1px solid #F0A830;
+	padding: 0.2em;
+}
+
 footer {
 	margin-top: 60px;
 }
@@ -187,6 +190,10 @@ footer {
   /*animation-duration:0;*/
 }
 
+/*.well {
+    background: rgb(22, 105, 173);
+}*/
+
 
 .unEditableDrinks.ng-move,
 .unEditableDrinks.ng-enter {
@@ -220,3 +227,28 @@ footer {
   from { opacity:1; }
   to { opacity:0; }
 }
+
+
+/*@media all and (max-width: 1200px) { /* screen size until 1200px */
+
+    body {
+        font-size: 1.5em; 
+        /* 1.5x default size */
+    }
+}
+@media all and (max-width: 1000px) {
+ /* screen size until 1000px */
+    body {
+        font-size: 1.2em;  1.2x default size 
+        }
+    }
+@media all and (max-width: 500px) { 
+	/* screen size until 500px */
+    body {
+        font-size: 0.8em; 
+        /* 0.8x default size */
+        }
+    button {
+    	font-size: 0.6em;
+    	}
+    }
