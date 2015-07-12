@@ -5,11 +5,6 @@
   font-family: 'Lato',serif;
 
 }
-/*.container-fluid {
-	background: url('../images/caffeineBeans@2x.png') repeat center;
-	/*background-size: 100% 100%;*/
-
-}*/
 
 .navbar {
 	margin-bottom: 0;
@@ -17,7 +12,7 @@
 	font-family: 'Damion',serif;
 }
 .navbar-brand {
-	/*font-family: 'Tangerine',serif;*/
+	/*font-family: 'Tangerine',serif;
 	font-size: 28px;
 	font-weight: bold;
 	/*background: #29241E;*/
@@ -147,12 +142,25 @@
 	border: 1px solid #FF8105;
 	border-radius: 10px;
 }*/
+#tableContainer .drinkEngine {
+	background: url('../images/Glas_2@2x.png') repeat center;
+	background-size: 100% 100%;
+
+}
 .drink-labels {
-	color: #F0A830;
+	/*color: #FFF;*/
+	color:rgba(240,168,84,1.0);
+	font-weight: bold;
+	/*font-size: 16px;*/
+}
+.well {
+    background: rgba(19, 22, 13, 0.47);
+    font-weight: bolder;
+    border: none;
 }
 
 .block-border{
-	border: 1px solid #F0A830;
+	border: 3px solid #F0A830;
 	padding: 0.2em;
 }
 
@@ -190,9 +198,7 @@ footer {
   /*animation-duration:0;*/
 }
 
-/*.well {
-    background: rgb(22, 105, 173);
-}*/
+
 
 
 .unEditableDrinks.ng-move,
