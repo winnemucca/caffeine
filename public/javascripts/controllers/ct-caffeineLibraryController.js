@@ -17,63 +17,45 @@ app.controller('libraryController',['$scope','DrinkLibrary','Drink','ModalServic
       console.log(clicked);
     }
 
+    
+
     var editabledrinkSet = function(){
       editableArray = [];
+      $scope.editableDrinkList = editableArray;
       console.log('editable',editableArray);
+      // next step will be to move these out and into a directive
+      $scope.currentPage = 1;
+      $scope.itemsPerPage =10;
+      $scope.maxSize = 10;
 
       DrinkLibrary.getAllDrinks().success(function(data){
         for (var i = 0; i < data.length; i++) {
           if(data[i].editable) {
             editableArray.push(data[i])
           };
-        };
-        $scope.currentPage = 1;
+        }; 
         $scope.totalItems = editableArray.length;
-        $scope.itemsPerPage =10;
-        $scope.maxSize = 10;
-
-        var dayCaffLevels = _.chain(editableArray)
-                              .pluck('date')
-                              .value();
-        console.log(dayCaffLevels); 
-
-        var caffPerDay = _.chain(editableArray)
-                          .groupBy(function (data) {
-                              return data.date;
-                          })
-                          .pairs()
-                          .value();
-        console.log(caffPerDay);                    
-
-      
-
-        $scope.setPage = function(pageNo) {
-          $scope.currentPage = pageNo;
-        }
-        $scope.pageChanged = function() {
-          $log.log('Page changed to: ' + $scope.currentPage);
-        };
-        
-        $scope.editableDrinkList = editableArray;
-      });
+                       
+      }).then(function(result) {
+        console.log(result);
+        console.log(editableArray);
+      })
     };
- 
-    
+    // run the function
+    editabledrinkSet();
+
     var unEditabledrinkSet = function(){
       unEditableArray = [];
       DrinkLibrary.getAllDrinks().success(function(data){
           for (var i = 0; i < data.length; i++) {
             if(!data[i].editable) {
               unEditableArray.push(data[i])
+            };
           };
-        };
-     
-        // console.log(Drink.myCaffeineList);
         $scope.unEditableDrinkList = unEditableArray;
       });
     };
 
-    editabledrinkSet();
     unEditabledrinkSet();
 
     $scope.drinkList= function(obj) {
@@ -113,10 +95,6 @@ app.controller('libraryController',['$scope','DrinkLibrary','Drink','ModalServic
       $scope.dt = null;
     };
 
-    // Disable weekend selection
-    $scope.disabled = function(date, mode) {
-      return ( mode === 'day' && ( date.getDay() === 0 || date.getDay() === 6 ) );
-    };
     $scope.open = function($event) {
       $event.preventDefault();
       $event.stopPropagation();
@@ -126,22 +104,5 @@ app.controller('libraryController',['$scope','DrinkLibrary','Drink','ModalServic
       formatYear: 'yy',
       startingDay: 1
     };
-
-    $scope.formats = ['dd-MMMM-yyyy', 'yyyy/MM/dd', 'dd.MM.yyyy', 'shortDate'];
-    $scope.format = $scope.formats[0];
-
-    $scope.getDayClass = function(date, mode) {
-      if (mode === 'day') {
-        var dayToCheck = new Date(date).setHours(0,0,0,0);
-        for (var i=0;i<$scope.events.length;i++){
-          var currentDay = new Date($scope.events[i].date).setHours(0,0,0,0);
-          if (dayToCheck === currentDay) {
-            return $scope.events[i].status;
-          }
-        }
-      }
-      return '';
-    };
-
 
 }]);

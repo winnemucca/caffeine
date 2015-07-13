@@ -1,11 +1,68 @@
  body {
   padding-top: 45px;
-  font-size: 18px;
+  font-size: 22px;
   /*font-size: 3.5vw;*/
   font-family: 'Lato',serif;
 
 }
+/*searchbox for panel of drinks*/
+.box {
+	background: #428BE4;
+}
+.searchBox {
+	width: 300px;
+	vertical-align: middle;
+	white-space: nowrap;
+	position: relative;
+}
 
+.searchBox input.searcher {
+	width: 300px;
+	height: 50px;
+	background: #2b303b;
+	border: none;
+	font-size: 10pt;
+	float: left;
+	color: #63717f;
+	padding-left: 45px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	-webkit-transition: background .55s ease;
+  -moz-transition: background .55s ease;
+  -ms-transition: background .55s ease;
+  -o-transition: background .55s ease;
+  transition: background .55s ease;
+
+}
+
+.searchBox input.searcher::-webkit-input-placeholder {
+   color: #65737e;
+}
+ 
+.searchBox input.searcher:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;  
+}
+ 
+.searchBox input.searcher::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e;  
+}
+
+.searchBox .icon {
+	position: absolute;
+	top:50%;
+	margin-left: 17px;
+	margin-top: 17px;
+	z-index: 1;
+	color: #4f5b66;
+}
+
+.searchBox input.searcher:hover,.searchBox input.searcher:focus, .searchBox input.searcher:active {
+	outline: none;
+	background: #ffffff;
+}
+/*end of search box for panel of drinks*/
 .navbar {
 	margin-bottom: 0;
 	background: #FF8105;
@@ -135,28 +192,33 @@
 	margin-top: 80px;
 }
 
-/*lights late gray
-.well {
 
-	background: #ffffff;
-	border: 1px solid #FF8105;
-	border-radius: 10px;
-}*/
 #tableContainer .drinkEngine {
-	background: url('../images/Glas_2@2x.png') repeat center;
-	background-size: 100% 100%;
+	background: url('../images/glas2.png') no-repeat center;
+	background-size: 70% 100%;
 
 }
 .drink-labels {
 	/*color: #FFF;*/
 	color:rgba(240,168,84,1.0);
+
 	font-weight: bold;
-	/*font-size: 16px;*/
+	font-size: 1.3em;
 }
 .well {
     background: rgba(19, 22, 13, 0.47);
     font-weight: bolder;
     border: none;
+}
+.filterButton {
+	background: rgba(19, 22, 13, 0.47);
+	color:rgba(240,168,84,1.0);
+	border: none;
+	border-bottom: 2px solid rgba(240,168,84,1.0);
+}
+.filterButton:hover {
+	color:blue;
+	font-size: 1.2em;
 }
 
 .block-border{
@@ -183,6 +245,10 @@ footer {
 
 .unEditableDrinks {
 	position: relative;
+}
+/*styling date picker*/
+.text-center {
+	background: #fff;
 }
 
 .unEditableDrinks.ng-enter-stagger,
@@ -251,9 +317,13 @@ footer {
 @media all and (max-width: 500px) { 
 	/* screen size until 500px */
     body {
-        font-size: 0.8em; 
+        font-size: 1em; 
+
         /* 0.8x default size */
         }
+    h5 {
+    	font-size: 1.2em;
+    }
     button {
     	font-size: 0.6em;
     	}

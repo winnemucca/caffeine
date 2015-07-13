@@ -5,20 +5,29 @@
 
 	<div class="row">
 		<form class="form-horizontal" novalidate>
-		  <div class="form-group">
-		    <label for="name">beverageName</label>
-		    <input type="text" class="form-control" id="drinkName" placeholder="beverage name" ng-model="defaultForm.beverageName">
-		  </div>
-		 
-		  <div class="form-group">
-		    <label for="caffeine-level">caffeine-level</label>
-		    <input type="text" class="form-control" id="caffeine-level" placeholder="caffeine-level" ng-model="defaultForm.caffeineLevel">
-		  </div>
+			<div class="form-group">
+			    <label for="name">beverageName</label>
+			    <input type="text" class="form-control" id="drinkName" placeholder="beverage name" ng-model="defaultForm.beverageName">
+			</div>
+				 
+		  	<div class="form-group">
+			    <label for="caffeine-level">caffeine-level</label>
+			    <input type="text" class="form-control" id="caffeine-level" placeholder="caffeine-level" ng-model="defaultForm.caffeineLevel">
+		  	</div>
 
 
 		  <div class="form-group input-group">
 		  	<!-- <label>Date</label> -->
-		  	<input  class="form-control" id="date" placeholder="date" ng-model="defaultForm.date" datepicker-popup ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions"  date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+		  	<input  class="form-control " id="date" placeholder="date" 
+		  	ng-model="defaultForm.date" 
+		  	datepicker-popup ng-model="dt" 
+		  	is-open="opened" 
+		  	min-date="minDate" 
+		  	datepicker-options="dateOptions"  
+		  	ng-required="true" 
+		  	close-text="Close" 
+		  	init-date="today(dt)"/>
+
 	        <span class="input-group-btn">
 	            <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
 	       </span>
@@ -106,7 +115,7 @@
 				</thead>
 
 				<tbody>
-					<!-- <tr ng-repeat="drink in editableDrinkList.slice(((currentPage-1)*maxSize), ((currentPage)*maxSize)) track by $index |orderBy:'-date'"> -->
+					<!-- pages is a custom filter created  -->
 					<tr ng-repeat="drink in editableDrinkList |orderBy:'-date' |pages:currentPage : itemsPerPage">
 						<td>[[drink.name]]</td>
 						<td>[[drink.date |date: format :timezone]]</td>

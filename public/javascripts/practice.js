@@ -106,3 +106,11 @@
 
   // modal
   
+  // these are the old pagination tools that i was using.  holding on just in case
+    // $scope.setPage = function(pageNo) {
+        //   $scope.currentPage = pageNo;
+        // }
+        // $scope.pageChanged = function() {
+        //   $log.log('Page changed to: ' + $scope.currentPage);
+        // };
+        // $scope.editableDrinkList = editableArray;

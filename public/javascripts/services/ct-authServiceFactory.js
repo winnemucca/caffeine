@@ -83,6 +83,7 @@ app.factory('AuthService',['$q', '$timeout', '$http', function ($q, $timeout, $h
         })
         // handle error
         .error(function (data) {
+          console.log('not registered',data);
           deferred.reject();
         });
 

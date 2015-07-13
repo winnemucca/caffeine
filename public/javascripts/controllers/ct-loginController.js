@@ -29,4 +29,12 @@ app.controller('loginController',['$scope', '$location', 'AuthService',
 
     };
 
+    $scope.logout = function() {
+      console.log(AuthService.getUserStatus());
+      AuthService.logout()
+        .then(function() {
+          $location.path('/login');
+        });
+    };
+
 }]);
