@@ -61,14 +61,13 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="form-group">
 			<input type="text" class="drinkSearch" ng-model="search"  placeholder="search" />
 		</div>
 
 		<div class="table-responsive col-sm-6 caffDataTable">
-
 			<table class="table table-hover scrollTable" style="table-layout:fixed">
-
 				<thead>
 					<tr>
 						<th>Beverage</th>
@@ -76,11 +75,9 @@
 						<th>Caffeine Amount</th>
 						<th>Beverage Description</th>
 					</tr>
-				</thead>
-				
+				</thead>	
 				<tbody>
 					<tr class="unEditableDrinks" ng-repeat="drink in unEditableDrinkList | orderBy:'-date'|limitTo:400|filter:search |filter:myFilter">
-
 						<td>[[drink.name]]</td>
 						<td>[[drink.date |date: format :timezone]]</td>
 						<td>[[drink.caffeineLevel]]</td>
@@ -94,9 +91,7 @@
 						</td>
 					</tr>
 				</tbody>
-				
 			</table>
-		
 		</div>
 
 				

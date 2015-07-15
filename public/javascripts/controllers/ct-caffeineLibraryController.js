@@ -43,6 +43,7 @@ app.controller('libraryController',['$scope','DrinkLibrary','Drink','ModalServic
     };
     // run the function
     editabledrinkSet();
+    
 
     var unEditabledrinkSet = function(){
       unEditableArray = [];

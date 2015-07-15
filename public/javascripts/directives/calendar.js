@@ -1,16 +1,8 @@
 
-
-//         scope.$watch(getOptions, function(newO,oldO){
-//             scope.destroy();
-//             scope.init();
-//         });
-//       }
-//     };
-// }]);
-// 
-// 
 var app = angular.module('myApp');
 app.directive("calendar", function() {
+
+    // removed controller
     return {
         restrict: "E",
         templateUrl: "javascripts/directives/calendar.html",
@@ -19,18 +11,21 @@ app.directive("calendar", function() {
         },
         link: function(scope) {
             scope.selected = _removeTime(scope.selected || moment());
+            // scope.selected returns a moment object with the current date and 00:00:00 for minutes or seconds.
             scope.month = scope.selected.clone();
-
+            // start is an extension of scope.selected
             var start = scope.selected.clone();
+            // start.date(1) starts the calendar at the beginning of the month
             start.date(1);
             _removeTime(start.day(0));
-
+            // build month is defined below 
             _buildMonth(scope, start, scope.month);
-
+            // select is added to click handler to give user ability to select a day
             scope.select = function(day) {
+                // returns the current date with 0 for time
                 scope.selected = day.date;  
             };
-
+            // gives user ability to jump around months added to click handler
             scope.next = function(){
                 var next = scope.month.clone();
                 _removeTime(next.month(next.month()+1).date(1));
