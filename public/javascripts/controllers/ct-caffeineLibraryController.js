@@ -80,8 +80,11 @@ app.controller('libraryController',['$scope','DrinkLibrary','Drink','ModalServic
     // here is my service modal
     $scope.update = function(drink) {
       ModalService.trigger(drink).result.then(function() {
-      editabledrinkSet();
+      // editabledrinkSet();
       });
+
+      editabledrinkSet();
+
     };
   
 
